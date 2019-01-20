@@ -9,11 +9,11 @@ body {
     color: rgb(12, 136, 64); 
     }
 h1  {
-    font-size: 1rem;
+    font-size: 2rem;
     color: darkblue;
     }
 h2  {
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align:center
     border-bottom 1px solid rgb(70, 69, 69);
     }
