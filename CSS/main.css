@@ -9,18 +9,18 @@ body {
     color: rgb(12, 136, 64); 
     }
 h1  {
-    font-size: 0.8rem;
+    font-size: .8rem;
     color: darkblue;
     }
 h2  {
-    font-size: 25px;
+    font-size: 1rem;
     text-align:center
-    border-bottom 5px solid blue;
+    border-bottom 1px solid rgb(70, 69, 69);
     }
 header, main, footer
     {
-    margin: 25px 25px 25px 25px;
-    padding: 20px;
+    margin: 1.25rem auto;
+    padding: .5rem;
     max-width: 300px;
     }
 header, footer, footer a 
@@ -31,7 +31,7 @@ header, footer, footer a
     }
 header img 
     {
-    width: auto;
+    width: 150px;
     height: auto;
     float: right;
     }
