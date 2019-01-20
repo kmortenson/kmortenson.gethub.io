@@ -15,7 +15,7 @@ h1  {
 h2  {
     font-size: 1.5rem;
     text-align:center
-    border-bottom 1px solid rgb(18, 87, 24);
+    border-bottom 1px solid black;
     }
 header, main, footer
     {
