@@ -6,16 +6,16 @@ body {
     font-size: 16px;
     line-height: 32px;
     font-family: Arial, Helvetica, sans-serif;
-    color: blue; 
+    color: rgb(12, 136, 64); 
     }
 h1  {
-    font-size: 32px;
+    font-size: 0.8rem;
     color: darkblue;
     }
 h2  {
     font-size: 25px;
     text-align:center
-    border-bottom: 5px solid blue;
+    border-bottom 5px solid blue;
     }
 header, main, footer
     {
