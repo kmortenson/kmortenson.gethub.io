@@ -5,32 +5,35 @@
 body {
     font-size: 16px;
     line-height: 32px;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: blue; 
     }
 h1  {
-    font-size:0.58;
+    font-size: 32px;
     color: rgb(60, 17, 139);
     }
 h2  {
     font-size: 25px;
     text-align:center
-    border-bottom: 5px solid blue;
+    border-bottom: 5px blue;
     }
-header, main, footer {
+
+header, main, footer
+    {
     margin: 1.25rem auto
     padding: .5rem;
     max-width: 150px;
-header, footer, footer a {
+    }
+header, footer, footer a 
+    {
     text-align: center;
     background-color: blue;
     color: whitesmoke;
-}
-header img {
+    }
+header img 
+    {
     width: auto;
     height: auto;
     float: right;
-}
-footer {
-    font-size:0.30;
-}
+    }
+footer {font-size:0.30;}
