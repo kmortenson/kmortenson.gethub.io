@@ -6,7 +6,7 @@ body {
     font-size: 16px;
     line-height: 32px;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(12, 136, 64); 
+    color: black; 
     }
 h1  {
     font-size: 2rem;
@@ -15,7 +15,7 @@ h1  {
 h2  {
     font-size: 1.5rem;
     text-align:center
-    border-bottom 1px solid black;
+    border-bottom 3px solid black;
     }
 header, main, footer
     {
