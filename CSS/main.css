@@ -9,7 +9,7 @@ body {
     color: rgb(12, 136, 64); 
     }
 h1  {
-    font-size: .8rem;
+    font-size: 1rem;
     color: darkblue;
     }
 h2  {
@@ -21,7 +21,7 @@ header, main, footer
     {
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width: 300px;
+    max-width: 1500px;
     }
 header, footer, footer a 
     {
@@ -31,7 +31,7 @@ header, footer, footer a
     }
 header img 
     {
-    width: 150px;
+    width: 1500px;
     height: auto;
     float: right;
     }
