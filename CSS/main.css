@@ -21,17 +21,17 @@ header, main, footer
     {
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width: 1500px;
+    max-width: 700px;
     }
 header, footer, footer a 
     {
     text-align: center;
-    background-color: blue;
+    background-color: aqua;
     color: whitesmoke;
     }
 header img 
     {
-    width: 1500px;
+    width: 150px;
     height: auto;
     float: right;
     }
