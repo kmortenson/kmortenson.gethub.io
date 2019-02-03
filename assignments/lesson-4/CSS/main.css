@@ -37,13 +37,15 @@ header img
     }
 nav
     {
+    padding: 1em 2em;
+    font-size: 2em;
     text-align: left;
     background-color: brown;
     color: Black;
     }
 
-li a {
-        display: block;
+.navli a {
+        display: inline;
         width: 50%;
         color: green;
         padding: 8px 16px;
