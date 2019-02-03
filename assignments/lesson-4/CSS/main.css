@@ -50,10 +50,10 @@ li a {
         text-decoration: none;
         }
 li a:link { color: green }
-li a:visited { color: brown}
-li a:focus { }
-li a:hover { color: limehartreuse}
-li a:active { color: red}
+li a:visited { color: darkgreen }
+li a:focus { color: black }
+li a:hover { color: lime }
+li a:active { color: Red}
     {
     background-color: #000066;
     color: white;
