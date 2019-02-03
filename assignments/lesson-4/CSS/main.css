@@ -41,4 +41,26 @@ nav
     background-color: blue;
     color: Black;
     }
+
+li a {
+        display: block;
+        width: 100%;
+        color: black;
+        padding: 8px 16px;
+        text-decoration: none;
+        }
+li a:link { color: green }
+li a:visited { color: brown}
+li a:focus { }
+li a:hover { color: limehartreuse}
+li a:active { color: red}
+    {
+    background-color: #000066;
+    color: white;
+    }
+.active 
+    {
+    background-color: #6699ff;
+    color: white;
+    }
 footer {font-size: smaller;}
