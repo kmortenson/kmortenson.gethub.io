@@ -40,7 +40,6 @@ nav
     padding: 1em 2em;
     font-size: 1.2em;
     text-align: left;
-    display: inline;
     background-color: brown;
     color: Black;
     }
@@ -49,7 +48,8 @@ nav
         width: 50%;
         color: green;
         padding: 8px 16px;
-        text-decoration: none;
+        display: inline;
+ /*       text-decoration: none; */ 
         }
 li a:link { color: green }
 li a:visited { color: darkgreen }
