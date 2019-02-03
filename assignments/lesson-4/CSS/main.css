@@ -17,13 +17,13 @@ h2  {
     text-align:center;
     border-bottom: 5px solid black;
     }
-header, main, footer
+header, main, nav, footer
     {
     margin: 1.25rem auto;
     padding: .5rem;
     max-width: 700px;
     }
-header, footer, footer a 
+header, footer
     {
     text-align: center;
     background-color: blue;
