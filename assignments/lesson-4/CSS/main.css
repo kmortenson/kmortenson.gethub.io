@@ -45,7 +45,7 @@ nav
     }
 
 .navli a {
-        width: 50%;
+        width: 100%;
         color: green;
         padding: 8px 16px;
         display: inline;
