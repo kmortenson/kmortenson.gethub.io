@@ -51,7 +51,7 @@ nav
         display: inline;
  /*       text-decoration: none; */ 
         }
-li a:link { color: green }
+li a:link { color: whitesmoke}
 li a:visited { color: darkgreen }
 li a:focus { color: black }
 li a:hover { color: lime }
