@@ -10,7 +10,7 @@ body {
     }
 h1  {
     font-size: 2rem;
-    color: lightblue;
+    color: black;
     }
 h2  {
     font-size: 1.5rem;
@@ -33,6 +33,12 @@ header img
     {
     width: 150px;
     height: auto;
-    float: right;
+    float: left;
+    }
+nav
+    {
+    text-align: center;
+    background-color: blue;
+    color: Black;
     }
 footer {font-size: smaller;}
