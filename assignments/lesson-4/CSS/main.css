@@ -38,14 +38,14 @@ header img
 nav
     {
     padding: 1em 2em;
-    font-size: 2em;
+    font-size: 1.2em;
     text-align: left;
+    display: inline;
     background-color: brown;
     color: Black;
     }
 
 .navli a {
-        display: inline;
         width: 50%;
         color: green;
         padding: 8px 16px;
