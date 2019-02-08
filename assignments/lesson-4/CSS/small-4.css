@@ -32,8 +32,11 @@ header img
     {
     width: 150px;
     height: auto;
-    float: left;
-    }
+     }
+.motto
+{
+    display: inline-block;
+}
 nav
     {
     padding: 8px 16px;
@@ -42,10 +45,10 @@ nav
     background-color: lightseagreen;
     color: Black;
     }
-        }
+li {list-style-type: none;}
 li a:link { color: whitesmoke}
 li a:visited { color: darkgreen }
 li a:focus { color: black }
-li a:hover { color: lime; background-color: green}
+li:hover { background-color: green}
 li a:active { color: Red}
 footer {font-size: smaller;}
