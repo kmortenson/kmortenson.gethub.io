@@ -1,7 +1,5 @@
 /* CIT 230 - WeaterSite CSS  */
-/* small-5 for  */
-
-*  { margin: 0; box-sizing: border-box; }
+{ margin: 0; box-sizing: border-box; }
 body {
     font-size: 16px;
     line-height: 32px;
@@ -9,12 +7,17 @@ body {
     color: black; 
     }
 h1  {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: black;
     }
 h2  {
     font-size: 1.5rem;
     text-align:center;
+    }
+h3  {
+    font-size: 1.5rem;
+    text-align:center;
+    color: whitesmoke;
     }
 header, main, nav, footer
     {
@@ -30,26 +33,40 @@ header, footer
     }
 header img 
     {
-    width: 150px;
+    width: 100px;
     height: auto;
+    
      }
+main
+    { 
+    background-color: blue;
+    text-align: center;
+    }
+main img
+{   display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: auto;
+    height: auto;
+    
+    }
 .motto
 {
     display: inline-block;
 }
 nav
     {
-    padding: 8px 16px;
-    font-size: 1.2em;
-    border:1px solid #555;
-    text-align: left;
+    padding: 8px 8px;
+    font-size: 1em;
+    text-align: center;
     background-color: lightseagreen;
     color: Black;
     }
-li {list-style-type: none;}
+li {list-style-type: none; }
 li a:link { color: whitesmoke}
 li a:visited { color: darkgreen }
 li a:focus { color: black }
 li:hover { background-color: green}
 li a:active { color: Red}
-footer {font-size: smaller;}
+footer {font-size:1em;}

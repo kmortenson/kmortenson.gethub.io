@@ -1,2 +1,18 @@
 /* CIT 230 - WeaterSite CSS  */
 /* large-5 for  */
+@media (min-width:600px) {
+nav 
+{
+  padding: 14px 20px;
+  font-size: 1.5em;
+  text-align: left;
+ 
+  }
+li  
+{
+display: inline-block;
+border: 2em;
+float: none;
+}
+
+}
