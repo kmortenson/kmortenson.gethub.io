@@ -18,9 +18,13 @@ nav
   padding: 14px 20px;
   font-size: 1.5em;
   text-align: left;
- 
   }
-li  
+  .mainimg
+  {
+    margin 1.24 rem
+  }
+
+  li  
 {
 display: inline-block;
 border: 2em;
