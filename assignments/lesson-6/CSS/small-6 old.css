@@ -1,0 +1,101 @@
+/* CIT 230 - WeaterSite CSS Small min-with 450*/
+body 
+    {
+    font-size: 16px;
+    line-height: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black; 
+    }
+    header, footer
+    {
+    text-align: center;
+    background-color: blue;
+    color: whitesmoke;
+    }
+header img {
+    width: 100px;
+    height: auto;
+    }
+.motto {
+    display: inline-block;
+    }   
+h1  {
+    font-size: 1.5em;
+    /* color: black;*/
+    }
+h2  {
+    /*font-size: 1.5rem;
+    text-align:center;*/
+    }
+h3  {
+    /*font-size: 1.5rem;*/
+    text-align:center;
+    color: whitesmoke;
+    }
+header, main, nav, footer
+    {
+    max-width: 600px;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    }
+
+.topnav {
+overflow: hidden;
+background-color: #333;
+    }
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+nav
+    {
+    padding: 8px 8px;
+    font-size: 1em;
+    text-align: center;
+    background-color: lightseagreen;
+    color: Black;
+    }
+
+li {list-style-type: none; }
+li a:link { color: whitesmoke}
+li a:visited { color: darkgreen }
+li a:focus { color: black }
+li:hover { background-color: green}
+li a:active { color: Red} 
+
+main
+    { 
+    text-align: center;
+    background-color: blue;
+    color: whitesmoke
+    }
+.mainimg
+{   margin: 1.25rem auto; position: relative;
+    padding: .5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 50%;*/
+    max-width: 560px;
+    height: auto;
+
+     
+}
+    .cweather 
+    {
+        position: absolute;
+        line-height: 1;
+        top: 20px;
+        left: 100px;
+        border: 1px solid #000;
+        padding: 1.2rem;
+        box-shadow: 0 0 30px #fff;
+    }
+  
+footer {font-size:1em;}

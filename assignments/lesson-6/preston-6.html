@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Outdoor Weather site</title>
+    <meta name="description" content="Preston OutdoorWeather page">
+    <meta name="author" content="Kirk Mortenson">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/small-6.css">
     <link rel="stylesheet" href="CSS/large-6.css">
-    <meta name="description" content="Preston OutdoorWeather page">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Outdoor Weather site : Preston</title>
 
 <body>
     <header>
@@ -20,20 +20,27 @@
             <h2>Weather for Adventure</h2>
         </div>
         <nav>
-            <ul id="menu">
-                <li><a href="preston-5.html">Preston</a></li>
-                <li><a href="sodasprings.html">Soda Springs</a></li>
-                <li><a href="fishhaven.html">Fish Haven</a></li>
-                <li><a href="stormcenter.html">Storm Center</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="home.html">Home</a></li>
-            </ul>
+            <div class="topnav" Id="myTopnav">
+                <a href="home.html">Home</a>
+                <a href="preston-6.html" class="active">Preston</a>
+                <a href="sodasprings.html">Soda Springs</a>
+                <a href="fishhaven.html">Fish Haven</a>
+                <a href="stormcenter.html">Storm Center</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="javascript:void(0);" class="icon" onclick="myhamburger()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
         </nav>
     </header>
     <main>
         <h1>Preston Idaho</h1>
-        <div class="mainimg">
-            <img src="images/PrestonID.jpg" alt="outdoor Image" width="max" height="auto">
+        <picture>
+            <img src="images/cropped450.jpeg" sizes="100vw"
+                srcset="images/cropped450.jpeg 450w, images/cropped800.jpeg 2000w" alt="Sunny Landscape">
+        
+           
             <section class="cweather">
                 <H4>Current Weather</H4>
                 <P>Temp: </P>
@@ -41,12 +48,13 @@
                 <p>Direction:</p>
                 <p>Humidity:</p>
             </section>
-        </div>
+        </picture>
 
         <article>
             <h3>Idaho Adventures</h1>
                 <p>
-                    There are many adventures in idaho. Try exploring craters of the moon national monumnet or Floating
+                    There are many adventures in idaho. Try exploring craters of the moon national monumnet or
+                    Floating
                     the middle fork of the Salmon river.
                     for the more daring try Jetboating through Hells Canyon or paragliding off the top of Baldy</p>
                 <P> if your looking for outdoor beauy on a nice hike or high adventure Idaho is the place and
@@ -55,10 +63,9 @@
 
     </main>
     <footer>
+
+        <p> &copy;2019 All Rights Reserved - Outdoor Weather - <a id="dt"></a></p>
         <script src="scripts/currentdate.js"></script>
-         <p> &copy;2019 All Rights Reserved - Outdoor Weather - </p>
-            <p id="dt">date</p>
-            
     </footer>
 
 </body>

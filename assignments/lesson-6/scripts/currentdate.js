@@ -1,6 +1,4 @@
-// date function//
-function myFunction() {
-    var d = new Date();
-    var n = d.toDateString();
-    document.getElementById("dt").innerHTML = n;
-}
+// date //
+var d = new Date();
+document.getElementById("dt").innerHTML = d.toDateString();
+

@@ -1,4 +1,4 @@
-/* CIT 230 - WeaterSite CSS  */
+/* CIT 230 - WeaterSite CSS Small min-with 320*/
 body 
     {
     font-size: 16px;
@@ -6,40 +6,40 @@ body
     font-family: Arial, Helvetica, sans-serif;
     color: black; 
     }
-h1  {
-    font-size: 1.5rem;
-    color: black;
-    }
-h2  {
-    font-size: 1.5rem;
-    text-align:center;
-    }
-h3  {
-    font-size: 1.5rem;
-    text-align:center;
-    color: whitesmoke;
-    }
-header, main, nav, footer
-    {
-    margin: 1.25rem auto;
-    padding: .5rem;
-    max-width: 800px;
-      }
-header, footer
+    header, footer
     {
     text-align: center;
     background-color: blue;
     color: whitesmoke;
     }
-header img 
-    {
-        width: 100px;
-        height: auto;
+header img {
+    width: 100px;
+    height: auto;
     }
-.motto
-    {
+.motto {
     display: inline-block;
     }   
+h1  {
+    font-size: 1.5em;
+    /* color: black;*/
+    }
+h2  {
+    /*font-size: 1.5rem;
+    text-align:center;*/
+    }
+h3  {
+    /*font-size: 1.5rem;*/
+    text-align:center;
+    color: whitesmoke;
+    }
+header, main, nav, footer
+    {
+    max-width: 600px;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    
+      }
+
 nav
     {
     padding: 8px 8px;
@@ -68,8 +68,8 @@ main
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    max-width: 800px;
+    /*width: 50%;*/
+    max-width: 560px;
     height: auto;
 
      

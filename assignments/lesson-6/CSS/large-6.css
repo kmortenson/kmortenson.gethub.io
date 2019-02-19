@@ -1,34 +1,31 @@
-/* CIT 230 - WeaterSite CSS  */
-/* large-5 for  */
+/* CIT 230 - WeaterSite CSS Large */
 @media (min-width:600px) {
 
-header, main, nav, footer
-{
+header, main, nav, footer {
   margin: 1.25rem auto;
   padding: .5rem;
   max-width: 800px;
 }
-header img 
-    {
+header img {
       width: 100px;
       height: auto;
     }
-nav 
-{
+    h1  {
+      font-size: 2em;
+nav {
   padding: 14px 20px;
-  font-size: 1.5em;
+  font-size: 1.25em;
   text-align: left;
   }
-  .mainimg
-  {
-    margin 1.24 rem
-  }
-
-  li  
+  
+li 
 {
 display: inline-block;
 border: 2em;
 float: none;
 }
-
+.mainimg
+  {
+    margin: .24rem;
+  }
 }
