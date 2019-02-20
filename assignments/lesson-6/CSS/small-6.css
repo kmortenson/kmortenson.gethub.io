@@ -87,10 +87,10 @@ main
     background-color: blue;
     color: whitesmoke
     }
-picture {  
+.herodiv {  
     
     position: relative;
-    padding: .5rem;
+    Margin: 10px;
     }
     .cweather 
     {
@@ -98,8 +98,8 @@ picture {
         line-height: 1;
         font-size: 10px;
         padding: .25rem;
-        top: 20px;
-        left: 20px;
+        top: 10px;
+        left: 10px;
         border: 1px solid #000;
         box-shadow: 0 0 30px #fff;
     }
