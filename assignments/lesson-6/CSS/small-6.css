@@ -81,34 +81,26 @@ background-color: #333;
     text-align: left;
   }
 
-
-
-
 main
     { 
     text-align: center;
     background-color: blue;
     color: whitesmoke
     }
-picture
-{   margin: 1.25rem auto; 
+picture {  
+    
     position: relative;
     padding: .5rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
-
-     
-}
+    }
     .cweather 
     {
         position: absolute;
-        line-height: .5;
+        line-height: 1;
+        font-size: 10px;
+        padding: .25rem;
         top: 20px;
         left: 20px;
         border: 1px solid #000;
-        padding: 1rem;
         box-shadow: 0 0 30px #fff;
     }
   

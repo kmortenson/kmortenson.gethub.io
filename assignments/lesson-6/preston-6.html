@@ -31,22 +31,22 @@
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
-
         </nav>
     </header>
+
     <main>
         <h1>Preston Idaho</h1>
         <picture>
-            <img src="images/cropped450.jpeg" sizes="100vw"
-                srcset="images/cropped450.jpeg 450w, images/cropped800.jpeg 2000w" alt="Sunny Landscape">
-        
-           
+            <img src="images/cropped450.jpeg" alt="Sunny Landscape">
+
             <section class="cweather">
-                <H4>Current Weather</H4>
-                <P>Temp: </P>
-                <P>Wind:</P>
-                <p>Direction:</p>
-                <p>Humidity:</p>
+                <h4>Current Weather</h4>
+                <P>Temp:<span id="cTemp">80</span>&deg;F</P>
+                <P>Wind:<span id="wSpeed">5</span>mph</P>
+                <p>Direction: <span id="wDir">SW</span></P>
+                <p>Humidity: <span id="humid">70%</span></P>
+                <p>Windchill: <span id="wChill"></span>&deg;F</P>
+                <script src="scripts/windchill.js"></script>
             </section>
         </picture>
 
@@ -63,7 +63,9 @@
 
     </main>
     <footer>
-
+        <p>Outdoor Weather watch</p>
+        <p>123 Main St.</p>
+        <p>Weather, Id 89111</p>
         <p> &copy;2019 All Rights Reserved - Outdoor Weather - <a id="dt"></a></p>
         <script src="scripts/currentdate.js"></script>
     </footer>
