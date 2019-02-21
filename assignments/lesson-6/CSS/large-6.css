@@ -1,7 +1,7 @@
 /* CIT 230 - WeaterSite CSS Large */
-@media (min-width:800px) {
+@media (min-width:600px) {
 
-header, main, nav, footer {
+header, main, footer {
   margin: 1.25rem auto;
   padding: .5rem;
   max-width: 800px;
@@ -12,20 +12,22 @@ header img {
     }
     h1  {
       font-size: 2em;
-/*nav {
-  padding: 14px 20px;
-  font-size: 1.25em;
+    }
+    .topnav .icon {display: none;}
+
+nav {
+  padding: 10px 10px;
+  font-size: 1em;
   text-align: left;
   }
-  
 li 
 {
 display: inline-block;
 border: 2em;
 float: none;
 }
-.mainimg
-  {
-    margin: .24rem;
-  }*/
+.mainimg  {margin: .24rem;}
+
+.herodiv img {width: 100%;}
+
 }
