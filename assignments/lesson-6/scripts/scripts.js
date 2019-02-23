@@ -1,5 +1,6 @@
 function togglemenu() {
   console.log("it worked")
+  
 }
 /*
   var x = document.getElementById("myTopnav");
