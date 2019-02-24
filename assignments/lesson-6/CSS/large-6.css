@@ -18,9 +18,14 @@
     font-size: 2em;
   }
 
-  .topnav .icon {
+  nav button {
     display: none;
   }
+
+  nav ul.hide {
+    display: block;
+  }
+
 
   nav {
     padding: 10px 10px;
