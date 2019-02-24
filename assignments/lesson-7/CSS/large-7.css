@@ -33,7 +33,7 @@
     text-align: left;
   }
 
-  Nav li {
+  Nav ul li {
     display: inline-block;
     border: 1px;
     float: none;
