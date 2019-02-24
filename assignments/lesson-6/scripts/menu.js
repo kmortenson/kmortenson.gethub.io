@@ -1,5 +1,6 @@
 function togglemenu() {
-  console.log("it worked")
+    console.log(document.getElementById("primarynav").classList);
+    document.getElementById("primarynav").classList.toggle("hide");
 }
 /*
   var x = document.getElementById("myTopnav");
