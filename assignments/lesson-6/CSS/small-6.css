@@ -53,9 +53,10 @@ nav {
 
 nav button {
     margin: .2rem 2%;
+    font-size: 1.3rem;
     background-color: transparent;
-    color: aliceblue
-}
+    color: aliceblue;
+    }
 
 nav ul {
     display: block;
@@ -64,6 +65,15 @@ nav ul {
     padding: 2px 7px;
     text-decoration: none;
     font-size: 16px;
+    float: none;
+   
+}
+
+nav ul li a{
+    float: none;
+    display: block;
+    text-align: left;
+    text-decoration: none;
 }
 
 nav a:link {
@@ -84,12 +94,6 @@ nav a:hover {
 
 nav a:active {
     color: Red
-}
-
-nav ul {
-    float: none;
-    display: block;
-    text-align: left;
 }
 
 nav ul.hide {
