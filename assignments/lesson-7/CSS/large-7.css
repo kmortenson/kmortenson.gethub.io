@@ -28,17 +28,20 @@
 
 
   nav {
-    padding: 10px 10px;
+    padding: 0;
     font-size: .8em;
     text-align: left;
   }
 
-  li {
+  Nav li {
     display: inline-block;
-    border: 1em;
+    border: 1px;
     float: none;
   }
+  Nav ul li a {
+    Border: 5px 
 
+  }
   .mainimg {
     margin: .24rem;
   }
