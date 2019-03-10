@@ -5,24 +5,23 @@
   "secretBase": "Super tower",
   "active": true,
   "members": [{
-      "name": "Atomic Man",
-      "age": 52,
-      "secretIdentity": "Kirk Mortenson",
+      "name": "Molecule Man",
+      "age": 29,
+      "secretIdentity": "Dan Jukes",
       "powers": [
         "Radiation resistance",
-        "Make Time",
-        "Split into two"
+        "Turning tiny",
+        "Radiation blast"
       ]
     },
     {
-      "name": "NinjAlden",
-      "age": 6,
-      "secretIdentity": "John Mortenson",
+      "name": "Madame Uppercut",
+      "age": 39,
+      "secretIdentity": "Jane Wilson",
       "powers": [
-        "Night vision",
-        "Super helaing",
+        "Million tonne punch",
+        "Damage resistance",
         "Superhuman reflexes"
-        "Martial Art Skills"
       ]
     },
     {
@@ -34,7 +33,7 @@
         "Super Intellengence",
         "Laser eyes",
         "Teleportation",
-        "speaks with cats"
+        "speaks with"
       ]
     }
   ]
