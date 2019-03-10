@@ -17,14 +17,15 @@
     
     {
       "name": "SuperMOM",
-      "age": 6,
+      "age": "Unknown",
       "secretIdentity": "Terri Mortenson",
       "powers": [
         "Speed Reading",
         "Super Intellengence",
         "Laser eyes",
         "Super Memory",
-        "speaks with children"
+        "Mind Reading",
+        "Speaks with children"
       ]
     },{
       "name": "NinjAlden",
