@@ -14,7 +14,7 @@
         "Split into two"
       ]
     },
-    
+
     {
       "name": "SuperMOM",
       "age": "Unknown",
@@ -27,18 +27,7 @@
         "Mind Reading",
         "Speaks with children"
       ]
-    },{
-      "name": "NinjAlden",
-      "age": 6,
-      "secretIdentity": "John Mortenson",
-      "powers": [
-        "Night vision",
-        "Super helaing",
-        "Superhuman reflexes",
-        "Martial Art Skills"
-      ]
-    },
-    {
+    }, {
       "name": "Sarahbellium",
       "age": 9,
       "secretIdentity": "Sarah Mortenson",
@@ -48,6 +37,17 @@
         "Laser eyes",
         "Teleportation",
         "speaks with cats"
+      ]
+    },
+    {
+      "name": "NinjAlden",
+      "age": 6,
+      "secretIdentity": "John Mortenson",
+      "powers": [
+        "Night vision",
+        "Super helaing",
+        "Superhuman reflexes",
+        "Martial Art Skills"
       ]
     }
   ]
