@@ -37,7 +37,7 @@ header p {
 
 section article {
   width: 33%;
-  float: center;
+  float: left;
 }
 
 section p {
