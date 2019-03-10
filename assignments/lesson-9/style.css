@@ -7,7 +7,7 @@ html {
 body {
   width: 800px;
   margin: 0 auto;
-  background-color: lightblue;
+  background-color: lightblue
 }
 
 h1
@@ -36,8 +36,7 @@ header p {
 
 /* section styles */
 
-section article {
-  background-color: lightblue;
+section article {al
   width: 33%;
   float: left;
 }
