@@ -16,12 +16,13 @@
     },
     {
       "name": "NinjAlden",
-      "age": 39,
+      "age": 6,
       "secretIdentity": "John Mortenson",
       "powers": [
-        "Million tonne punch",
-        "Damage resistance",
-        "Superhuman reflexes"
+        "Night vision",
+        "Super helaing",
+        "Superhuman reflexes",
+        "Martial Art Skills"
       ]
     },
     {
@@ -29,11 +30,11 @@
       "age": 1000000,
       "secretIdentity": "Sarah Mortenson",
       "powers": [
-        "Immortality",
-        "Heat Immunity",
-        "Inferno",
+        "Speed Reading",
+        "Super Intellengence",
+        "Laser eyes",
         "Teleportation",
-        "Interdimensional travel"
+        "speaks with cats"
       ]
     }
   ]
