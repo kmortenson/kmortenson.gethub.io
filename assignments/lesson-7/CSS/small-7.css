@@ -48,6 +48,8 @@ nav {
     background-color: #333;
     list-style-type: none;
     Padding: 0;
+    
+
 }
 
 
@@ -66,7 +68,7 @@ nav ul {
     text-decoration: none;
     font-size: 16px;
     float: none;
-   
+    
 }
 
 nav ul li a{
