@@ -14,7 +14,18 @@
         "Split into two"
       ]
     },
+    
     {
+      "name": "NinjAlden",
+      "age": 6,
+      "secretIdentity": "John Mortenson",
+      "powers": [
+        "Night vision",
+        "Super helaing",
+        "Superhuman reflexes",
+        "Martial Art Skills"
+      ]
+    },{
       "name": "NinjAlden",
       "age": 6,
       "secretIdentity": "John Mortenson",
@@ -27,7 +38,7 @@
     },
     {
       "name": "Sarahbellium",
-      "age": 1000000,
+      "age": 9,
       "secretIdentity": "Sarah Mortenson",
       "powers": [
         "Speed Reading",
