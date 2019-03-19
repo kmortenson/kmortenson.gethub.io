@@ -48,7 +48,8 @@ nav {
     background-color: #333;
     list-style-type: none;
     Padding: 0;
-    display: flex
+    display: flex;
+    flex-direction: column;
 
 }
 
