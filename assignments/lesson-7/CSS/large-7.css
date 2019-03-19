@@ -18,6 +18,12 @@
     font-size: 2em;
   }
 
+  nav {
+    padding: 0;
+    font-size: .8em;
+    text-align: left;
+  }
+
   nav button {
     display: none;
   }
@@ -27,21 +33,17 @@
   }
 
 
-  nav {
-    padding: 0;
-    font-size: .8em;
-    text-align: left;
-  }
 
   Nav ul li {
     display: inline-block;
     border: 1px;
     float: none;
   }
-  Nav ul li a {
-    Border: 5px 
 
+  Nav ul li a {
+    Border: 5px
   }
+
   .mainimg {
     margin: .24rem;
   }
