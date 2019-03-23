@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Preston OutdoorWeather page">
+    <meta name="author" content="Kirk Mortenson">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/small-8.css">
+    <link rel="stylesheet" href="CSS/medium-8.css">
+    <link rel="stylesheet" href="CSS/large-8.css">
+    <title>Outdoor Weather site : Preston</title>
+
+<body>
+    <header>
+        <img src="images/logo2.jpg" alt="OutdoorWeather Logo">
+        <div class="motto">
+            <h1>OutdoorWeather.watch</h1>
+            <h2>Weather for Adventure</h2>
+        </div>
+        <nav>
+            <button onclick="togglemenu()">Menu &#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="preston-8.html" class="active">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+
+            </ul>
+            <script src="scripts/navmenu.js"></script>
+        </nav>
+
+    </header>
+
+    <main>
+        <h1>Preston Idaho</h1>
+        <div class="herodiv">
+            <img src="images/cropped450.jpeg" alt="Sunny Landscape">
+
+            <section class="cweather">
+                <h4>Current Weather</h4>
+                <P>Temp:<span id="cTemp">80</span>&deg;F</P>
+                <P>Wind:<span id="wSpeed">5</span>mph</P>
+                <p>Direction: <span id="wDir">SW</span></P>
+                <p>Humidity: <span id="humid">70%</span></P>
+                <p>Windchill: <span id="wChill"></span>&deg;F</P>
+                <script src="scripts/windchill.js"></script>
+            </section>
+        </div>
+        <div class="forcast">
+            <h2>5 day Forcast</h2>
+            <table>
+                <tr>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr>
+                    <td>Sunny</td>
+                    <td>Cloudy</td>
+                    <td>Rain</td>
+                    <td>Cloudy</td>
+                    <td>Sunny</td>
+                </tr>
+                <tr>
+                    <td>80° F</td>
+                    <td>70° F</td>
+                    <td>65° F</td>
+                    <td>72° F</td>
+                    <td>79° F</td>
+                </tr>
+
+            </table>
+        </div>
+        <article>
+            <h3>Idaho Adventures</h3>
+            <p>
+                There are many adventures in idaho. Try exploring craters of the moon national monumnet or
+                Floating
+                the middle fork of the Salmon river.
+                for the more daring try Jetboating through Hells Canyon or paragliding off the top of Baldy</p>
+            <P> if your looking for outdoor beauy on a nice hike or high adventure, Idaho is the place and
+                OutdoorWeather.com will help make your adventure successful and safe.</P>
+        </article>
+
+    </main>
+    <footer>
+        <div class='footer'>
+            <div>
+                <p>
+                    Outdoor Weather watch<br>
+                    123 Main St.<br>
+                    Weather, Id 89111<br>
+                    <p> &copy;2019 All Rights Reserved - Outdoor Weather<br>
+                        <a id="dt"></a></p>
+                    <script src="scripts/currentdate.js"></script>
+                </p>
+            </div>
+            <div class="map">
+                <img src="images/preston Map.jpg" alt="Temp Map">
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</Html>

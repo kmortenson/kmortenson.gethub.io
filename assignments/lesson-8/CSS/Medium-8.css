@@ -1,0 +1,74 @@
+/* CIT 230 - WeaterSite CSS Large */
+@media (min-width:600px) {
+
+  header,
+  main,
+  footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 800px;
+  }
+
+  header img {
+    width: 100px;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  nav {
+    padding: 0;
+    font-size: .8em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul.hide {
+    display: block;
+  }
+
+  Nav ul li {
+    display: inline-block;
+    border: 1px;
+    float: none;
+  }
+
+  Nav ul li a {
+    padding: 8px;
+  }
+
+  .mainimg {
+    margin: .24rem;
+  }
+
+  .herodiv img {
+    width: 100%;
+  }
+
+  .forcast {
+    display: block;
+    text-align: center;
+  }
+
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
+
+
+}
