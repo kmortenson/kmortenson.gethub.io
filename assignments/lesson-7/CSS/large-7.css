@@ -23,7 +23,7 @@
     font-size: .8em;
     text-align: left;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   nav button {
@@ -34,8 +34,6 @@
     display: block;
   }
 
-
-
   Nav ul li {
     display: inline-block;
     border: 1px;
@@ -43,7 +41,7 @@
   }
 
   Nav ul li a {
-    Border: 5px
+    padding: 8px;
   }
 
   .mainimg {
@@ -53,5 +51,24 @@
   .herodiv img {
     width: 100%;
   }
+
+  .forcast {
+    display: block;
+    text-align: center;
+  }
+
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
+
 
 }
