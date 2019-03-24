@@ -1,9 +1,7 @@
 /* CIT 230 - WeaterSite CSS Large */
 @media (min-width:600px) {
 
-  header,
-  main,
-  footer {
+  header {
     margin: 1.25rem auto;
     padding: .5rem;
     max-width: 800px;
@@ -44,6 +42,12 @@
     padding: 8px;
   }
 
+  main {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 800px;
+  }
+
   .mainimg {
     margin: .24rem;
   }
@@ -55,8 +59,8 @@
   .forcast {
     display: block;
     text-align: center;
+    padding: 50px;
   }
-
 
   table {
     border-collapse: collapse;
@@ -70,5 +74,20 @@
     padding: 8px;
   }
 
+  footer {
+    max-width: 800px;
+  }
 
-}
+  .contact {
+    display: grid;
+    grid: 220px / 220px 400px;
+    grid-gap: 10px;
+    background-color: blue;
+    padding: 10px;
+  }
+    .info {
+      margin: 1.25rem auto;
+      padding: .5rem;
+      max-width: 800px;
+    }
+  }

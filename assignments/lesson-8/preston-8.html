@@ -30,7 +30,7 @@
                 <li><a href="gallery.html">Gallery</a></li>
 
             </ul>
-            <script src="scripts/navmenu.js"></script>
+            
         </nav>
 
     </header>
@@ -47,7 +47,7 @@
                 <p>Direction: <span id="wDir">SW</span></P>
                 <p>Humidity: <span id="humid">70%</span></P>
                 <p>Windchill: <span id="wChill"></span>&deg;F</P>
-                <script src="scripts/windchill.js"></script>
+                
             </section>
         </div>
         <div class="forcast">
@@ -81,33 +81,33 @@
             <h3>Idaho Adventures</h3>
             <p>
                 There are many adventures in idaho. Try exploring craters of the moon national monumnet or
-                Floating
-                the middle fork of the Salmon river.
-                for the more daring try Jetboating through Hells Canyon or paragliding off the top of Baldy</p>
-            <P> if your looking for outdoor beauy on a nice hike or high adventure, Idaho is the place and
+                Floating the middle fork of the Salmon river.
+                for the more daring try Jetboating through Hells Canyon or paragliding off the top of Baldy.</p>
+            <P> If your looking for outdoor beauy on a nice hike or high adventure, Idaho is the place and
                 OutdoorWeather.com will help make your adventure successful and safe.</P>
         </article>
 
     </main>
     <footer>
-        <div class='footer'>
-            <div>
-                <p>
-                    Outdoor Weather watch<br>
-                    123 Main St.<br>
-                    Weather, Id 89111<br>
-                    <p> &copy;2019 All Rights Reserved - Outdoor Weather<br>
-                        <a id="dt"></a></p>
-                    <script src="scripts/currentdate.js"></script>
-                </p>
-            </div>
-            <div class="map">
-                <img src="images/preston Map.jpg" alt="Temp Map">
-            </div>
+        <div class='contact'>
+            <div class="info">
+            <p><b>Outdoor Weather watch</b><br>
+                123 Main St.<br>
+                Weather, Id 89111<br>
+                <h5>Adventure@outdoorweather.watch</h5><br></p>
+                <img class="social" scr= "images/facebook.png" alt= "Facebook Icon">
         </div>
-
+        <div id="googlemap"></div>
+        
     </footer>
-
+    <P class="copyr">&copy;2019 All Rights Reserved - Outdoor Weather - <a id="dt"></span><br></p>
+    </div>
+    <script src="scripts/navmenu.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6Ztx0goERX869VlKM0sJA_HRX-3LuRL4&callback=myMap">
+    </script>
 </body>
 
 </Html>
