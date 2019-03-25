@@ -159,10 +159,12 @@ footer{
     line-height: 20px;
     font-size: .7em;
 }
-.social {
-    display: grid;
-    grid: 50px / auto auto auto;
+a:link { color: whitesmoke;}
+a:hover {color: lightblue;}
 
+.social {
+    max-width: 20%;
+   
 }
 
 div#googlemap {
