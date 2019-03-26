@@ -1,5 +1,10 @@
-/* CIT 230 - WeaterSite CSS Large */
-@media (min-width:400px) 
-{ 
-  
+/* CIT 230 - WeaterSite CSS medium */
+@media (min-width:600px) {
+
+.gallery {
+    max-width: 850px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+
+}
 }
