@@ -133,10 +133,27 @@ main {
 
 .forcast {
     display: none
+   }
+
+article {
+   
+    text-align: left;
+    max-width: 450px;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    background-color: blue;
+    color: whitesmoke;
+      
 }
+.articleimg {
+    margin: 40px;
+ 
+}
+.articlewrd {
+    padding: 50px;
+    line-height: 1;
 
-
-
+}
 footer {
     max-width: 450px;
     margin: 1.25rem auto;
@@ -170,7 +187,7 @@ a:hover {
 }
 
 .social {
-    max-width: 20%;
+    max-width: 10%;
 
 }
 
