@@ -207,7 +207,7 @@ p.copyr {
 }
 
 .gallery {
-    justify-content: center
+    justify-content: center;
     max-width: 450px;
     display: grid;
     grid-template-columns: auto;
