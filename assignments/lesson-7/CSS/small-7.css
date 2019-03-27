@@ -165,7 +165,7 @@ footer {
 
 .contact {
     display: grid;
-    grid: 220px 230px 400px;
+    grid: 220px 400px;
     grid-gap: 10px;
     background-color: blue;
     padding: 10px;
@@ -200,7 +200,7 @@ div#googlemap {
 
 p.copyr {
     background-color: darkblue;
-    padding: 30;
+    padding: 5px;
     color: whitesmoke;
     font-size: .8rem;
     text-align: center;
