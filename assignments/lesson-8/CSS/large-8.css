@@ -60,16 +60,18 @@
     display: block;
     text-align: center;
     padding: 50px;
-  }
+    
+      }
 
   table {
     border-collapse: collapse;
     width: 100%;
+    Border: 4px solid lightblue
   }
 
   td,
   th {
-    border: 1px solid #dddddd;
+    border: 2px solid #dddddd;
     text-align: center;
     padding: 8px;
   }
