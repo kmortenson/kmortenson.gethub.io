@@ -165,7 +165,7 @@ footer {
 
 .contact {
     display: grid;
-    grid: 220px 400px;
+    grid: auto auto;
     grid-gap: 10px;
     background-color: blue;
     padding: 10px;
