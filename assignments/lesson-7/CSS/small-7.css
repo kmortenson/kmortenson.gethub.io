@@ -136,8 +136,9 @@ main {
    }
 
 article {
-   
-    text-align: left;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
     max-width: 450px;
     margin: 1.25rem auto;
     padding: .5rem;
@@ -150,7 +151,10 @@ article {
  
 }
 .articlewrd {
-    padding: 50px;
+    background-color: lightblue;
+    color:black;
+    text-align: left;
+    padding: 5px;
     line-height: 1;
 
 }
@@ -165,7 +169,7 @@ footer {
 
 .contact {
     display: grid;
-    grid: auto auto;
+    grid-template-columns: auto;
     grid-gap: 10px;
     background-color: blue;
     padding: 10px;
