@@ -147,14 +147,15 @@ article {
       
 }
 .articleimg {
-    margin: 40px;
- 
-}
+    margin: 40px;}
+ h2 {text-align:center;}
+
 .articlewrd {
     background-color: lightblue;
     color:black;
     text-align: left;
-    padding: 5px;
+    padding: 2px;
+    border: 2px;
     line-height: 1;
 
 }
