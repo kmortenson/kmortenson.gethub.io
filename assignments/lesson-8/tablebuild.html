@@ -2,51 +2,63 @@
 <html lang="en-us">
 
 <head>
+    <meta charset="utf-8">
+    <title>CIT 230 Lesson 8 tablebuild Kirk Mortenson</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="tablebuild.css">
 
 <body>
     <table>
-        <thread>
+        <thead>
+        <tr>
+            <th colspan="3">ACME Wild West</th>
+        </tr>
+        </thead>
+        <tbody>
             <tr>
-                <th colspan="3">ACME Wild West</th>
+                <td><b>Period</b></td>
+                <td><b>Sales</b></td>
+                <td><b>Sales Goal</b></td>
             </tr>
-            <tbody>
-                <tr id="r02">
-                    <td>Period</td>
-                    <td>Sales</td>
-                    <td>Sales Goal</td>
-                </tr>
-                <tr>
-                    <td>August</td>
-                    <td>$3,590</td>
-                    <td>$4,000</td>
-                </tr>
-                <tr>
-                    <td>September</td>
-                    <td>$4,4200</td>
-                    <td>$5,000</td>
-                </tr>
-                <tr>
-                    <td>October</td>
-                    <td>$4,870</td>
-                    <td>$5,000</td>
-                </tr>
-                <tr>
-                        <td>November</td>
-                        <td>$4,870</td>
-                        <td>$5,000</td>
-                    </tr>
-                    <tr>
-                            <td><i>Black Friday</i></td>
-                            <td>$3,200</td>
-                            <td>$5,000</td>
-                        </tr>
-                        <tr>
-                                <td>December</td>
-                                <td>$6,820</td>
-                                <td>$7,500</td>
-                            </tr>
-            </tbody>
-        </thread>
+            <tr>
+                <td>August</td>
+                <td>$3,590</td>
+                <td>$4,000</td>
+            </tr>
+            <tr>
+                <td>September</td>
+                <td>$4,420</td>
+                <td>$5,000</td>
+            </tr>
+            <tr>
+                <td>October</td>
+                <td>$4,870</td>
+                <td>$5,000</td>
+            </tr>
+            <tr>
+                <td>November</td>
+                <td>$8,610</td>
+                <td class="highlight">$7,500</td>
+            </tr>
+            <tr>
+                <td><i>Black Friday</i></td>
+                <td colspan="2">$3,200</td>
+            </tr>
+            <tr>
+                <td>December</td>
+                <td>$6,820</td>
+                <td>$7,500</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">compiled 12.20,2020 by bRauls</td>
+            </tr>
+        </tfoot>
+
+
     </table>
 </body>
 </head>

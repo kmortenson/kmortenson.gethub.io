@@ -1,0 +1,47 @@
+/* CIT 230 - tablebuild CSS */
+body {
+    text-align: center;
+    font-family: ubuntu, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    border: 5px  solid #628ca6;
+    box-shadow: 0 0 30px ;
+}
+
+table,
+td,
+th {
+    padding: 6px;
+    border: 1px solid  #7fb9c2;
+}
+tbody tr:nth-child(1){
+    background-color: #628ca6;
+    color: white;
+}
+
+thead {
+    background-color: #7fb9c2;
+    color: black;
+    font-size: 125%
+}
+
+
+.highlight {
+    background-color: #7fb9c2;
+    color: white;
+}
+
+tfoot {
+    background-color: #7fb9c2;
+    color: black;
+   font-size: 75%
+
+
+}
+
+/* #e7f0ed
+/* e7ffed
+/* #628ca6
+/* #7fb9c2
