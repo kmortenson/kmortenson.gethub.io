@@ -57,7 +57,7 @@
                 <label class="top">Storm Date<input type="date" name="stormDate"></label>
 
 
-                <label for="stormRating" class="top">Rating (1 to 10):</label>
+                <label for="rating" class="top">Rating (1 to 10):</label>
                 <input type="range" class="slider" id="rating" value="5" min="1" max="10" step="1"
                     oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                 <span id="ratingvalue">5</span><br>
@@ -86,7 +86,7 @@
                         <option value="fishhaven">Fish Haven</option>
                     </select>
                 </label>
-                
+
                 <label class="top">Additional Information</label>
                 <textarea name="addinfo" rows="4" cols="50" form="stormform">
                     </textarea>
