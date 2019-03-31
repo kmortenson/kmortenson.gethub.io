@@ -79,7 +79,12 @@
     max-width: 1000px;
 
   }
-
+/*-----------Form --------------*/
+form label.sbs {
+  padding: .4rem 0;
+}
+/*-----------Form --------------*/
+/*-----------Footer --------------*/
   footer {
     max-width: 1000px;
   }

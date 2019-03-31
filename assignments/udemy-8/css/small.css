@@ -79,19 +79,20 @@ nav ul li.active a {
 main {
     padding: 0 2%;
     min-height: 20rem;
+    background-color:lightblue
 }
 
 /*----------- FORM --------------*/
 form fieldset {
     margin: 2rem 0;
-    border: 1px solid #445ba9;
-    border-radius: 10px;
+    border: 1px solid black;
+    border-radius: 2px;
     padding: .5rem 2%;
 
 }
 
 form legend {
-    color: #445ba9;
+    color: black;
     margin: 0 1rem;
     padding: 0.5rem;
 }
@@ -100,7 +101,7 @@ form label.top,
 form div {
     display: block;
     padding-top: 1rem;
-    color: #9c2c13;
+    color: darkblue;
     font-size: .8rem;
 }
 
@@ -125,7 +126,7 @@ form label.sbs {
 
 form input.submitBtn {
     border: none;
-    background-color: #9c2c13;
+    background-color: blue;
     color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
@@ -142,13 +143,11 @@ form label.top input:required:valid {
     border-left: green solid 6px;
 }
 
-
-/*----------- FOOTER --------------*/
-footer {
-    background-color: #ddd;
-    padding: .5rem 2%;
-    text-align: center;
+form textarea.top{
+    text-align: left;
 }
+
+
 
 
 
