@@ -41,7 +41,7 @@
     <main>
         <h1>Storm Center</h1>
 
-        <form method="get" action="thanks.html">
+        <form method="get" action="thanks.html" id="stormform">
             <fieldset>
                 <legend>Contact Information</legend>
                 <label class="top">Full Name(required)* <input type="text" name="name" pattern="{a-zA-Z -._] {5,99}"
@@ -87,7 +87,7 @@
                     </select>
                     <label class="top">Additional Information
                     </label>
-                    <textarea name="addinfo" rows="4" cols="50">
+                    <textarea name="addinfo" rows="4" cols="50" form="stormform">
                     </textarea>
                 </label>
             </fieldset>
