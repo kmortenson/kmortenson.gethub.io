@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Kirk Mortenson">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Storm Center OutdoorWeather page">
+    <title>Outdoor Weather : Storm Center</title>
+
+    <!-- Style Sheets-->
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/small-8.css">
+    <link rel="stylesheet" href="CSS/medium-8.css">
+    <link rel="stylesheet" href="CSS/large-8.css">
+
+
+
+<body>
+    <header>
+        <img src="images/logo2.jpg" alt="OutdoorWeather Logo">
+        <div class="motto">
+            <h1>OutdoorWeather.watch</h1>
+            <h2>Weather for Adventure</h2>
+        </div>
+        <nav>
+            <button onclick="togglemenu()">Menu &#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="preston-8.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html" class="active">Storm Center</a></li>
+                <li><a href="gallery-8.html">Gallery</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+    <main>
+        <h1>Storm Center</h1>
+
+        <form method="get" action="thanks.html" id="stormform">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label class="top">Full Name(required)* <input type="text" name="name" pattern="{a-zA-Z -._] {5,99}"
+                        required></label>
+                <label class="top">Email <input type="email" name="email" placeholder="stormchaser@gmail.com"></label>
+                <label class="top">Phone(required)* <input type="tel" name="phone" value="" pattern="[0-9]{10,20}"
+                        placeholder="1235551234" required></label>
+                <label class="top">Zip Code(required)* <input type="number" name="zip" placeholder="83263"
+                        required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="top">Storm Date<input type="date" name="stormDate"></label>
+
+
+                <label for="rating" class="top">Rating (1 to 10):</label>
+                <input type="range" class="slider" id="rating" value="5" min="1" max="10" step="1"
+                    oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span><br>
+
+
+                <label class="top">Storm Type
+                    <input list=stormType Name="stormType">
+                    <datalist id="stormType">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunder Storm">
+                        <option value="Tornado">
+                    </datalist>
+                </label>
+
+                <div>User In Danger</div>
+                <label class="sbs"><input type="radio" name="danger" value="yes">Yes</label>
+                <label class="sbs"><input type="radio" name="danger" value="Maybe">Mabye</label>
+                <label class="sbs"><input type="radio" name="danger" value="No">No</label>
+
+                <label class="top">Storm Region<select Name="sRegion">
+                        <option value="">Select Region &#9662;</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodasprings">Soda Springs</option>
+                        <option value="fishhaven">Fish Haven</option>
+                    </select>
+                </label>
+
+                <label class="top">Additional Information</label>
+                <textarea name="addinfo" rows="4" cols="50" form="stormform">
+                    </textarea>
+
+            </fieldset>
+
+
+            <fieldset>
+                <input type="submit" value="Report Your Storm" class="submitBtn">
+            </fieldset>
+        </form>
+    </main>
+
+
+    <div>
+        <p class='copyr'>&copy;2019 All Rights Reserved - Outdoor Weather - <span id="dt"></span><br></p>
+    </div>
+
+    <script src="scripts/navmenu.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/map.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6Ztx0goERX869VlKM0sJA_HRX-3LuRL4&callback=myMap">
+    </script>
+</body>
+
+</Html>
