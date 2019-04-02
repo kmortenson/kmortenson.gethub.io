@@ -12,10 +12,12 @@ function showData(jsonObj) {
     var data = jsonObj['towns'];
 
     for (var i = 0; i < data.length; i++) {
-        if (i === 0 || i === 2 || i === 3 || i === 6) { continue; }
+        if (i === 0 || i === 2 || i === 3 || i === 6) {
+            continue;
+        }
         
         var myArticle = document.createElement('div');
-        var myH2 = document.createElement('h5');
+        var myH5 = document.createElement('h5');
         var myPara1 = document.createElement('h6');
         var myPara2 = document.createElement('p');
         var myPara3 = document.createElement('p');
