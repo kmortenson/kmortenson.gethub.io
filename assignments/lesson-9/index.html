@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="Gallery OutdoorWeather page">
+    <meta name="description" content="Home OutdoorWeather page">
     <meta name="author" content="Kirk Mortenson">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/small-9.css">
     <link rel="stylesheet" href="CSS/medium-9.css">
     <link rel="stylesheet" href="CSS/large-9.css">
-    <title>Outdoor Weather : Gallery</title>
+    <title>Outdoor Weather : Home</title>
 
 <body>
     <header>
@@ -23,11 +23,11 @@
             <button onclick="togglemenu()">Menu &#9776;</button>
             <ul id="primaryNav" class="hide">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="preston-9.html" ">Preston</a></li>
+                <li><a href="preston-9.html" class="active">Preston</a></li>
                 <li><a href="sodasprings.html">Soda Springs</a></li>
                 <li><a href="fishhaven.html">Fish Haven</a></li>
                 <li><a href="stormcenter.html">Storm Center</a></li>
-                <li><a href="gallery-9.html"class="active">Gallery</a></li>
+                <li><a href="gallery-9.html">Gallery</a></li>
 
             </ul>
 
@@ -35,32 +35,21 @@
 
     </header>
 
-    <body>
-        <div class ="container"></div>
-        <h1>Gallery</h1>
-        <div class="gallery">
-            <div class="picture"><img src="images/weather1.jpg" alt="Clouds over range">
-                <figcaption>"Clouds over range"</figcaption>
-            </div>
-            <div class="picture"><img src="images/weather2.jpeg" alt="Moutain clouds">
-                <figcaption>"Moutain clouds"</figcaption>
-            </div>
-            <div class="picture"><img src="images/weather3.jpg" alt="Storm">
-                <figcaption>"Storm"</figcaption>
-            </div>
-            <div class="picture"><img src="images/weather4.jpg" alt="Low Clouds">
-                <figcaption>"Low Clouds"</figcaption>
-            </div>
-            <div class="picture"><img src="images/weather5.jpg" alt="Storm Road">
-                <figcaption>"Storm Road"</figcaption>
-            </div>
-            <div class="picture"><img src="images/weather6.jpg" alt="Lightning">
-                <figcaption>"Lightning"</figcaption>
-            </div>
+    <main>
+        <h1>Welcome to Weather Watch</h1>
+        <div class="herodiv">
+            <img src="images/cropped450SM.jpeg" alt="Sunny Landscape" sizes="100vw"
+                srcset="images/cropped450SM.jpeg 600w, images/cropped600Med.jpeg 800w, images/cropped800LG.jpeg 1000w">
 
-        </div>
-    </div>
-    </body>
+
+    </main>
+    <!--JSON Data-->
+    <article id="hometowns">
+
+    </article>
+    <!--JSON Data-->
+
+
     <footer>
         <div class='contact'>
             <div class="info">
@@ -76,12 +65,13 @@
 
             </div>
             <div id="googlemap"></div>
-
+        </div>
     </footer>
-    <P class="copyr">&copy;2019 All Rights Reserved - Outdoor Weather - <a id="dt"></span><br></p>
+    <div>
+        <p class='copyr'>&copy;2019 All Rights Reserved - Outdoor Weather - <span id="dt"></span><br></p>
     </div>
     <script src="scripts/navmenu.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/towndata.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6Ztx0goERX869VlKM0sJA_HRX-3LuRL4&callback=myMap">
