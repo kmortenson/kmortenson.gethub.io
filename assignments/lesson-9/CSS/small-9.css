@@ -89,7 +89,7 @@ nav a:hover {
     color: black;
 }
 
-nav a:active {
+nav a.active {
     background-color: blue;
     color: white
 
