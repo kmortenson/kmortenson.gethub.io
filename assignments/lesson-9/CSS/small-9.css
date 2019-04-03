@@ -80,10 +80,10 @@ nav a:visited {
     color: lightblue
 }
 
-nav a:focus {
-    color: black
+/*nav a:focus {
+    color: darkblue
 }
-
+*/
 nav a:hover {
     background-color: lightblue;
     color: black;
@@ -270,7 +270,9 @@ footer {
 a:link {
     color: whitesmoke;
 }
-
+a:visited{
+    color:whitesmoke;
+}
 a:hover {
     color: lightblue;
 }
