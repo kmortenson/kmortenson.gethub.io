@@ -168,31 +168,9 @@ h2 {
 /* ------------------json data-------*/
 
 .articlejson {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
-    text-align: center;
-    border-collapse: separate;
+    display:none;
+   
 }
-
-.articlejson div {
-    border: 4px solid Black;
-    border-radius: 25px;
-    margin: 20px;
-    background-color: lightblue;
-    color: black;
-}
-.articlejson H5 {
-    border: 4px solid Black;
-    border-radius: 25px; 
-
-
-}
-.homePhoto {
-    border: 4px solid blue;
-    border-radius: 10px;
-}
-
 
 
 
@@ -285,7 +263,8 @@ footer {
 
 .contact {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 400px;
+    grid-template-rows: 220px 220px;
     grid-gap: 10px;
     background-color: blue;
     padding: 10px;

@@ -20,6 +20,38 @@
     footer {
         max-width: 9000px;
     }
+/* ------------------json data-------*/
+
+
+.articlejson {
+    border-collapse: collapse;
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto;
+    text-align: center;
+       
+}
+
+.articlejson div {
+    border: 4px solid Black;
+    border-radius: 25px;
+    margin: 0px;
+    background-color: lightblue;
+    color: black;
+}
+.articlejson H5 {
+    border: 4px solid Black;
+    border-radius: 25px; 
+
+
+}
+.homePhoto {
+    border: 4px solid blue;
+    border-radius: 10px;
+    margin: 20px;
+    width: 100%;
+} 
+/* ------------------json data-------*/
 
     .social {
         max-width: 10%;

@@ -17,7 +17,7 @@
   }
 
   nav {
-   
+
     font-size: .8em;
     text-align: left;
     display: flex;
@@ -49,10 +49,10 @@
   }
 
 
-.mainimg {
-  margin: .24rem;
-}
- 
+  .mainimg {
+    margin: .24rem;
+  }
+
 
 
   .forcast {
@@ -77,21 +77,39 @@
 
   article {
     max-width: 1000px;
-
   }
-/*-----------Form --------------*/
-form label.sbs {
-  padding: .4rem 0;
+/* ------------------json data-------*/
+
+.articlejson {
+  border-collapse: separate;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
 }
-/*-----------Form --------------*/
-/*-----------Footer --------------*/
+  .articlejson div {
+    border: 4px solid Black;
+    border-radius: 25px;
+    margin: 20px;
+    background-color: lightblue;
+    color: black;
+}
+  /*-----------Form --------------*/
+  form label.sbs {
+    padding: .4rem 0;
+  }
+ 
+}
+  /*-----------Form --------------*/
+  /*-----------Footer --------------*/
   footer {
     max-width: 1000px;
   }
 
   .contact {
     display: grid;
-    grid: 220px / 220px 400px;
+    grid-template-columns: 220px 400px;
+    grid-template-rows: 220px;
+   /* grid: 220px / 220px 400px;*/
     grid-gap: 10px;
     background-color: blue;
     padding: 10px;
