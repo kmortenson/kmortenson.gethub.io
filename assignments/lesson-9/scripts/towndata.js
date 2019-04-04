@@ -18,7 +18,7 @@ function showData(jsonObj) {
             continue;
         }
         var myArticle = document.createElement('div');
-        var myH5 = document.createElement('h5');
+        var myH5 = document.createElement('h2');
         var myPara1 = document.createElement('h6');
         var myPara2 = document.createElement('p');
         var myPara3 = document.createElement('p');
@@ -37,23 +37,24 @@ function showData(jsonObj) {
         myArticle.appendChild(myPara3);
         myArticle.appendChild(myPara4);
         myArticle.appendChild(myPhoto);
-        if (data[i].name == "Fish Haven") {
-            myPhoto.scr = "images/home2.jpg"
-            myPhoto.setAttribute('class', 'homePhoto');
-            myPhoto.setAttribute('alt', 'Fish Haven Photo'); 
-            myArticle.style.order = "3";
-        }
+      
         if (data[i].name == "Preston") {
-            myPhoto.scr = "images/home1.jpg"
+            myPhoto.src = "images/home1.jpg"
             myPhoto.setAttribute('class', 'homePhoto');
             myPhoto.setAttribute('alt', 'Preston Photo');
             myArticle.style.order = "1";
         }
         if (data[i].name == "Soda Springs") {
-            myPhoto.scr = "images/home3.jpg"
+            myPhoto.src = "images/home3.jpg"
             myPhoto.setAttribute('class', 'homePhoto');
             myPhoto.setAttribute('alt', 'Soda Springs Photo');
             myArticle.style.order = "2";
+        }
+        if (data[i].name == "Fish Haven") {
+            myPhoto.src = "images/home2.jpg"
+            myPhoto.setAttribute('class', 'homePhoto');
+            myPhoto.setAttribute('alt', 'Fish Haven Photo'); 
+            myArticle.style.order = "3";
         }
         article.appendChild(myArticle);
 
