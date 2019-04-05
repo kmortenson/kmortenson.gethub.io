@@ -65,13 +65,14 @@
     }
 
     /* ------------------json data-------*/
+    /*-----------------Footer --------------*/
 
     .social {
         max-width: 50px;
 
     }
 
-
+    /* ---------------Gallery-------------*/
     .gallery {
         max-width: 900px;
         grid-template-columns: auto auto;
