@@ -168,8 +168,8 @@ h2 {
 /* ------------------json data-------*/
 
 .articlejson {
-    display:none;
-   
+    display: none;
+
 }
 
 
@@ -261,10 +261,10 @@ footer {
     color: whitesmoke;
 }
 
+
 .contact {
     display: grid;
-    grid-template-columns: 400px;
-    grid-template-rows: 220px 220px;
+    grid-template-columns: auto;
     grid-gap: 10px;
     background-color: blue;
     padding: 10px;
@@ -290,7 +290,7 @@ a:hover {
 }
 
 .social {
-    max-width: 10%;
+    max-width: 50px;
 
 }
 
@@ -309,6 +309,7 @@ p.copyr {
     text-align: center;
 }
 
+/* ------------------Gallery-----------*/
 .gallery {
     justify-content: center;
     max-width: 450px;

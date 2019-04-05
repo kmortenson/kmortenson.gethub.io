@@ -9,7 +9,7 @@
         max-width: 900px;
     }
 
-   
+
     article {
         max-width: 900px;
         display: grid;
@@ -20,41 +20,54 @@
     footer {
         max-width: 9000px;
     }
-/* ------------------json data-------*/
+
+    /* ------------------json data-------*/
 
 
-.articlejson {
-    border-collapse: collapse;
-    display: grid;
-    grid-template-columns: auto auto ;
-    grid-template-rows: auto auto;
-    text-align: center;
-       
-}
+    .articlejson {
+        border-collapse: collapse;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        text-align: center;
 
-.articlejson div {
-    border: 4px solid Black;
-    border-radius: 25px;
-    margin: 0px;
-    background-color: lightblue;
-    color: black;
-}
-.articlejson H5 {
-    border: 4px solid Black;
-    border-radius: 25px; 
+    }
 
+    .articlejson div {
+        border: 4px solid Black;
+        border-radius: 25px;
+        margin: 0px;
+        background-color: lightblue;
+        color: black;
+        max-width: 300px;
+    }
 
-}
-.homePhoto {
-    border: 4px solid blue;
-    border-radius: 10px;
-    margin: 20px;
-    width: 100%;
-} 
-/* ------------------json data-------*/
+    .articlejson H5 {
+        border: 4px solid Black;
+        border-radius: 25px;
+    }
+
+    .articlejson H6 {
+        font-style: italic;
+
+    }
+
+    .articlejson p {
+        margin: 0px;
+
+    }
+
+    .homePhoto {
+        border: 4px solid blue;
+        border-radius: 10px;
+        margin: 20px;
+        width: 75%;
+    }
+
+    /* ------------------json data-------*/
 
     .social {
-        max-width: 10%;
+        max-width: 50px;
 
     }
 
