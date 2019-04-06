@@ -33,7 +33,7 @@ weatherForcast.onload = function () {
     var listIconCode = [];
     var listTemp = [];
 
-    for (i = 0; i < weatherInfo.list.length; ++i); {
+    for (i = 0; i < weatherInfo.list.length; ++i) {
         time = weatherInfo.list[i].dt_txt;
         if (time.includes("18:00:00")) {
            
