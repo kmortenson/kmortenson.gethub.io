@@ -22,4 +22,54 @@ document.getElementById('wChill').innerHTML = wChill
 }
 
 //forcast
-//var weatherForcast = new XMLHttpRequest();
+var weatherForcast = new XMLHttpRequest();
+weatherForcast.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=9a639e9b88f8f96c233986dc5ceb5877&units=imperial', true);
+weatherForcast.send();
+weatherForcast.onload = function () {
+
+    var weatherInfo = JSON.parse(weatherObject.responseText);
+    console.log(weatherInfo);
+    var listDate = [];
+    var listIconCode = [];
+    var listTemp = [];
+
+    for (i = 0; i < weatherInfo.list.length; ++i); {
+        time = weatherInfo.list[i].dt_txt;
+        if (time.includes('18:00:00')) {
+           
+            
+            var date = new Date(weatherInfo.list[i].dt * 1000);    
+            var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+            var month = ["January", "February", "March", "April", "May", "June", "July", "August", "Saptember", "October", "November", "December"];
+            var findDate = weekday[date.getDay()] + "<br>" + month[date.getMonth()] + " " + date.getDate();
+            listDate.push(findDate);
+
+            var temp = weatherInfo.list[i].main.temp_max;
+            var temp = math.round(temp);
+            listTemp.push(temp);
+
+            var iconCode = weatherInfo.list[i].weather["0"].icon;
+            var icon_path = "https://openweathermap.org/img/w/" + iconCode + ".png";
+            listIconCode.path(icon_path);
+        }
+        continue;
+    }
+
+//forcast date
+document.getElementById('day1').innerHTML = listDate[0];
+document.getElementById('day2').innerHTML = listDate[1];
+document.getElementById('day3').innerHTML = listDate[2];
+document.getElementById('day4').innerHTML = listDate[3];
+document.getElementById('day5').innerHTML = listDate[4];
+//Icon
+document.getElementById('weater_icon1').src = listIconCode[0];
+document.getElementById('weater_icon2').src = listIconCode[1];
+document.getElementById('weater_icon3').src = listIconCode[2];
+document.getElementById('weater_icon4').src = listIconCode[3];
+document.getElementById('weater_icon5').src = listIconCode[4];
+//Temp
+document.getElementById('highTemp1').innerHTML = listTemp[0];
+document.getElementById('highTemp2').innerHTML = listTemp[1];
+document.getElementById('highTemp3').innerHTML = listTemp[2];
+document.getElementById('highTemp4').innerHTML = listTemp[3];
+document.getElementById('highTemp5').innerHTML = listTemp[4];
