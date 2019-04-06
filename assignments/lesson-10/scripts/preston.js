@@ -50,7 +50,7 @@ weatherForcast.onload = function () {
 
             var iconCode = weatherInfo.list[i].weather["0"].icon;
             var icon_path = "https://openweathermap.org/img/w/" + iconCode + ".png";
-            listIconCode.path(icon_path);
+            listIconCode.push(icon_path);
         }
         continue;
     }
