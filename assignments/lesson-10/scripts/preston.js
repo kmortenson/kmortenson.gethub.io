@@ -12,7 +12,7 @@ weatherObject.onload = function () {
     document.getElementById('weatherDesc').innerHTML = weatherInfo.weather[0].description;
     document.getElementById('cTemp').innerHTML = weatherInfo.main.temp;
     document.getElementById('humidity').innerHTML = weatherInfo.main.humidity;
-    document.getElementById('windspeed').innerHTML = weatherInfo.wind.speed;
+    document.getElementById('wSpeed').innerHTML = weatherInfo.wind.speed;
 
    
     var wChill = 35.74 + 0.6215 * weatherInfo.main.temp - 35.75 * Math.pow(weatherInfo.wind.speed, 0.16)
