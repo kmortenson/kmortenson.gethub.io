@@ -2,7 +2,7 @@
 
 //weather summery
 var weatherObject = new XMLHttpRequest();
-weatherObject.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/weather?id=5604473&appid-ba0aa9a68bce08fd2b1322f852ff85cc&units -imperial', true);
+weatherObject.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/weather?id=5604473&appid=9a639e9b88f8f96c233986dc5ceb5877&units=imperial', true);
 weatherObject.send();
 weatherObject.onload = function () {
     
