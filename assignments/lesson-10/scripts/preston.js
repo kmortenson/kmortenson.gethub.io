@@ -45,7 +45,7 @@ weatherForcast.onload = function () {
             listDate.push(findDate);
 
             var temp = weatherInfo.list[i].main.temp_max;
-            var temp = math.round(temp);
+            var temp = Math.round(temp);
             listTemp.push(temp);
 
             var iconCode = weatherInfo.list[i].weather["0"].icon;
