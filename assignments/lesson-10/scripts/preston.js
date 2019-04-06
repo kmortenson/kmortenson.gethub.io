@@ -6,7 +6,7 @@ weatherObject.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/weather?id=56
 weatherObject.send();
 weatherObject.onload = function () {
     
-    var weatherInfo = json.parse(weatherObject.responseText);
+    var weatherInfo = JSON.parse(weatherObject.responseText);
     console.log(weatherInfo);
 
     document.getElementById('weatherDesc').innerHTML = weatherInfo.weather[0].description;
