@@ -150,6 +150,7 @@ article {
 
 .articleimg {
     margin: 40px;
+     
 }
 
 h2 {
@@ -161,7 +162,8 @@ h2 {
     color: black;
     text-align: left;
     padding: 2px;
-    border: 2px;
+    border: 2px solid black;
+    border-radius: 10px;
     line-height: 1;
 }
 
