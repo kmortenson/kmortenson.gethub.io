@@ -140,7 +140,6 @@ article {
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: auto;
-    max-width: auto;
     margin: 1.25rem auto;
     padding: .5rem;
     background-color: blue;
