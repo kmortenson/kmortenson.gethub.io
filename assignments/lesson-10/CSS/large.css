@@ -53,8 +53,6 @@
     margin: .24rem;
   }
 
-
-
   .forcast {
     display: block;
     text-align: center;
@@ -63,16 +61,29 @@
   }
 
   table {
-    border-collapse: collapse;
+
     width: 100%;
-    Border: 4px solid lightblue
+    Border: 4px solid lightblue;
+    border-radius: 10PX;
   }
 
-  td,
+
   th {
-    border: 2px solid #dddddd;
+    background-color: blue;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 8PX;
     text-align: center;
-    padding: 8px;
+    padding: 4px;
+
+  }
+
+  td {
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 8PX;
+    text-align: center;
+    padding: 4px;
   }
 
   article {
