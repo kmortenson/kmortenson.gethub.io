@@ -61,11 +61,11 @@ weatherForecast.onload = function () {
     document.getElementById('day4').innerHTML = listDate[3];
     document.getElementById('day5').innerHTML = listDate[4];
     //Icon
-    document.getElementById('weater_icon1').src = listIconCode[0];
-    document.getElementById('weater_icon2').src = listIconCode[1];
-    document.getElementById('weater_icon3').src = listIconCode[2];
-    document.getElementById('weater_icon4').src = listIconCode[3];
-    document.getElementById('weater_icon5').src = listIconCode[4];
+    document.getElementById('weather_icon1').src = listIconCode[0];
+    document.getElementById('weather_icon2').src = listIconCode[1];
+    document.getElementById('weather_icon3').src = listIconCode[2];
+    document.getElementById('weather_icon4').src = listIconCode[3];
+    document.getElementById('weather_icon5').src = listIconCode[4];
     //Temp
     document.getElementById('highTemp1').innerHTML = listTemp[0];
     document.getElementById('highTemp2').innerHTML = listTemp[1];
