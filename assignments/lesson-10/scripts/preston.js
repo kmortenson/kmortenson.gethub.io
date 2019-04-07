@@ -21,10 +21,10 @@ weatherObject.onload = function () {
 }
 
 //forcast
-var weatherForcast = new XMLHttpRequest();
-weatherForcast.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=9a639e9b88f8f96c233986dc5ceb5877&units=imperial', true);
-weatherForcast.send();
-weatherForcast.onload = function () {
+var weatherForecast = new XMLHttpRequest();
+weatherForecast.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=9a639e9b88f8f96c233986dc5ceb5877&units=imperial', true);
+weatherForecast.send();
+weatherForecast.onload = function () {
 
     var weatherInfo = JSON.parse(weatherObject.responseText);
     console.log(weatherInfo);
