@@ -47,8 +47,8 @@ weatherForecast.onload = function () {
             temp = Math.round(temp);
             listTemp.push(temp);
 
-            var iconCode = weatherInfo.list[i].weather["0"].icon;
-            var icon_path = "https://openweathermap.org/img/w/" + iconCode + ".png";
+            var iconcode = weatherInfo.list[i].weather["0"].icon;
+            var icon_path = "https://openweathermap.org/img/w/" + iconcode + ".png";
             listIconCode.push(icon_path);
         }
         continue;
