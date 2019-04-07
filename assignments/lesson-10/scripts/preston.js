@@ -26,7 +26,7 @@ weatherForecast.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/forecast?id
 weatherForecast.send();
 weatherForecast.onload = function () {
 
-    var weatherInfo = JSON.parse(weatherObject.responseText);
+    var weatherInfo = JSON.parse(weatherForecast.responseText);
     console.log(weatherInfo);
     var listDate = [];
     var listIconCode = [];
