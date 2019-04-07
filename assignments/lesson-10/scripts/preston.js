@@ -43,7 +43,7 @@ weatherForecast.onload = function () {
             var findDate = weekday[date.getDay()] + "<br>" + month[date.getMonth()] + " " + date.getDate();
             listDate.push(findDate);
 
-            var temp = weatherInfo.list[i].main.temp_max;
+            var temp = weatherInfo.list[i].main.temp;
             temp = Math.round(temp);
             listTemp.push(temp);
 
