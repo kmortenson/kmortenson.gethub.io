@@ -89,6 +89,9 @@
   article {
     max-width: 1000px;
   }
+  aside {
+    max-width: 1000px;
+}
 
   /* ------------------json data-------*/
 

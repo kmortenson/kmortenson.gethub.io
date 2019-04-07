@@ -72,5 +72,44 @@ weatherForecast.onload = function () {
     document.getElementById('highTemp3').innerHTML = listTemp[2];
     document.getElementById('highTemp4').innerHTML = listTemp[3];
     document.getElementById('highTemp5').innerHTML = listTemp[4];
-    
+
+}
+//Event
+var aside = document.querySelector('aside');
+var requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+var request = new XMLHttpRequest();
+request.open('GET', requestURL);
+request.responseType = 'json';
+request.send();
+request.onload = function () {
+    var townData = request.response;
+    showData(townData);
+}
+
+function showData(jsonObj) {
+    var data = jsonObj['towns'];
+
+
+    for (var i = 0; i < data.length; i++) {
+        if ((data[i].name == "Preston") == false) {
+            continue;
+        }
+        var myAside = document.createElement('div');
+        var myH2 = document.createElement('h2');
+        var myPara1 = document.createElement('p');
+        var myPhoto = document.createElement('img');
+
+        myH2.textContent = "Upomming events in Preston:";
+        myPara1.textContent = data[i].events;
+       
+
+        myAside.appendChild(myH2);
+        myAside.appendChild(myPara1);
+        myAside.appendChild(myPhoto);
+
+        myPhoto.src = "images/nDinoFest.jpg"
+        myPhoto.setAttribute('class', 'eventPhoto');
+        myPhoto.setAttribute('alt', 'Napoleon Dynamite Festival');
+        aside.appendChild(myAside);
+    }
 }
