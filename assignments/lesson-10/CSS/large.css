@@ -63,7 +63,7 @@
   table {
 
     width: 100%;
-    Border: 4px solid lightblue;
+    Border: 4px solid lightskyblue;
     border-radius: 10PX;
   }
 
@@ -79,7 +79,7 @@
   }
 
   td {
-    background-color: rgb(81, 112, 216);
+    background-color: lightskyblue;
     color: black;
     border-radius: 8PX;
     text-align: center;
