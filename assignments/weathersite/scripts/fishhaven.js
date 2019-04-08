@@ -1,8 +1,8 @@
-//Bear Lake county-Fish Haven 5585000
+//Fish Haven 5585010 (Could not find in Jason file did find Bear Lake county used one provided by course)
 
 //weather summery
 var weatherObject = new XMLHttpRequest
-weatherObject.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/weather?id=5585000&appid=9a639e9b88f8f96c233986dc5ceb5877&units=imperial', true);
+weatherObject.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/weather?id=5585010&appid=9a639e9b88f8f96c233986dc5ceb5877&units=imperial', true);
 weatherObject.send();
 weatherObject.onload = function () {
 
@@ -22,7 +22,7 @@ weatherObject.onload = function () {
 
 //forcast
 var weatherForecast = new XMLHttpRequest
-weatherForecast.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/forecast?id=5585000&appid=9a639e9b88f8f96c233986dc5ceb5877&units=imperial', true);
+weatherForecast.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/forecast?id=5585010&appid=9a639e9b88f8f96c233986dc5ceb5877&units=imperial', true);
 weatherForecast.send();
 weatherForecast.onload = function () {
 
@@ -112,4 +112,12 @@ function showData(jsonObj) {
         myPhoto.setAttribute('alt', 'Big Fish');
         aside.appendChild(myAside);
     }
+}
+// Map for Fish Haven
+function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(42.0372,-111.3960),
+      zoom:10,
+    };
+    var map = new google.maps.Map(document.getElementById("googlemap"),mapProp);
 }

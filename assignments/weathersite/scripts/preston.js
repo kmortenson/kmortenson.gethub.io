@@ -101,7 +101,7 @@ function showData(jsonObj) {
 
         myH2.textContent = "Upomming events in Preston:";
         myPara1.textContent = data[i].events;
-       
+
 
         myAside.appendChild(myH2);
         myAside.appendChild(myPara1);
@@ -112,4 +112,12 @@ function showData(jsonObj) {
         myPhoto.setAttribute('alt', 'Napoleon Dynamite Festival');
         aside.appendChild(myAside);
     }
+}
+// Map for preston
+function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(42.0963,-111.8766),
+      zoom:10,
+    };
+    var map = new google.maps.Map(document.getElementById("googlemap"),mapProp);
 }

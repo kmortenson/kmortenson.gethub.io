@@ -1,8 +1,8 @@
-//Soda Springs 5678757
+//Soda Springs 5607916  (Jason File says 5678757 used one provided by course)
 
 //weather summery
 var weatherObject = new XMLHttpRequest
-weatherObject.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/weather?id=5678757&appid=9a639e9b88f8f96c233986dc5ceb5877&units=imperial', true);
+weatherObject.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/weather?id=5607916&appid=9a639e9b88f8f96c233986dc5ceb5877&units=imperial', true);
 weatherObject.send();
 weatherObject.onload = function () {
 
@@ -22,7 +22,7 @@ weatherObject.onload = function () {
 
 //forcast
 var weatherForecast = new XMLHttpRequest
-weatherForecast.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/forecast?id=5678757&appid=9a639e9b88f8f96c233986dc5ceb5877&units=imperial', true);
+weatherForecast.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=9a639e9b88f8f96c233986dc5ceb5877&units=imperial', true);
 weatherForecast.send();
 weatherForecast.onload = function () {
 
@@ -112,4 +112,12 @@ function showData(jsonObj) {
         myPhoto.setAttribute('alt', 'Oktober Fest Logo');
         aside.appendChild(myAside);
     }
+}
+// Map for Spda Springs
+function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(42.6544,-111.6047),
+      zoom:12,
+    };
+    var map = new google.maps.Map(document.getElementById("googlemap"),mapProp);
 }
