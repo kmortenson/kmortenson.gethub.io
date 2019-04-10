@@ -343,20 +343,23 @@ p.copyr {
 
 }
 
-figcaption {
-    color: whitesmoke;
-    text-align: center;
-}
-
-.gallery>div {
-
+figure {
+    padding: 0;
     text-align: center;
     padding: 20px 0;
     color: whitesmoke;
     border: 3px solid #000;
-
+    margin: 4px
 }
 
-.picture:hover {
+figcaption {
+    color: whitesmoke;
+    text-align: center;
+    padding: 0;
+}
+
+
+
+figure:hover {
     box-shadow: 0 0 50px whitesmoke;
 }
