@@ -1,0 +1,55 @@
+{
+  "squadName": "Super hero squad",
+  "homeTown": "Las Vegas",
+  "formed": 2016,
+  "secretBase": "Super tower",
+  "active": true,
+  "members": [{
+      "name": "Atomic Man",
+      "age": 52,
+      "secretIdentity": "Kirk Mortenson",
+      "powers": [
+        "Radiation resistance",
+        "Make Time",
+        "Split into two"
+      ]
+    },
+
+    {
+      "name": "Super MOM",
+      "age": "Unknown",
+      "secretIdentity": "Terri Mortenson",
+      "powers": [
+        "Speed Reading",
+        "Super Intellengence",
+        "Laser eyes",
+        "Super Memory",
+        "Mind Reading",
+        "Speaks with children"
+      ]
+    }, {
+      "name": "Sarahbellium",
+      "age": 9,
+      "secretIdentity": "Sarah Mortenson",
+      "powers": [
+        "Speed Reading",
+        "Super Intellengence",
+        "Laser eyes",
+        "Teleportation",
+        "speaks with cats"
+      ]
+    },
+    {
+      "name": "NinjAlden",
+      "age": 6,
+      "secretIdentity": "John Mortenson",
+      "powers": [
+        "Night vision",
+        "Super helaing",
+        "Superhuman reflexes",
+        "Invisibility",
+        "Martial Art Skills"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+/* CIT 230 - WeaterSite CSS medium */
+@media (min-width:600px) {
+    header {
+        max-width: 900px;
+    }
+
+    main {
+
+        max-width: 900px;
+    }
+
+   
+    article {
+        max-width: 900px;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+    }
+
+    footer {
+        max-width: 9000px;
+    }
+
+    .social {
+        max-width: 10%;
+
+    }
+
+
+    .gallery {
+        max-width: 900px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+
+    }
+}

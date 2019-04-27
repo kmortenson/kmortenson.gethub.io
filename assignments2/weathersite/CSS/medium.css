@@ -1,0 +1,86 @@
+/* CIT 230 - WeaterSite CSS medium */
+@media (min-width:600px) {
+    header {
+        max-width: 900px;
+    }
+
+    main {
+
+        max-width: 900px;
+    }
+
+
+    article {
+        max-width: 900px;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+    }
+
+    aside {
+        max-width: 900px;
+    }
+
+    footer {
+        max-width: 900px;
+    }
+
+    /* ------------------json data-------*/
+
+
+    .articlejson {
+        border-collapse: collapse;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        text-align: center;
+
+    }
+
+    .articlejson div {
+        border: 4px solid Black;
+        border-radius: 25px;
+        margin: 0px;
+        background-color: lightblue;
+        color: black;
+        max-width: 300px;
+    }
+
+    .articlejson H5 {
+        border: 4px solid Black;
+        border-radius: 25px;
+    }
+
+    .articlejson H6 {
+        font-style: italic;
+
+    }
+
+    .articlejson p {
+        margin: 0px;
+
+    }
+
+    .homePhoto {
+        border: 4px solid blue;
+        border-radius: 10px;
+        margin: 20px;
+        width: 75%;
+    }
+
+    /* ------------------json data-------*/
+    /*-----------------Footer --------------*/
+
+    .social {
+        max-width: 50px;
+
+    }
+
+    /* ---------------Gallery-------------*/
+    .gallery {
+        max-width: 900px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+
+    }
+}

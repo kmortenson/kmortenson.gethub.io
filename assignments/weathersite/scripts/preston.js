@@ -93,18 +93,29 @@ function showData(jsonObj) {
     for (var i = 0; i < data.length; i++) {
         if ((data[i].name == "Preston") == false) {
             continue;
-        }
+                   }
+        
+
         var myAside = document.createElement('div');
         var myH2 = document.createElement('h2');
-        var myPara1 = document.createElement('p');
+        /*var myPara1 = document.createElement('p');*/
         var myPhoto = document.createElement('img');
+        var listItem = document.createElement('li');
 
         myH2.textContent = "Upomming events in Preston:";
+
+        var townEvents = data[i].events;
+        for (var j = 0; j < townEvents.length; j++) {
+            listItem.textContent = townEvents[j];
+        }
+
+        /*
         myPara1.textContent = data[i].events;
-
-
-        myAside.appendChild(myH2);
         myAside.appendChild(myPara1);
+*/
+        myAside.appendChild(myH2);
+        myAside.appendChild(listItem);
+
         myAside.appendChild(myPhoto);
 
         myPhoto.src = "images/nDinoFest.jpg"
@@ -115,9 +126,9 @@ function showData(jsonObj) {
 }
 // Map for preston
 function myMap() {
-    var mapProp= {
-      center:new google.maps.LatLng(42.0963,-111.8766),
-      zoom:10,
+    var mapProp = {
+        center: new google.maps.LatLng(42.0963, -111.8766),
+        zoom: 10,
     };
-    var map = new google.maps.Map(document.getElementById("googlemap"),mapProp);
+    var map = new google.maps.Map(document.getElementById("googlemap"), mapProp);
 }
