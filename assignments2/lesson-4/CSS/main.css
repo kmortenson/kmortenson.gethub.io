@@ -1,6 +1,7 @@
 /* CIT 230 - WeaterSite CSS Template */
 /* You may use #HEX or color names */
 /* * is a wildcard referring to all elements. */
+
 *  { margin: 0; box-sizing: border-box; }
 body {
     font-size: 16px;
@@ -36,13 +37,18 @@ header img
     }
 nav
     {
+        display:block;
     padding: 8px 16px;
     font-size: 1.2em;
     text-align: left;
     background-color: lightseagreen;
     color: Black;
     }
-        }
+    li a   {
+    display: inline-block;
+    border: 2em;
+    float: none;
+    }
 li a:link { color: whitesmoke}
 li a:visited { color: darkgreen }
 li a:focus { color: black }

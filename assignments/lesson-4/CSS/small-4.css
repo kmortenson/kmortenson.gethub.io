@@ -1,54 +1,103 @@
 /* CIT 230 - WeaterSite CSS Template */
 /* You may use #HEX or color names */
 /* * is a wildcard referring to all elements. */
-*  { margin: 0; box-sizing: border-box; }
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-size: 16px;
     line-height: 32px;
     font-family: Arial, Helvetica, sans-serif;
-    color: black; 
-    }
-h1  {
+    color: whitesmoke;
+}
+
+h1 {
     font-size: 2rem;
-    color: black;
-    }
-h2  {
+    color: whitesmoke;
+}
+
+h2 {
     font-size: 1.5rem;
-    text-align:center;
-    }
-header, main, nav, footer
-    {
+    text-align: center;
+}
+
+header,
+main,
+nav,
+footer {
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width: 800px;
-    }
-header, footer
-    {
+    max-width: 480px;
+}
+
+
+
+header,
+footer {
     text-align: center;
     background-color: blue;
     color: whitesmoke;
-    }
-header img 
-    {
+}
+
+header img {
     width: 150px;
     height: auto;
-     }
-.motto
-{
+}
+
+.motto {
+    font-family: 'Open Sans', sans-serif;
     display: inline-block;
 }
-nav
-    {
-    padding: 8px 16px;
+
+nav {
+    padding: 8px 80px 8px 80px;
     font-size: 1.2em;
-    text-align: left;
+    text-align: center;
     background-color: lightseagreen;
     color: Black;
-    }
-li {list-style-type: none;}
-li a:link { color: whitesmoke}
-li a:visited { color: darkgreen }
-li a:focus { color: black }
-li:hover { background-color: green}
-li a:active { color: Red}
-footer {font-size: smaller;}
+}
+
+li {
+    list-style-type: none;
+    border: 1px black solid;
+
+}
+
+li a:link {
+    color: whitesmoke
+}
+
+li a:visited {
+    color: darkgreen
+}
+
+li a:focus {
+    color: black
+}
+
+li:hover {
+    background-color: green
+}
+
+li a:active {
+    color: Red
+}
+
+main {
+    text-align: center;
+    background-color: blue;
+}
+section img{
+    width: 70%;
+}
+article p {
+    text-align: left;
+    border: 2px black solid;
+    padding: 15px;
+    background-color: rgb(11, 69, 124);
+}
+footer {
+    font-size: smaller;
+}
