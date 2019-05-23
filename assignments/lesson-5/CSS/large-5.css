@@ -4,7 +4,7 @@
 header, main, footer {
   margin: 1.25rem auto;
   padding: .5rem;
-  max-width: 800px;
+  max-width: 1000px;
 }
 header img {
       width: 100px;
@@ -30,4 +30,51 @@ float: none;
 
 .herodiv img {width: 100%;}
 
+
+
+.forcast {
+  display: block;
+  text-align: center;
+  padding: 50px;
+
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  Border: 4px solid lightblue
+}
+
+td,
+th {
+  border: 2px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+article {
+  max-width: 800px;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: auto auto ;
+
+}
+
+footer {
+  max-width: 1000px;
+}
+
+.contact {
+  display: grid;
+  grid: 220px / 220px 400px;
+  grid-gap: 10px;
+  background-color: blue;
+  padding: 10px;
+}
+
+.info {
+  margin: 1.25rem auto;
+  padding: .5rem;
+  max-width: 800px;
+}
 }
