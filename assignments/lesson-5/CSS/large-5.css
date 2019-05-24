@@ -1,80 +1,92 @@
 /* CIT 230 - WeaterSite CSS Large */
 @media (min-width:600px) {
 
-header, main, footer {
-  margin: 1.25rem auto;
-  padding: .5rem;
-  max-width: 1000px;
-}
-header img {
-      width: 100px;
-      height: auto;
-    }
-    h1  {
-      font-size: 2em;
-    }
-    .topnav .icon {display: none;}
-
-nav {
-  padding: 10px 10px;
-  font-size: 1em;
-  text-align: left;
+  header,
+  main,
+  footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 1000px;
   }
-li 
-{
-display: inline-block;
-border: 2em;
-float: none;
-}
-.mainimg  {margin: .24rem;}
 
-.herodiv img {width: 100%;}
+  header img {
+    width: 100px;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+
+  nav {
+    padding: 10px 10px;
+    font-size: 1em;
+    text-align: left;
+  }
+
+  li {
+    display: inline-block;
+    border: 2em;
+    float: none;
+  }
+
+  .mainimg {
+    margin: .24rem;
+  }
+
+  .herodiv img {
+    width: 100%;
+  }
 
 
 
-.forcast {
-  display: block;
-  text-align: center;
-  padding: 50px;
+  .forcast {
+    display: block;
+    text-align: center;
+    padding: 50px;
 
-}
+  }
 
-table {
-  border-collapse: collapse;
-  width: 100%;
-  Border: 4px solid lightblue
-}
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    Border: 4px solid lightblue
+  }
 
-td,
-th {
-  border: 2px solid #dddddd;
-  text-align: center;
-  padding: 8px;
-}
+  td,
+  th {
+    border: 2px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
 
-article {
-  max-width: 800px;
-  display: grid;
-  grid-template-rows: 100%;
-  grid-template-columns: auto auto ;
+  article {
+    max-width: 800px;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: auto auto;
 
-}
+  }
 
-footer {
-  max-width: 1000px;
-}
+  footer {
+    max-width: 1000px;
+  }
 
-.contact {
-  display: grid;
-  grid: 220px / 220px 400px;
-  grid-gap: 10px;
-  background-color: blue;
-  padding: 10px;
-}
+  .contact {
+    display: grid;
+    grid: 220px / 220px 400px;
+    grid-gap: 10px;
+    background-color: blue;
+    padding: 10px;
+  }
 
-.info {
-  margin: 1.25rem auto;
-  padding: .5rem;
-  max-width: 800px;
-}
+  .info {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 800px;
+  }
 }
