@@ -6,7 +6,7 @@
     padding: .5rem;
     max-width: 800px;
   }
-  
+
   header img {
     width: 100px;
     height: auto;
@@ -24,7 +24,6 @@
     display: block;
   }
 
-
   nav {
     padding: 0;
     font-size: .8em;
@@ -36,14 +35,17 @@
     border: 1px;
     float: none;
   }
+
   Nav ul li a {
-    Border: 5px 
+    Border: 5px
   }
+
   main {
     margin: 1.25rem auto;
     padding: .5rem;
     max-width: 800px;
   }
+
   .mainimg {
     margin: .24rem;
   }
@@ -51,6 +53,7 @@
   .herodiv img {
     width: 100%;
   }
+
   .forcast {
     display: block;
     text-align: center;
@@ -81,7 +84,9 @@
 
   footer {
     max-width: 800px;
-  }
+    margin: 1.25rem auto;
+    padding: .5rem;
+    }
 
   .contact {
     display: grid;
