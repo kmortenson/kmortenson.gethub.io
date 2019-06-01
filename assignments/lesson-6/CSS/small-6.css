@@ -8,8 +8,10 @@ body {
     color: black;
 }
 
-header,
-footer {
+header {
+    max-width: 450px;
+    margin: 1.25rem auto;
+    padding: .5rem;
     text-align: center;
     background-color: blue;
     color: whitesmoke;
@@ -33,14 +35,6 @@ h3 {
     /*font-size: 1.5rem;*/
     text-align: center;
     color: whitesmoke;
-}
-
-header,
-main,
-footer {
-    max-width: 450px;
-    margin: 1.25rem auto;
-    padding: .5rem;
 }
 
 nav {
@@ -102,9 +96,12 @@ nav ul.hide {
 
 
 main {
+    max-width: 450px;
+    margin: 1.25rem auto;
+    padding: .5rem;
     text-align: center;
     background-color: blue;
-    color: whitesmoke
+    color: whitesmoke;
 }
 
 .herodiv {
@@ -129,6 +126,92 @@ main {
     box-shadow: 0 0 30px #fff;
 }
 
+.forcast {
+    display: none
+}
+
+article {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    max-width: 450px;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    background-color: blue;
+    color: whitesmoke;
+
+}
+
+.articleimg {
+    padding: 0;
+    margin: 40px;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+.articlewrd {
+    background-color: rgb(63, 122, 248);
+    color: black;
+    text-align: left;
+    padding: 20px;
+
+    line-height: 1;
+    box-shadow: 0 0 30px #fff;
+}
+
 footer {
+    max-width: 450px;
+    margin: 1.25rem auto;
+    padding: .5rem;
     font-size: 1em;
+    text-align: center;
+    background-color: blue;
+    color: whitesmoke;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    background-color: blue;
+    padding: 10px;
+}
+
+.info {
+    padding: 5px;
+    text-align: left;
+    line-height: 20px;
+    font-size: .7em;
+}
+
+a:link {
+    color: whitesmoke;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+.social {
+    max-width: 10%;
+
+}
+
+div#googlemap {
+    margin: 20px;
+    max-width: 100%;
+    height: 200px;
+    border: 1px solid Black;
+
+}
+
+p.copyr {
+    background-color: darkblue;
+    padding: 5px;
+    color: whitesmoke;
+    font-size: .8rem;
+    text-align: center;
 }
