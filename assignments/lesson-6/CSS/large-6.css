@@ -4,7 +4,7 @@
   header {
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width: 800px;
+    max-width: 1000px;
   }
 
   header img {
@@ -43,7 +43,7 @@
   main {
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width: 800px;
+    max-width: 1000px;
   }
 
   .mainimg {
@@ -75,7 +75,7 @@
   }
 
   article {
-    max-width: 800px;
+    max-width: 1000px;
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: auto auto;
@@ -83,10 +83,10 @@
   }
 
   footer {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 1.25rem auto;
     padding: .5rem;
-    }
+  }
 
   .contact {
     display: grid;
@@ -97,8 +97,8 @@
   }
 
   .info {
+    max-width: 1000px;
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width: 800px;
   }
 }
