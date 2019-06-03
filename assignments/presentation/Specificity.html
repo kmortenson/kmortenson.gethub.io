@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="specificity">
     <title>Specificity</title>
+    <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="style.css"
+    <style> body { background: blue } </style>
+</head>
+<body style="background: red";>
+
+    <h1>What is Specificity?</h1>
+    <div>
+        <p class="definition">"If there are two or more conflicting CSS rules that point to the same element,
+             the browser follows some rules to determine which one is most specific and therefore wins out."</p>
+             <p class="source" id="source">W3 schools</p>
+       
+    </div>
+</body>
+</html>
