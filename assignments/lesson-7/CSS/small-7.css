@@ -88,7 +88,8 @@ nav a:hover {
     background-color: green
 }
 
-nav ul li a .active {
+nav .active {
+    color: white;
     background-color: blue;
 }
 
