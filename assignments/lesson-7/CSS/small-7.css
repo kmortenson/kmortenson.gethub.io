@@ -88,7 +88,7 @@ nav a:hover {
     background-color: green
 }
 
-nav a:active {
+nav a .active {
     color: Red
 }
 
