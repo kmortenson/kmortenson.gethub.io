@@ -19,9 +19,10 @@
   nav {
 
     font-size: .8em;
-    text-align: left;
+    text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
   }
 
   nav button {

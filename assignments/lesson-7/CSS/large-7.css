@@ -18,9 +18,10 @@
 
   nav {
     font-size: .8em;
-    text-align: left;
+    text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
   }
 
   nav button {
@@ -47,12 +48,9 @@
     max-width: 1000px;
   }
 
-
   .mainimg {
     margin: .24rem;
   }
-
-
 
   .forcast {
     display: block;
