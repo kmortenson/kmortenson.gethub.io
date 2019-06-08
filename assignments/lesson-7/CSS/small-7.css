@@ -242,9 +242,8 @@ figcaption {
 }
 
 .picture {
-
     text-align: center;
-    padding: 20px, 0, 0, 0;
+    padding: 20px 0 0 0;
     color: whitesmoke;
     border: 3px solid #000;
 
