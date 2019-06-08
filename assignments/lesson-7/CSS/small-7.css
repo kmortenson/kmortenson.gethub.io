@@ -241,14 +241,14 @@ figcaption {
     text-align: center;
 }
 
-figure .picture {
+.picture {
     text-align: center;
-    padding: 20px 0 0 0;
+    padding: 20px 0p;
     color: whitesmoke;
     border: 3px solid #000;
 
 }
 
-figure .picture:hover {
+.picture:hover {
     box-shadow: 7px 7px 5px darkblue;
 }
