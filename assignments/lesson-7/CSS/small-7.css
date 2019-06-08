@@ -17,11 +17,13 @@ header {
     background-color: blue;
     color: whitesmoke;
 }
+
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 header img {
     width: 100px;
     height: auto;
@@ -109,7 +111,6 @@ main {
     color: whitesmoke
 }
 
-
 .herodiv {
     position: relative;
     padding: .25rem;
@@ -149,9 +150,9 @@ article {
 
 }
 
-.articleimg img{
+.articleimg img {
     margin: 40px;
-    Padding:0;
+    Padding: 0;
     border: 2px solid black;
 }
 
@@ -220,6 +221,7 @@ p.copyr {
     font-size: .8rem;
     text-align: center;
 }
+
 /* ---------------Gallery-------------*/
 .gallery {
     justify-content: center;
@@ -242,7 +244,7 @@ figcaption {
 .picture {
 
     text-align: center;
-    padding: 20px,0, 0, 0;
+    padding: 20px, 0, 0, 0;
     color: whitesmoke;
     border: 3px solid #000;
 
