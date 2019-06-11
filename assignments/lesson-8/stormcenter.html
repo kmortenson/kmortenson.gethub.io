@@ -3,41 +3,43 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="description" content="Gallery OutdoorWeather page">
     <meta name="author" content="Kirk Mortenson">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Storm Center OutdoorWeather page">
-    <title>Outdoor Weather : Storm Center</title>
-
-    <!-- Style Sheets-->
-    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:800i&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <!-- <link rel="stylesheet" href="CSS/normalize.css">-->
     <link rel="stylesheet" href="CSS/small-8.css">
     <link rel="stylesheet" href="CSS/medium-8.css">
     <link rel="stylesheet" href="CSS/large-8.css">
+    <title>Outdoor Weather : Storm Center</title>
 
 
-
-<body>
-    <header>
-        <img src="images/logo2.jpg" alt="OutdoorWeather Logo">
-        <div class="motto">
-            <h1>OutdoorWeather.watch</h1>
-            <h2>Weather for Adventure</h2>
-        </div>
-        <nav>
-            <button onclick="togglemenu()">Menu &#9776;</button>
-            <ul id="primaryNav" class="hide">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="preston-8.html">Preston</a></li>
-                <li><a href="sodasprings.html">Soda Springs</a></li>
-                <li><a href="fishhaven.html">Fish Haven</a></li>
-                <li><a href="stormcenter.html" class="active">Storm Center</a></li>
-                <li><a href="gallery-8.html">Gallery</a></li>
-
-            </ul>
-
-        </nav>
-
-    </header>
+    <body>
+        <header>
+            <div class="container">
+                <div>
+                    <img src="images/logo8.png" alt="OutdoorWeather Logo">
+                </div>
+                <div class="motto">
+                    <h1>OutdoorWeather.watch</h1>
+                    <h2>Weather for Adventure</h2>
+                </div>
+            </div>
+            <nav>
+                <button onclick="togglemenu()">Menu &#9776;</button>
+                <ul id="primaryNav" class="hide">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="preston-8.html">Preston</a></li>
+                    <li><a href="sodasprings.html">Soda Springs</a></li>
+                    <li><a href="fishhaven.html">Fish Haven</a></li>
+                    <li><a href="stormcenter.html"class="active">Storm Center</a></li>
+                    <li><a href="gallery-8.html">Gallery</a></li>
+    
+                </ul>
+    
+            </nav>
+        </header>
     <main>
         <h1>Storm Center</h1>
 
@@ -106,7 +108,6 @@
     </div>
 
     <script src="scripts/navmenu.js"></script>
-    <script src="scripts/windchill.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/map.js"></script>
     <script src="scripts/slider.js"></script>
