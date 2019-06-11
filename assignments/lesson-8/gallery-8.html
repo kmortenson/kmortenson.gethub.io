@@ -6,61 +6,65 @@
     <meta name="description" content="Gallery OutdoorWeather page">
     <meta name="author" content="Kirk Mortenson">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="stylesheet" href="CSS/small-8.css">
-    <link rel="stylesheet" href="CSS/medium-8.css">
-    <link rel="stylesheet" href="CSS/large-8.css">
-    <title>Outdoor Weather : Gallery</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:800i&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <!-- <link rel="stylesheet" href="CSS/normalize.css">-->
+    <link rel="stylesheet" href="CSS/small-7.css">
+    <link rel="stylesheet" href="CSS/medium-7.css">
+    <link rel="stylesheet" href="CSS/large-7.css">
+    <title>Outdoor Weather site : Gallery</title>
+</head>
 
 <body>
     <header>
-        <img src="images/logo2.jpg" alt="OutdoorWeather Logo">
-        <div class="motto">
-            <h1>OutdoorWeather.watch</h1>
-            <h2>Weather for Adventure</h2>
+        <div class="container">
+            <div>
+                <img src="images/logo8.png" alt="OutdoorWeather Logo">
+            </div>
+            <div class="motto">
+                <h1>OutdoorWeather.watch</h1>
+                <h2>Weather for Adventure</h2>
+            </div>
         </div>
         <nav>
             <button onclick="togglemenu()">Menu &#9776;</button>
             <ul id="primaryNav" class="hide">
                 <li><a href="home.html">Home</a></li>
-                <li><a href="preston-8.html" ">Preston</a></li>
+                <li><a href="preston-7.html">Preston</a></li>
                 <li><a href="sodasprings.html">Soda Springs</a></li>
                 <li><a href="fishhaven.html">Fish Haven</a></li>
                 <li><a href="stormcenter.html">Storm Center</a></li>
-                <li><a href="gallery-8.html"class="active">Gallery</a></li>
+                <li><a href="gallery-7.html" class="active">Gallery</a></li>
 
             </ul>
 
         </nav>
-
     </header>
 
-    <body>
-        <div class ="container"></div>
-        <h1>Gallery</h1>
-        <div class="gallery">
-            <div class="picture"><img src="images/weather1.jpg" alt="Clouds over range">
-                <figcaption>"Clouds over range"</figcaption>
-            </div>
-            <div class="picture"><img src="images/weather2.jpeg" alt="Moutain clouds">
-                <figcaption>"Moutain clouds"</figcaption>
-            </div>
-            <div class="picture"><img src="images/weather3.jpg" alt="Storm">
-                <figcaption>"Storm"</figcaption>
-            </div>
-            <div class="picture"><img src="images/weather4.jpg" alt="Low Clouds">
-                <figcaption>"Low Clouds"</figcaption>
-            </div>
-            <div class="picture"><img src="images/weather5.jpg" alt="Storm Road">
-                <figcaption>"Storm Road"</figcaption>
-            </div>
-            <div class="picture"><img src="images/weather6.jpg" alt="Lightning">
-                <figcaption>"Lightning"</figcaption>
-            </div>
+    <h1>Gallery</h1>
+    <div class="gallery">
+        <figure class="picture"><img src="images/weather1.jpg" alt="Clouds over range">
+            <figcaption>"Clouds over range"</figcaption>
+        </figure>
+        <figure class="picture"><img src="images/weather2.jpeg" alt="Moutain clouds">
+            <figcaption>"Moutain clouds"</figcaption>
+        </figure>
+        <figure class="picture"><img src="images/weather3.jpg" alt="Storm">
+            <figcaption>"Storm"</figcaption>
+        </figure>
+        <figure class="picture"><img src="images/weather4.jpg" alt="Low Clouds">
+            <figcaption>"Low Clouds"</figcaption>
+        </figure>
+        <figure class="picture"><img src="images/weather5.jpg" alt="Storm Road">
+            <figcaption>"Storm Road"</figcaption>
+        </figure>
+        <figure class="picture"><img src="images/weather6.jpg" alt="Lightning">
+            <figcaption>"Lightning"</figcaption>
+        </figure>
 
-        </div>
     </div>
-    </body>
+
+
     <footer>
         <div class='contact'>
             <div class="info">
@@ -76,16 +80,15 @@
 
             </div>
             <div id="googlemap"></div>
-
+        </div>
     </footer>
-    <P class="copyr">&copy;2019 All Rights Reserved - Outdoor Weather - <a id="dt"></span><br></p>
-    </div>
+    <p class='copyr'>&copy;2019 All Rights Reserved - Outdoor Weather - <span id="dt"></span><br></p>
     <script src="scripts/navmenu.js"></script>
-    <script src="scripts/windchill.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6Ztx0goERX869VlKM0sJA_HRX-3LuRL4&callback=myMap">
     </script>
 </body>
+
 
 </Html>

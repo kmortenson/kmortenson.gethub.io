@@ -1,4 +1,4 @@
- //hamburger menu 7//
+//hamburger menu//
 
 function togglemenu() {
     document.getElementById("primaryNav").classList.toggle("hide");
