@@ -29,12 +29,9 @@ header img {
     height: auto;
 }
 
-
-
 h1 {
     font-size: 1.5em;
 }
-
 
 h3 {
     text-align: center;
@@ -251,4 +248,79 @@ figcaption {
 
 .picture:hover {
     box-shadow: 7px 7px 5px darkblue;
+}
+/* ---------------storm center--------------*/
+form fieldset {
+    text-align: left;
+    margin: 2rem 0;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: .5rem 2%;
+    background-color:lightblue
+
+}
+
+form legend {
+    color: black;
+    border: 2PX solid black;
+    border-radius: 15PX;
+    background-color:lightblue;
+    margin: 0 1rem;
+    padding: 0.5rem;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: darkblue;
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: whitesmoke;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem;
+    color: #555;
+}
+span#ratingvalue {
+
+color: blue;
+font-size: 1.5rem
+}
+
+form input.submitBtn {
+    border: 4px solid black;
+    box-shadow: 0 0 30px black;
+    background-color: blue;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+form textarea.top{
+    text-align: left;
 }
