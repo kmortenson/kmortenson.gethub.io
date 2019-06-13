@@ -22,6 +22,13 @@ th {
     border: 1px solid #7fb9c2;
 }
 
+tbody tr:nth-child(odd) {
+  background-color: #e7ffed;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e7f0ed ;
+}
 tbody tr:nth-child(1) {
     background-color: #628ca6;
     color: white;
