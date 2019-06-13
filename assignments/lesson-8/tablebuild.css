@@ -11,15 +11,18 @@ header {
 table {
     margin: auto;
     border-collapse: collapse;
-    border: 5px solid #628ca6;
     box-shadow: 5px 5px 10px #628ca6;
 }
 
 table,
 td,
 th {
-    padding: 6px;
-    border: 1px solid #7fb9c2;
+    padding: 8px;
+    border: 1px solid Lightgray;
+}
+tbody tr:nth-child(1) {
+    background-color: #628ca6;
+    color: white;
 }
 
 tbody tr:nth-child(odd) {
