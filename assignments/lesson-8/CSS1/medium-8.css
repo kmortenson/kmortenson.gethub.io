@@ -1,5 +1,5 @@
 /* CIT 230 - WeaterSite CSS medium */
-@media (min-width:600px) {
+@media (min-width:650px) {
     header {
         max-width: 900px;
     }

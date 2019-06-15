@@ -45,16 +45,23 @@
         <form method="get" action="thanks.html" id="stormform">
             <fieldset>
                 <legend>Contact Information</legend>
+
                 <label class="top">Full Name(required)* <input type="text" name="name" pattern="{a-zA-Z -._] {5,99}"
                         required></label>
+
                 <label class="top">Email <input type="email" name="email" placeholder="stormchaser@gmail.com"></label>
+
                 <label class="top">Phone(required)* <input type="tel" name="phone" value="" pattern="[0-9]{10,20}"
                         placeholder="1235551234" required></label>
+                        
                 <label class="top">Zip Code(required)* <input type="number" name="zip" placeholder="83263"
                         required></label>
             </fieldset>
+           
+           
             <fieldset>
                 <legend>Storm Information</legend>
+
                 <label class="top">Storm Date<input type="date" name="stormDate"></label>
 
 
