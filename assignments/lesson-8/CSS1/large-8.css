@@ -79,11 +79,8 @@
     max-width: 1000px;
 
   }
-/*-----------Form --------------*/
-form label.sbs {
-  padding: .4rem 0;
-}
-/*-----------Form --------------*/
+
+
 /*-----------Footer --------------*/
   footer {
     max-width: 1000px;
@@ -106,7 +103,7 @@ form label.sbs {
   .container {
     margin-left: auto;
   }
-
+/*-----------Gallery --------------*/
   .gallery {
     margin-left: auto;
     margin-right: auto;
@@ -115,4 +112,10 @@ form label.sbs {
     grid-template-rows: auto auto;
 
   }
+
+  /*-----------Form --------------*/
+form label.sbs {
+  padding: .4rem 0;
+}
+
 }

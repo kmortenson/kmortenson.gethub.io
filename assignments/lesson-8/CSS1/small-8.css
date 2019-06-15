@@ -166,6 +166,92 @@ h2 {
     line-height: 1;
 
 }
+
+
+/* -----------------footer-------------------*/
+footer {
+    max-width: 450px;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    font-size: 1em;
+    background-color: blue;
+    color: whitesmoke;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    background-color: blue;
+    padding: 10px;
+}
+
+.info {
+    padding: 5px;
+    text-align: left;
+    line-height: 20px;
+    font-size: .7em;
+}
+
+a:link {
+    color: whitesmoke;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+.social {
+    max-width: 10%;
+
+}
+
+div#googlemap {
+    margin: 20px;
+    max-width: 100%;
+    height: 200px;
+    border: 1px solid Black;
+}
+
+p.copyr {
+    background-color: darkblue;
+    padding: 5px;
+    color: whitesmoke;
+    font-size: .8rem;
+    text-align: center;
+}
+/* ---------------gallery--------------*/
+.gallery {
+    justify-content: center;
+    max-width: 450px;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+    background-color: blue;
+    padding: 10px;
+
+}
+
+figcaption {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.gallery>div {
+
+    text-align: center;
+    padding: 20px 0;
+    color: whitesmoke;
+    border: 3px solid #000;
+
+}
+
+.picture:hover {
+    box-shadow: 0 0 50px whitesmoke;
+}
+
 /* ---------------storm center--------------*/
 form fieldset {
     text-align: left;
@@ -240,88 +326,4 @@ form label.top input:required:valid {
 
 form textarea.top{
     text-align: left;
-}
-
-/* -----------------footer-------------------*/
-footer {
-    max-width: 450px;
-    margin: 1.25rem auto;
-    padding: .5rem;
-    font-size: 1em;
-    background-color: blue;
-    color: whitesmoke;
-}
-
-.contact {
-    display: grid;
-    grid-template-columns: auto;
-    grid-gap: 10px;
-    background-color: blue;
-    padding: 10px;
-}
-
-.info {
-    padding: 5px;
-    text-align: left;
-    line-height: 20px;
-    font-size: .7em;
-}
-
-a:link {
-    color: whitesmoke;
-}
-
-a:hover {
-    color: lightblue;
-}
-
-.social {
-    max-width: 10%;
-
-}
-
-div#googlemap {
-    margin: 20px;
-    max-width: 100%;
-    height: 200px;
-    border: 1px solid Black;
-}
-
-p.copyr {
-    background-color: darkblue;
-    padding: 5px;
-    color: whitesmoke;
-    font-size: .8rem;
-    text-align: center;
-}
-
-.gallery {
-    justify-content: center;
-    max-width: 450px;
-    margin: 1rem auto;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    grid-gap: 10px;
-    background-color: blue;
-    padding: 10px;
-
-}
-
-figcaption {
-    color: whitesmoke;
-    text-align: center;
-}
-
-.gallery>div {
-
-    text-align: center;
-    padding: 20px 0;
-    color: whitesmoke;
-    border: 3px solid #000;
-
-}
-
-.picture:hover {
-    box-shadow: 0 0 50px whitesmoke;
 }
