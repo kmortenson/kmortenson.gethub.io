@@ -102,15 +102,30 @@
         </form>
     </main>
 
+    <footer>
+        <div class='contact'>
+            <div class="info">
+                <p><b>Outdoor Weather watch</b><br>
+                    123 Main St.<br>
+                    Weather, Id 89111<br>
+                    <a href="mailto:Adventure@outdoorweather.watch" target="_top">Adventure@outdoorweather.watch</a><br>
+                </p>
+                <img class="social" src="images/facebook.png" alt="Facebook Icon">
+                <img class="social" src="images/google.png" alt="Google Icon">
+                <img class="social" src="images/twitter.png" alt="Twitter Icon">
+                <img class="social" src="images/pinterest.png" alt="Pinterest Icon">
 
-    <div>
-        <p class='copyr'>&copy;2019 All Rights Reserved - Outdoor Weather - <span id="dt"></span><br></p>
-    </div>
-
+            </div>
+            <div id="googlemap"></div>
+        </div>
+    </footer>
+    <p class='copyr'>&copy;2019 All Rights Reserved - Outdoor Weather - <span id="dt"></span><br></p>
     <script src="scripts/navmenu.js"></script>
     <script src="scripts/currentdate.js"></script>
-    <script src="scripts/slider.js"></script>
-   
-   </body>
+    <script src="scripts/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6Ztx0goERX869VlKM0sJA_HRX-3LuRL4&callback=myMap">
+    </script>
+</body>
+
 
 </Html>
