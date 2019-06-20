@@ -10,8 +10,7 @@ body {
   background-color: lightblue;
 }
 
-h1
-  {
+h1 {
   font-family: 'Faster One', cursive;
   color: red;
 }
@@ -52,4 +51,9 @@ section ul {
 h2 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+ 
 }
