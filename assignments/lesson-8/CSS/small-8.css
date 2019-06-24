@@ -97,7 +97,6 @@ nav ul.hide {
     display: none;
 }
 
-
 main {
     max-width: 450px;
     margin: 1.25rem auto;
@@ -128,7 +127,6 @@ main {
     border: 1px solid #000;
     box-shadow: 0 0 30px #fff;
 }
-
 
 .forcast {
     display: none
@@ -249,6 +247,7 @@ figcaption {
 .picture:hover {
     box-shadow: 7px 7px 5px darkblue;
 }
+
 /* ---------------storm center--------------*/
 form fieldset {
     text-align: left;
@@ -256,15 +255,14 @@ form fieldset {
     border: 1px solid black;
     border-radius: 2px;
     padding: .5rem 2%;
-    background-color:lightblue
-
+    background-color: lightblue
 }
 
 form legend {
     color: black;
     border: 2PX solid black;
     border-radius: 15PX;
-    background-color:lightblue;
+    background-color: lightblue;
     margin: 0 1rem;
     padding: 0.5rem;
 }
@@ -277,7 +275,8 @@ form div {
     font-size: .8rem;
 }
 
-form label.top input, form label.top select {
+form label.top input,
+form label.top select {
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
@@ -295,10 +294,10 @@ form label.sbs {
     padding: .75rem;
     color: #555;
 }
-span#ratingvalue {
 
-color: blue;
-font-size: 1.5rem
+span#ratingvalue {
+    color: blue;
+    font-size: 1.5rem
 }
 
 form input.submitBtn {
@@ -321,6 +320,13 @@ form label.top input:required:valid {
     border-left: green solid 6px;
 }
 
-form textarea.top{
+form textarea.top {
     text-align: left;
+}
+
+/* ------------------json data-------*/
+
+.articlejson {
+    display: none;
+
 }

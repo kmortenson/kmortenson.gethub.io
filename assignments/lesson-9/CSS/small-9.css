@@ -31,7 +31,6 @@ h1 {
     font-size: 1.5em;
 }
 
-
 h3 {
     /*font-size: 1.5rem;*/
     text-align: center;
@@ -73,20 +72,19 @@ nav ul li a {
 }
 
 nav a:link {
-    color: whitesmoke
+    color: whitesmoke;
 }
 
 nav a:visited {
-    color: lightblue
+    color: lightblue;
 }
 
-/*nav a:focus {
-    color: darkblue
-}
-*/
-nav a:hover {
-    background-color: lightblue;
+nav a:focus {
     color: black;
+}
+
+nav a:hover {
+    background-color: green;
 }
 
 nav a.active {
@@ -98,7 +96,6 @@ nav ul.hide {
     display: none;
 }
 
-
 main {
     max-width: 450px;
     margin: 1.25rem auto;
@@ -107,7 +104,6 @@ main {
     background-color: blue;
     color: whitesmoke;
 }
-
 
 .herodiv {
     position: relative;
@@ -148,8 +144,10 @@ article {
 
 }
 
-.articleimg {
+.articleimg img{
     margin: 40px;
+    Padding: 0;
+    border: 2px solid black;
 }
 
 h2 {
@@ -160,17 +158,53 @@ h2 {
     background-color: lightblue;
     color: black;
     text-align: left;
-    padding: 2px;
-    border: 2px;
+    padding: 8px;
+    border: 2px solid black;
     line-height: 1;
 }
 
 /* ------------------json data-------*/
 
+
+
 .articlejson {
-    display: none;
+    border-collapse: collapse;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    text-align: center;
 
 }
+
+.articlejson div {
+    border: 4px solid Black;
+    border-radius: 25px;
+    margin: 0px;
+    background-color: lightblue;
+    color: black;
+    max-width: 300px;
+}
+
+.articlejson H5 {
+    border: 4px solid Black;
+    border-radius: 25px;
+}
+
+.articlejson H6 {
+    font-style: italic;
+
+}
+
+.articlejson p {
+    margin: 0px;
+
+}
+
+.homePhoto {
+    border: 4px solid blue;
+    border-radius: 10px;
+    margin: 20px;
+    width: 75%;
 
 
 
@@ -222,7 +256,6 @@ form label.sbs {
 }
 
 span#ratingvalue {
-
     color: blue;
     font-size: 1.5rem
 }
@@ -281,16 +314,12 @@ a:link {
     color: whitesmoke;
 }
 
-a:visited {
-    color: whitesmoke;
-}
-
 a:hover {
     color: lightblue;
 }
 
 .social {
-    max-width: 50px;
+    max-width: 10%;
 
 }
 
@@ -319,7 +348,7 @@ p.copyr {
     grid-template-rows: auto auto;
     grid-gap: 10px;
     background-color: blue;
-    padding: 10px;
+    padding: 5px;
 
 }
 
@@ -328,15 +357,14 @@ figcaption {
     text-align: center;
 }
 
-.gallery>div {
-
+.picture {
     text-align: center;
-    padding: 20px 0;
+    padding-bottom: 20px;
     color: whitesmoke;
     border: 3px solid #000;
+    margin: 5px;
 
 }
 
 .picture:hover {
-    box-shadow: 0 0 50px whitesmoke;
-}
+    box-shadow: 7px 7px 5px darkblue;
