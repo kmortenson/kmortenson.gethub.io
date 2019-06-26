@@ -1,5 +1,6 @@
 /* CIT 230 - WeaterSite CSS medium */
 @media (min-width:600px) {
+
     header {
         max-width: 900px;
     }
@@ -8,14 +9,11 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-
     }
 
     main {
-
         max-width: 900px;
     }
-
 
     article {
         max-width: 900px;
@@ -24,16 +22,16 @@
         grid-template-columns: auto auto;
     }
 
+    /* -----------------footer-------------------*/
     footer {
-        max-width: 9000px;
+        max-width: 900px;
     }
 
     .social {
         max-width: 8%;
-
     }
 
-/* ---------------Gallery-------------*/
+    /* ---------------Gallery-------------*/
     .gallery {
         max-width: 900px;
         grid-template-columns: auto auto;

@@ -52,8 +52,6 @@
     margin: .24rem;
   }
 
-
-
   .forcast {
     display: block;
     text-align: center;
@@ -78,31 +76,6 @@
     max-width: 1000px;
   }
 
-  /* ------------------json data-------*/
-
-  .articlejson {
-    border-collapse: separate;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
-  }
-
-  .articlejson div {
-    border: 4px solid Black;
-    border-radius: 25px;
-    margin: 5px;
-    background-color: lightblue;
-    color: black;
-  }
-
-  /*----------------Form --------------*/
-  form label.sbs {
-    padding: .4rem 0;
-  }
-
-
-
-  /*-------------------Form --------------*/
   /*-----------------Footer --------------*/
   footer {
     max-width: 1000px;
@@ -128,7 +101,7 @@
   }
 
   .container {
-    margin-left: auto;
+    margin-left: auto; 
   }
 
   /* ---------------Gallery-------------*/
@@ -138,6 +111,28 @@
     max-width: 1000px;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
-
   }
+
+  /* ---------------storm center--------------*/
+  form label.sbs {
+    padding: .4rem 0;
+  }
+
+  /* ------------------json data-------*/
+
+  .articlejson {
+    border-collapse: separate;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+  }
+
+  .articlejson div {
+    margin: 5px;
+  }
+
+
+
+
+
 }
