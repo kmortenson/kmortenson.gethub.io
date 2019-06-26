@@ -48,10 +48,6 @@
     max-width: 1000px;
   }
 
-  .mainimg {
-    margin: .24rem;
-  }
-
   .forcast {
     display: block;
     text-align: center;
@@ -101,7 +97,7 @@
   }
 
   .container {
-    margin-left: auto; 
+    margin-left: auto;
   }
 
   /* ---------------Gallery-------------*/

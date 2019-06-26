@@ -42,6 +42,7 @@
     /* ------------------json data-------*/
 
     .articlejson {
+        justify-content: center;
         border-collapse: collapse;
         display: grid;
         grid-template-columns: auto auto;
