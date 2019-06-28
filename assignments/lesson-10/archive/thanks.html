@@ -3,32 +3,29 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="Storm Center OutdoorWeather page">
+    <meta name="description" content="Storm Center Thanks OutdoorWeather page">
     <meta name="author" content="Kirk Mortenson">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:800i&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link rel="stylesheet" href="CSS/small-9.css">
-    <link rel="stylesheet" href="CSS/medium-9.css">
-    <link rel="stylesheet" href="CSS/large-9.css">
     <title>Outdoor Weather : Storm Center</title>
+
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/small.css">
+    <link rel="stylesheet" href="CSS/medium.css">
+    <link rel="stylesheet" href="CSS/large.css">
+</head>
 
 <body>
     <header>
-        <div class="container">
-            <div>
-                <img src="images/logo8.png" alt="OutdoorWeather Logo">
-            </div>
-            <div class="motto">
-                <h1>OutdoorWeather.watch</h1>
-                <h2>Weather for Adventure</h2>
-            </div>
+        <img src="images/logo2.jpg" alt="OutdoorWeather Logo">
+        <div class="motto">
+            <h1>OutdoorWeather.watch</h1>
+            <h2>Weather for Adventure</h2>
         </div>
         <nav>
             <button onclick="togglemenu()">Menu &#9776;</button>
             <ul id="primaryNav" class="hide">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="preston-9.html">Preston</a></li>
+                <li><a href="preston-10.html">Preston</a></li>
                 <li><a href="sodasprings.html">Soda Springs</a></li>
                 <li><a href="fishhaven.html">Fish Haven</a></li>
                 <li><a href="stormcenter.html" class="active">Storm Center</a></li>
@@ -41,13 +38,14 @@
     </header>
 
     <main>
+
         <h1>Storm Center</h1>
 
         <h1>Thank you for your storm submission.</h1>
         <p>Your data will be validated and added to our database.</p>
 
-    </main>
 
+    </main>
     <footer>
         <div class='contact'>
             <div class="info">
@@ -65,10 +63,14 @@
             <div id="googlemap"></div>
         </div>
     </footer>
-    <p class='copyr'>&copy;2019 All Rights Reserved - Outdoor Weather - <span id="dt"></span><br></p>
+
+    <div>
+        <p class='copyr'>&copy;2019 All Rights Reserved - Outdoor Weather - <span id="dt"></span><br></p>
+    </div>
+
     <script src="scripts/navmenu.js"></script>
     <script src="scripts/currentdate.js"></script>
-    <script src="scripts/idahomap.js"></script>
+    <script src="scripts/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6Ztx0goERX869VlKM0sJA_HRX-3LuRL4&callback=myMap">
     </script>
 </body>

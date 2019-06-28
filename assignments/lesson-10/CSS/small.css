@@ -155,11 +155,12 @@ h2 {
     text-align: left;
     line-height: 1;
     font-size: .8em;
-    padding: 2px;
+    padding: 6px;
     border: 2px solid black;
     border-radius: 10px;
 }
 
+/*---------------aside--------------------*/
 aside {
     max-width: 450px;
     margin: 1.25rem auto;
@@ -180,15 +181,90 @@ h2 {
     text-align: center;
 }
 
+/* -----------------footer-------------------*/
+footer {
+    max-width: 450px;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    font-size: 1em;
+    background-color: blue;
+    color: whitesmoke;
+}
 
-/* ------------------json data-------*/
+.contact {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    background-color: blue;
+    padding: 10px;
+}
 
-.articlejson {
-    display: none;
+.info {
+    padding: 5px;
+    text-align: left;
+    line-height: 20px;
+    font-size: .7em;
+}
+
+a:link {
+    color: whitesmoke;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+.social {
+    max-width: 50px;
 
 }
 
+div#googlemap {
+    margin: 20px;
+    max-width: 100%;
+    height: 200px;
+    border: 1px solid Black;
+}
 
+p.copyr {
+    background-color: darkblue;
+    padding: 5px;
+    color: whitesmoke;
+    font-size: .8rem;
+    text-align: center;
+}
+
+/* ---------------Gallery-------------*/
+.gallery {
+    justify-content: center;
+    max-width: 450px;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+    background-color: blue;
+    padding: 5px;
+
+}
+
+figcaption {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.picture {
+    text-align: center;
+    padding-bottom: 20px;
+    color: whitesmoke;
+    border: 3px solid #000;
+    margin: 5px;
+
+}
+
+.picture:hover {
+    box-shadow: 7px 7px 5px darkblue;
+}
 
 /* ---------------storm center--------------*/
 form fieldset {
@@ -238,7 +314,6 @@ form label.sbs {
 }
 
 span#ratingvalue {
-
     color: blue;
     font-size: 1.5rem
 }
@@ -267,92 +342,42 @@ form textarea.top {
     text-align: left;
 }
 
-/* -----------------footer-------------------*/
-footer {
-    max-width: 450px;
-    margin: 1.25rem auto;
-    padding: .5rem;
-    font-size: 1em;
-    background-color: blue;
-    color: whitesmoke;
-}
+/* ------------------json data-------*/
 
-
-.contact {
-    display: grid;
-    grid-template-columns: auto;
-    grid-gap: 10px;
-    background-color: blue;
-    padding: 10px;
-}
-
-.info {
-    padding: 5px;
-    text-align: left;
-    line-height: 20px;
-    font-size: .7em;
-}
-
-a:link {
-    color: whitesmoke;
-}
-
-a:visited {
-    color: whitesmoke;
-}
-
-a:hover {
-    color: lightblue;
-}
-
-.social {
-    max-width: 50px;
-
-}
-
-div#googlemap {
-    margin: 20px;
-    max-width: 100%;
-    height: 200px;
-    border: 1px solid Black;
-}
-
-p.copyr {
-    background-color: darkblue;
-    padding: 5px;
-    color: whitesmoke;
-    font-size: .8rem;
-    text-align: center;
-}
-
-/* ---------------Gallery-------------*/
-.gallery {
+.articlejson {
     justify-content: center;
-    max-width: 450px;
-    margin: 1rem auto;
+    border-collapse: collapse;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    grid-gap: 10px;
-    background-color: blue;
-    padding: 10px;
-
-}
-
-figcaption {
-    color: whitesmoke;
+    grid-template-rows: auto auto auto;
     text-align: center;
 }
 
-.gallery>div {
-
-    text-align: center;
-    padding: 20px 0;
-    color: whitesmoke;
-    border: 3px solid #000;
-
+.articlejson div {
+    border: 4px solid Black;
+    border-radius: 25px;
+    margin: 0px;
+    background-color: lightblue;
+    color: black;
+    max-width: 300px;
 }
 
-.picture:hover {
-    box-shadow: 0 0 50px whitesmoke;
+.articlejson H5 {
+    border: 4px solid Black;
+    border-radius: 25px;
 }
+
+.articlejson H6 {
+    font-style: italic;
+}
+
+.articlejson p {
+    margin: 0px;
+}
+.homePhoto {
+    border: 4px solid blue;
+    border-radius: 10px;
+    margin: 20px;
+    width: 75%;
+}
+

@@ -48,11 +48,6 @@
     max-width: 1000px;
   }
 
-
-  .mainimg {
-    margin: .24rem;
-  }
-
   .forcast {
     display: block;
     text-align: center;
@@ -61,7 +56,7 @@
   }
 
   table {
-
+    border-collapse: collapse;
     width: 100%;
     Border: 4px solid lightskyblue;
     border-radius: 10PX;
@@ -89,35 +84,11 @@
   article {
     max-width: 1000px;
   }
+
   aside {
     max-width: 1000px;
-}
-
-  /* ------------------json data-------*/
-
-  .articlejson {
-    border-collapse: separate;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
   }
 
-  .articlejson div {
-    border: 4px solid Black;
-    border-radius: 25px;
-    margin: 5px;
-    background-color: lightblue;
-    color: black;
-  }
-
-  /*----------------Form --------------*/
-  form label.sbs {
-    padding: .4rem 0;
-  }
-
-
-
-  /*-------------------Form --------------*/
   /*-----------------Footer --------------*/
   footer {
     max-width: 1000px;
@@ -153,6 +124,28 @@
     max-width: 1000px;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
-
   }
+
+  /* ---------------storm center--------------*/
+  form label.sbs {
+    padding: .4rem 0;
+  }
+
+  /* ------------------json data-------*/
+
+  .articlejson {
+    border-collapse: separate;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+  }
+
+  .articlejson div {
+    border: 4px solid Black;
+    border-radius: 25px;
+    margin: 5px;
+    background-color: lightblue;
+    color: black;
+  }
+
 }
