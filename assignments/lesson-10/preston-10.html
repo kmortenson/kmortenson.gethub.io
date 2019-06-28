@@ -6,20 +6,24 @@
     <meta name="description" content="Preston OutdoorWeather page">
     <meta name="author" content="Kirk Mortenson">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Outdoor Weather : Preston</title>
-
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="stylesheet" href="CSS/small.css">
-    <link rel="stylesheet" href="CSS/medium.css">
-    <link rel="stylesheet" href="CSS/large.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:800i&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="CSS/small-10.css">
+    <link rel="stylesheet" href="CSS/medium-10.css">
+    <link rel="stylesheet" href="CSS/large-10.css">
+    <title>Outdoor Weather site : Preston</title>
 </head>
 
 <body>
     <header>
-        <img src="images/logo2.jpg" alt="OutdoorWeather Logo">
-        <div class="motto">
-            <h1>OutdoorWeather.watch</h1>
-            <h2>Weather for Adventure</h2>
+        <div class="container">
+            <div>
+                <img src="images/logo8.png" alt="OutdoorWeather Logo">
+            </div>
+            <div class="motto">
+                <h1>OutdoorWeather.watch</h1>
+                <h2>Weather for Adventure</h2>
+            </div>
         </div>
         <nav>
             <button onclick="togglemenu()">Menu &#9776;</button>
@@ -40,8 +44,8 @@
     <main>
         <h1>Preston Idaho</h1>
         <div class="herodiv">
-            <img src="images/cropped450SM.jpeg" alt="Sunny Landscape" sizes="100vw"
-                srcset="images/cropped450SM.jpeg 600w, images/cropped600Med.jpeg 800w, images/cropped800LG.jpeg 1000w">
+            <img src="images/idahofarm450.jpg" alt="Idaho Farm" sizes="100vw"
+                srcset="images/idahofarm450.jpg 450w, images/idahofarm600.jpg 600w, images/idahofarm800.jpg 800w">
 
             <section class="cweather">
                 <h4>Current Weather</h4>
@@ -84,7 +88,7 @@
     </main>
     <article>
 
-        <div class="articleimg"><img src= "images/snowmobile.jpg" alt="Man on cliff"></div>
+        <div class="articleimg"><img src="images/snowmobile.jpg" alt="snowmobile"></div>
         <div class="articlewrd">
             <h2>Adventure in Preston</h2>
             <P><b>SNOWMOBILING!</b> The Preston Hill Climb occurs every year during the
@@ -100,14 +104,13 @@
                 licenses are available at many of our stores.<br><br>
                 Article from: <i>Idahohighcountry.org</i> </P>
         </div>
-   
-   
+
     </article>
-    
+
     <!--JSON Data-->
     <aside Class="asidejson" id="events">
     </aside>
-     <!--JSON Data-->
+    <!--JSON Data-->
 
     <footer>
         <div class='contact'>
