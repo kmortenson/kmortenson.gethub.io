@@ -180,6 +180,9 @@ aside {
 h2 {
     text-align: center;
 }
+aside ul li { 
+    list-style-type: none;
+}
 
 /* -----------------footer-------------------*/
 footer {
