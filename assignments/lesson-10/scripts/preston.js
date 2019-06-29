@@ -100,7 +100,7 @@ function showData(jsonObj) {
         var myPhoto = document.createElement('img');
 
         myH2.textContent = "Upomming events in Preston:";
-        myPara1.textContent = data[i].events;
+        myPara1.textContent = data[0].events;
        
 
         myAside.appendChild(myH2);
