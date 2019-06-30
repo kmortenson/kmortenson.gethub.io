@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Home OutdoorWeather page">
+    <meta name="author" content="Kirk Mortenson">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:800i&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="CSS/small.css">
+    <link rel="stylesheet" href="CSS/medium.css">
+    <link rel="stylesheet" href="CSS/large.css">
+    <title>Outdoor Weather : Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div>
+                <img src="images/logo8.png" alt="OutdoorWeather Logo">
+            </div>
+            <div class="motto">
+                <h1>OutdoorWeather.watch</h1>
+                <h2>Weather for Adventure</h2>
+            </div>
+        </div>
+        <nav>
+            <button onclick="togglemenu()">Menu &#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="preston-10.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <h1>Welcome to Weather Watch</h1>
+        <div class="herodiv">
+            <img src="images/cropped450SM.jpeg" alt="Sunny Landscape" sizes="100vw"
+                srcset="images/cropped450SM.jpeg 600w, images/cropped600Med.jpeg 800w, images/cropped800LG.jpeg 1000w">
+        </div>
+    </main>
+    <!--JSON Data-->
+    <article Class="articlejson" id="homeTowns">
+
+    </article>
+    <!--JSON Data-->
+
+
+    <footer>
+        <div class="contact">
+            <div class="info">
+                <p><b>Outdoor Weather watch</b><br>
+                    123 Main St.<br>
+                    Weather, Id 89111<br>
+                    <a href="mailto:Adventure@outdoorweather.watch" target="_top">Adventure@outdoorweather.watch</a><br>
+                    <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a><br>
+                    <a href="https://kmortenson.github.io/kmortenson.github.io/">Assignment Portal</a>
+                </p>
+                <img class="social" src="images/facebook.png" alt="Facebook Icon">
+                <img class="social" src="images/google.png" alt="Google Icon">
+                <img class="social" src="images/twitter.png" alt="Twitter Icon">
+                <img class="social" src="images/pinterest.png" alt="Pinterest Icon"><br>
+            </div>
+
+            <div id="googlemap"></div>
+
+        </div>
+    </footer>
+    <div>
+        <p class='copyr'>&copy;2019 All Rights Reserved - Outdoor Weather - <span id="dt"></span><br></p>
+    </div>
+    <script src="scripts/navmenu.js"></script>
+    <script src="scripts/towndata.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6Ztx0goERX869VlKM0sJA_HRX-3LuRL4&callback=myMap">
+    </script>
+</body>
+
+</Html>

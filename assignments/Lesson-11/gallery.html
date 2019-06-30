@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Gallery OutdoorWeather page">
+    <meta name="author" content="Kirk Mortenson">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:800i&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="CSS/small.css">
+    <link rel="stylesheet" href="CSS/medium.css">
+    <link rel="stylesheet" href="CSS/large.css">
+    <title>Outdoor Weather site : Gallery</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div>
+                <img src="images/logo8.png" alt="OutdoorWeather Logo">
+            </div>
+            <div class="motto">
+                <h1>OutdoorWeather.watch</h1>
+                <h2>Weather for Adventure</h2>
+            </div>
+        </div>
+        <nav>
+            <button onclick="togglemenu()">Menu &#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston-10.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+    <h1>Gallery</h1>
+    <div class="gallery">
+        <figure class="picture"><img src="images/weather1a.jpg" alt="Clouds over range">
+            <figcaption>"Clouds over range"</figcaption>
+        </figure>
+        <figure class="picture"><img src="images/weather2a.jpg" alt="Moutain clouds">
+            <figcaption>"Moutain clouds"</figcaption>
+        </figure>
+        <figure class="picture"><img src="images/weather3a.jpg" alt="Storm">
+            <figcaption>"Storm"</figcaption>
+        </figure>
+        <figure class="picture"><img src="images/weather4a.jpg" alt="Low Clouds">
+            <figcaption>"Low Clouds"</figcaption>
+        </figure>
+        <figure class="picture"><img src="images/weather5a.jpg" alt="Storm Road">
+            <figcaption>"Storm Road"</figcaption>
+        </figure>
+        <figure class="picture"><img src="images/weather6a.jpg" alt="Lightning">
+            <figcaption>"Lightning"</figcaption>
+        </figure>
+
+    </div>
+
+
+    <footer>
+        <div class='contact'>
+            <div class="info">
+                <p><b>Outdoor Weather watch</b><br>
+                    123 Main St.<br>
+                    Weather, Id 89111<br>
+                    <a href="mailto:Adventure@outdoorweather.watch" target="_top">Adventure@outdoorweather.watch</a><br>
+                </p>
+                <img class="social" src="images/facebook.png" alt="Facebook Icon">
+                <img class="social" src="images/google.png" alt="Google Icon">
+                <img class="social" src="images/twitter.png" alt="Twitter Icon">
+                <img class="social" src="images/pinterest.png" alt="Pinterest Icon">
+
+            </div>
+            <div id="googlemap"></div>
+        </div>
+    </footer>
+    <p class='copyr'>&copy;2019 All Rights Reserved - Outdoor Weather - <span id="dt"></span><br></p>
+    <script src="scripts/navmenu.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/idahomap.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6Ztx0goERX869VlKM0sJA_HRX-3LuRL4&callback=myMap">
+    </script>
+</body>
+
+
+</Html>
