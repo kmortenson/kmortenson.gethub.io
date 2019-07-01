@@ -1,8 +1,8 @@
-//Preston 5604473
+//Soda Springs 5607916  (Jason File says 5678757 used one provided by course)
 
 //weather summery
 var weatherObject = new XMLHttpRequest
-weatherObject.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/weather?id=5604473&appid=9a639e9b88f8f96c233986dc5ceb5877&units=imperial', true);
+weatherObject.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/weather?id=5607916&appid=9a639e9b88f8f96c233986dc5ceb5877&units=imperial', true);
 weatherObject.send();
 weatherObject.onload = function () {
 
@@ -22,7 +22,7 @@ weatherObject.onload = function () {
 
 //forcast
 var weatherForecast = new XMLHttpRequest
-weatherForecast.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=9a639e9b88f8f96c233986dc5ceb5877&units=imperial', true);
+weatherForecast.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=9a639e9b88f8f96c233986dc5ceb5877&units=imperial', true);
 weatherForecast.send();
 weatherForecast.onload = function () {
 
@@ -91,39 +91,33 @@ function showData(jsonObj) {
 
 
     for (var i = 0; i < data.length; i++) {
-        if ((data[i].name == "Preston") == false) {
+        if ((data[i].name == "Soda Springs") == false) {
             continue;
         }
-        var myAside = document.createElement('aside');
+        var myAside = document.createElement('div');
         var myH2 = document.createElement('h2');
-        var mylist = document.createElement('ul');
+        var myPara1 = document.createElement('p');
         var myPhoto = document.createElement('img');
 
-        myH2.textContent = "Upomming events in Preston:";
-        
-        
-        var allevents = data[i].events;
-        for (var j = 0; j < allevents.length; j++) {
-            var listItem = document.createElement('li');
-            listItem.textContent = allevents[j];
-            mylist.appendChild(listItem);
-        }
+        myH2.textContent = "Upomming events in Soda Springs:";
+        myPara1.textContent = data[i].events;
+       
 
         myAside.appendChild(myH2);
-        myAside.appendChild(mylist);
+        myAside.appendChild(myPara1);
         myAside.appendChild(myPhoto);
 
-        myPhoto.src = "images/nDinoFest.jpg"
+        myPhoto.src = "images/oktoberFestSodaSprings.jpg"
         myPhoto.setAttribute('class', 'eventPhoto');
-        myPhoto.setAttribute('alt', 'Napoleon Dynamite Festival');
+        myPhoto.setAttribute('alt', 'Oktober Fest Logo');
         aside.appendChild(myAside);
     }
-    // Map for preston
+}
+// Map for Spda Springs
 function myMap() {
     var mapProp= {
-      center:new google.maps.LatLng(42.0963,-111.8766),
-      zoom:10,
+      center:new google.maps.LatLng(42.6544,-111.6047),
+      zoom:12,
     };
     var map = new google.maps.Map(document.getElementById("googlemap"),mapProp);
-}
 }

@@ -1,8 +1,8 @@
-//Preston 5604473
+//Fish Haven 5585010 (Could not find in Jason file did find Bear Lake county used one provided by course)
 
 //weather summery
 var weatherObject = new XMLHttpRequest
-weatherObject.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/weather?id=5604473&appid=9a639e9b88f8f96c233986dc5ceb5877&units=imperial', true);
+weatherObject.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/weather?id=5585010&appid=9a639e9b88f8f96c233986dc5ceb5877&units=imperial', true);
 weatherObject.send();
 weatherObject.onload = function () {
 
@@ -22,7 +22,7 @@ weatherObject.onload = function () {
 
 //forcast
 var weatherForecast = new XMLHttpRequest
-weatherForecast.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=9a639e9b88f8f96c233986dc5ceb5877&units=imperial', true);
+weatherForecast.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/forecast?id=5585010&appid=9a639e9b88f8f96c233986dc5ceb5877&units=imperial', true);
 weatherForecast.send();
 weatherForecast.onload = function () {
 
@@ -91,7 +91,7 @@ function showData(jsonObj) {
 
 
     for (var i = 0; i < data.length; i++) {
-        if ((data[i].name == "Preston") == false) {
+        if ((data[i].name == "Fish Haven") == false) {
             continue;
         }
         var myAside = document.createElement('aside');
@@ -99,9 +99,9 @@ function showData(jsonObj) {
         var mylist = document.createElement('ul');
         var myPhoto = document.createElement('img');
 
-        myH2.textContent = "Upomming events in Preston:";
-        
-        
+        myH2.textContent = "Upomming events in Fish Haven:";
+
+
         var allevents = data[i].events;
         for (var j = 0; j < allevents.length; j++) {
             var listItem = document.createElement('li');
@@ -113,17 +113,17 @@ function showData(jsonObj) {
         myAside.appendChild(mylist);
         myAside.appendChild(myPhoto);
 
-        myPhoto.src = "images/nDinoFest.jpg"
+        myPhoto.src = "images/howbigfishhaven.jpg"
         myPhoto.setAttribute('class', 'eventPhoto');
-        myPhoto.setAttribute('alt', 'Napoleon Dynamite Festival');
+        myPhoto.setAttribute('alt', 'Big Fish');
         aside.appendChild(myAside);
     }
-    // Map for preston
-function myMap() {
-    var mapProp= {
-      center:new google.maps.LatLng(42.0963,-111.8766),
-      zoom:10,
-    };
-    var map = new google.maps.Map(document.getElementById("googlemap"),mapProp);
 }
+// Map for Fish Haven
+function myMap() {
+    var mapProp = {
+        center: new google.maps.LatLng(42.0372, -111.3960),
+        zoom: 10,
+    };
+    var map = new google.maps.Map(document.getElementById("googlemap"), mapProp);
 }
