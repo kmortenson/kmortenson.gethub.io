@@ -45,13 +45,13 @@ function showData(jsonObj) {
             myArticle.style.order = "1";
         }
         if (data[i].name == "Soda Springs") {
-            myPhoto.src = "images/home3.jpg"
+            myPhoto.src = "images/home2.jpg"
             myPhoto.setAttribute('class', 'homePhoto');
             myPhoto.setAttribute('alt', 'Soda Springs Photo');
             myArticle.style.order = "2";
         }
         if (data[i].name == "Fish Haven") {
-            myPhoto.src = "images/home2.jpg"
+            myPhoto.src = "images/home3.jpg"
             myPhoto.setAttribute('class', 'homePhoto');
             myPhoto.setAttribute('alt', 'Fish Haven Photo'); 
             myArticle.style.order = "3";
