@@ -216,11 +216,11 @@ a:link {
 }
 
 a:visited {
-    color: green;
+    color: rgb(102, 162, 182);
 }
 
 a:hover {
-    color: lightblue;
+    color: green
 }
 
 .social {

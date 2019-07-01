@@ -215,7 +215,7 @@ a:link {
 }
 
 a:visited {
-    color: lightblue
+    color: rgb(102, 162, 182);
 }
 
 a:hover {
