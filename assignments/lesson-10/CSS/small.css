@@ -218,7 +218,9 @@ a:link {
 a:hover {
     color: lightblue;
 }
-
+a:visited {
+    color: green;
+}
 .social {
     max-width: 50px;
 

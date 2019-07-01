@@ -215,12 +215,15 @@ a:link {
 }
 
 a:hover {
-    color: lightblue;
+    color: green
+}
+
+a:visited {
+    color: lightblue
 }
 
 .social {
     max-width: 50px;
-
 }
 
 div#googlemap {
@@ -253,11 +256,11 @@ p.copyr {
 }
 
 figcaption {
-   
+
     text-align: center;
     background-color: rgb(40, 87, 243);
     color: whitesmoke;
-    
+
 }
 
 .picture {
