@@ -215,12 +215,14 @@ a:link {
     color: whitesmoke;
 }
 
-a:hover {
-    color: lightblue;
-}
 a:visited {
     color: green;
 }
+
+a:hover {
+    color: lightblue;
+}
+
 .social {
     max-width: 50px;
 
@@ -256,11 +258,11 @@ p.copyr {
 }
 
 figcaption {
-   
+
     text-align: center;
     background-color: rgb(40, 87, 243);
     color: whitesmoke;
-    
+
 }
 
 .picture {

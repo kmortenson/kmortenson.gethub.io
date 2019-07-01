@@ -214,12 +214,12 @@ a:link {
     color: whitesmoke;
 }
 
-a:hover {
-    color: green
-}
-
 a:visited {
     color: lightblue
+}
+
+a:hover {
+    color: green
 }
 
 .social {
