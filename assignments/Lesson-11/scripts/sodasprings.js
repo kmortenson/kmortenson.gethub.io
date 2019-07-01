@@ -94,17 +94,21 @@ function showData(jsonObj) {
         if ((data[i].name == "Soda Springs") == false) {
             continue;
         }
-        var myAside = document.createElement('div');
+        var myAside = document.createElement('aside');
         var myH2 = document.createElement('h2');
-        var myPara1 = document.createElement('p');
+        var myPara1 = document.createElement('ul');
         var myPhoto = document.createElement('img');
 
         myH2.textContent = "Upomming events in Soda Springs:";
-        myPara1.textContent = data[i].events;
-       
-
+        var allevents = data[i].events;
+        for (var j = 0; j < allevents.length; j++) {
+            var listItem = document.createElement('li');
+            listItem.textContent = allevents[j];
+            mylist.appendChild(listItem);
+        }
+        
         myAside.appendChild(myH2);
-        myAside.appendChild(myPara1);
+        myAside.appendChild(mylist);
         myAside.appendChild(myPhoto);
 
         myPhoto.src = "images/oktoberFestSodaSprings.jpg"

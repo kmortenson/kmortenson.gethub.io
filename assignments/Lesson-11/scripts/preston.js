@@ -118,6 +118,7 @@ function showData(jsonObj) {
         myPhoto.setAttribute('alt', 'Napoleon Dynamite Festival');
         aside.appendChild(myAside);
     }
+}
     // Map for preston
 function myMap() {
     var mapProp= {
@@ -125,5 +126,4 @@ function myMap() {
       zoom:10,
     };
     var map = new google.maps.Map(document.getElementById("googlemap"),mapProp);
-}
 }
