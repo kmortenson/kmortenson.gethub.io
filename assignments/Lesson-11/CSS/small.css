@@ -139,6 +139,7 @@ article {
 }
 
 .articleimg img {
+    width: 100%;
     margin: 40px;
     Padding: 0;
     border: 2px solid black;

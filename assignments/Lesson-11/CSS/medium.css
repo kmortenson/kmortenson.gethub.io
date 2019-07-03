@@ -16,9 +16,7 @@
 
     article {
         max-width: 900px;
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: auto auto;
+        
     }
 
     aside {
