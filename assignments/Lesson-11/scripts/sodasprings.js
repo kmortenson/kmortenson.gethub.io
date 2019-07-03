@@ -100,7 +100,7 @@ function showData(jsonObj) {
         var myPara1 = document.createElement('ul');
         var myPhoto = document.createElement('img');
 
-        myH2.textContent = "Upomming events in Soda Springs:";
+        myH2.textContent = "Upcoming events in Soda Springs:";
         var allevents = data[i].events;
         for (var j = 0; j < allevents.length; j++) {
             var listItem = document.createElement('li');

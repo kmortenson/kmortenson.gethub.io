@@ -101,7 +101,7 @@ function showData(jsonObj) {
         var mylist = document.createElement('ul');
         var myPhoto = document.createElement('img');
 
-        myH2.textContent = "Upomming events in Preston:";
+        myH2.textContent = "Upcoming events in Preston:";
         
         
         var allevents = data[i].events;
