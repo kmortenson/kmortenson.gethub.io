@@ -143,6 +143,7 @@ article {
     Padding: 0;
     border: 2px solid black;
     border-radius: 10px;
+    max-width: 350px;
 }
 
 h2 {
