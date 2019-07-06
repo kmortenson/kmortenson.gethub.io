@@ -37,7 +37,7 @@ function showData(jsonObj) {
         myArticle.appendChild(myPara3);
         myArticle.appendChild(myPara4);
         myArticle.appendChild(myPhoto);
-      
+
         if (data[i].name == "Preston") {
             myPhoto.src = "images/home1.jpg"
             myPhoto.setAttribute('class', 'homePhoto');
@@ -53,7 +53,7 @@ function showData(jsonObj) {
         if (data[i].name == "Fish Haven") {
             myPhoto.src = "images/home3.jpg"
             myPhoto.setAttribute('class', 'homePhoto');
-            myPhoto.setAttribute('alt', 'Fish Haven Photo'); 
+            myPhoto.setAttribute('alt', 'Fish Haven Photo');
             myArticle.style.order = "3";
         }
         article.appendChild(myArticle);

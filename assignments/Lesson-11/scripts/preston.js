@@ -14,8 +14,8 @@ weatherObject.onload = function () {
     document.getElementById('humidity').innerHTML = weatherInfo.main.humidity;
     document.getElementById('wSpeed').innerHTML = weatherInfo.wind.speed;
     document.getElementById('wDir').innerHTML = Math.round(weatherInfo.wind.deg);
-    
-   
+
+
 
     var wChill = 35.74 + 0.6215 * weatherInfo.main.temp - 35.75 * Math.pow(weatherInfo.wind.speed, 0.16) + 0.4275 * weatherInfo.main.temp * Math.pow(weatherInfo.wind.speed, 0.16);
     wChill = Math.round(wChill);
@@ -102,8 +102,8 @@ function showData(jsonObj) {
         var myPhoto = document.createElement('img');
 
         myH2.textContent = "Upcoming events in Preston:";
-        
-        
+
+
         var allevents = data[i].events;
         for (var j = 0; j < allevents.length; j++) {
             var listItem = document.createElement('li');
@@ -121,11 +121,11 @@ function showData(jsonObj) {
         aside.appendChild(myAside);
     }
 }
-    // Map for preston
+// Map for preston
 function myMap() {
-    var mapProp= {
-      center:new google.maps.LatLng(42.0963,-111.8766),
-      zoom:10,
+    var mapProp = {
+        center: new google.maps.LatLng(42.0963, -111.8766),
+        zoom: 10,
     };
-    var map = new google.maps.Map(document.getElementById("googlemap"),mapProp);
+    var map = new google.maps.Map(document.getElementById("googlemap"), mapProp);
 }
