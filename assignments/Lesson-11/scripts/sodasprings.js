@@ -112,7 +112,7 @@ function showData(jsonObj) {
         myAside.appendChild(mylist);
         myAside.appendChild(myPhoto);
 
-        myPhoto.src = "images/oktoberFestSodaSprings.jpg"
+        myPhoto.src = "images/oktoberfest.jpg"
         myPhoto.setAttribute('class', 'eventPhoto');
         myPhoto.setAttribute('alt', 'Oktober Fest Logo');
         aside.appendChild(myAside);

@@ -115,7 +115,7 @@ function showData(jsonObj) {
         myAside.appendChild(mylist);
         myAside.appendChild(myPhoto);
 
-        myPhoto.src = "images/nDinoFest.jpg"
+        myPhoto.src = "images/ndino.jpg"
         myPhoto.setAttribute('class', 'eventPhoto');
         myPhoto.setAttribute('alt', 'Napoleon Dynamite Festival');
         aside.appendChild(myAside);
