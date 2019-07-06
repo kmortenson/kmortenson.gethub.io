@@ -13,6 +13,8 @@ weatherObject.onload = function () {
     document.getElementById('cTemp').innerHTML = weatherInfo.main.temp;
     document.getElementById('humidity').innerHTML = weatherInfo.main.humidity;
     document.getElementById('wSpeed').innerHTML = weatherInfo.wind.speed;
+    document.getElementById('wDir').innerHTML = Math.round(weatherInfo.wind.deg);
+
 
 
     var wChill = 35.74 + 0.6215 * weatherInfo.main.temp - 35.75 * Math.pow(weatherInfo.wind.speed, 0.16) + 0.4275 * weatherInfo.main.temp * Math.pow(weatherInfo.wind.speed, 0.16);
@@ -93,32 +95,27 @@ function showData(jsonObj) {
     for (var i = 0; i < data.length; i++) {
         if ((data[i].name == "Preston") == false) {
             continue;
-                   }
-        
-
-        var myAside = document.createElement('div');
+        }
+        var myAside = document.createElement('aside');
         var myH2 = document.createElement('h2');
-        /*var myPara1 = document.createElement('p');*/
+        var mylist = document.createElement('ul');
         var myPhoto = document.createElement('img');
-        var listItem = document.createElement('li');
 
-        myH2.textContent = "Upomming events in Preston:";
+        myH2.textContent = "Upcoming events in Preston:";
 
-        var townEvents = data[i].events;
-        for (var j = 0; j < townEvents.length; j++) {
-            listItem.textContent = townEvents[j];
+
+        var allevents = data[i].events;
+        for (var j = 0; j < allevents.length; j++) {
+            var listItem = document.createElement('li');
+            listItem.textContent = allevents[j];
+            mylist.appendChild(listItem);
         }
 
-        /*
-        myPara1.textContent = data[i].events;
-        myAside.appendChild(myPara1);
-*/
         myAside.appendChild(myH2);
-        myAside.appendChild(listItem);
-
+        myAside.appendChild(mylist);
         myAside.appendChild(myPhoto);
 
-        myPhoto.src = "images/nDinoFest.jpg"
+        myPhoto.src = "images/ndino.jpg"
         myPhoto.setAttribute('class', 'eventPhoto');
         myPhoto.setAttribute('alt', 'Napoleon Dynamite Festival');
         aside.appendChild(myAside);

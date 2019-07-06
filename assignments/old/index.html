@@ -6,12 +6,13 @@
     <meta name="description" content="Home OutdoorWeather page">
     <meta name="author" content="Kirk Mortenson">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:800i&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    
+
+    <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/small.css">
     <link rel="stylesheet" href="CSS/medium.css">
     <link rel="stylesheet" href="CSS/large.css">
-    <title>Outdoor Weather : Home</title>
+
 </head>
 
 <body>
@@ -20,31 +21,31 @@
             <div>
                 <img src="images/logo8.png" alt="OutdoorWeather Logo">
             </div>
-            <div class="motto">
-                <h1>OutdoorWeather.watch</h1>
-                <h2>Weather for Adventure</h2>
-            </div>
-        </div>
-        <nav>
-            <button onclick="togglemenu()">Menu &#9776;</button>
-            <ul id="primaryNav" class="hide">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="preston.html">Preston</a></li>
-                <li><a href="sodasprings.html">Soda Springs</a></li>
-                <li><a href="fishhaven.html">Fish Haven</a></li>
-                <li><a href="stormcenter.html">Storm Center</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-            </ul>
+                <div class="motto">
+                    <h1>OutdoorWeather.watch</h1>
+                    <h2>Weather for Adventure</h2>
+                </div>
+                <nav>
+                    <button onclick="togglemenu()">Menu &#9776;</button>
+                    <ul id="primaryNav" class="hide">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="preston-9.html">Preston</a></li>
+                        <li><a href="sodasprings.html">Soda Springs</a></li>
+                        <li><a href="fishhaven.html">Fish Haven</a></li>
+                        <li><a href="stormcenter.html">Storm Center</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
 
-        </nav>
+                    </ul>
+
+                </nav>
 
     </header>
 
     <main>
         <h1>Welcome to Weather Watch</h1>
         <div class="herodiv">
-            <img src="images/snakeriver450.jpg" alt="Sunny Landscape" sizes="100vw"
-                srcset="images/snakeriver450.jpg 600w, images/snakeriver600.jpg 800w, images/snakeriver800.jpg 1000w">
+            <img src="images/snake-river-rocks450.jpg" alt="Snake River Rocks" sizes="100vw"
+                srcset="images/snake-river-rocks450.jpg 600w, images/snake-river-rocks600.jpg 800w, images/snake-river-rocks800.jpg 1000w">
         </div>
     </main>
     <!--JSON Data-->
@@ -64,12 +65,10 @@
                     <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a><br>
                     <a href="https://kmortenson.github.io/kmortenson.github.io/">Assignment Portal</a>
                 </p>
-                <a href="https://www.facebook.com"><img class="social" src="images/facebook.png"
-                        alt="Facebook Icon"></a>
-                <a href="https://www.google.com"><img class="social" src="images/google.png" alt="Google Icon"></a>
-                <a href="https://www.twitter.com"><img class="social" src="images/twitter.png" alt="Twitter Icon"></a>
-                <a href="https://www.pinterest.com"><img class="social" src="images/pinterest.png"
-                        alt="Pinterest Icon"></a><br>
+                <img class="social" src="images/facebook.png" alt="Facebook Icon">
+                <img class="social" src="images/google.png" alt="Google Icon">
+                <img class="social" src="images/twitter.png" alt="Twitter Icon">
+                <img class="social" src="images/pinterest.png" alt="Pinterest Icon"><br>
             </div>
 
             <div id="googlemap"></div>
@@ -82,7 +81,7 @@
     <script src="scripts/navmenu.js"></script>
     <script src="scripts/towndata.js"></script>
     <script src="scripts/currentdate.js"></script>
-    <script src="scripts/idahomap.js"></script>
+    <script src="scripts/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6Ztx0goERX869VlKM0sJA_HRX-3LuRL4&callback=myMap">
     </script>
 </body>

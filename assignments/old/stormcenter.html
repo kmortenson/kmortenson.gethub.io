@@ -6,23 +6,20 @@
     <meta name="description" content="Storm Center OutdoorWeather page">
     <meta name="author" content="Kirk Mortenson">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:800i&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <title>Outdoor Weather : Storm Center</title>
+
+    <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/small.css">
     <link rel="stylesheet" href="CSS/medium.css">
     <link rel="stylesheet" href="CSS/large.css">
-    <title>Outdoor Weather : Storm Center</title>
+</head>
 
 <body>
     <header>
-        <div class="container">
-            <div>
-                <img src="images/logo8.png" alt="OutdoorWeather Logo">
-            </div>
-            <div class="motto">
-                <h1>OutdoorWeather.watch</h1>
-                <h2>Weather for Adventure</h2>
-            </div>
+        <img src="images/logo2.jpg" alt="OutdoorWeather Logo">
+        <div class="motto">
+            <h1>OutdoorWeather.watch</h1>
+            <h2>Weather for Adventure</h2>
         </div>
         <nav>
             <button onclick="togglemenu()">Menu &#9776;</button>
@@ -37,30 +34,25 @@
             </ul>
 
         </nav>
+
     </header>
+
     <main>
         <h1>Storm Center</h1>
 
         <form method="get" action="thanks.html" id="stormform">
             <fieldset>
                 <legend>Contact Information</legend>
-
                 <label class="top">Full Name(required)* <input type="text" name="name" pattern="{a-zA-Z -._] {5,99}"
                         required></label>
-
                 <label class="top">Email <input type="email" name="email" placeholder="stormchaser@gmail.com"></label>
-
                 <label class="top">Phone(required)* <input type="tel" name="phone" value="" pattern="[0-9]{10,20}"
                         placeholder="1235551234" required></label>
-
                 <label class="top">Zip Code(required)* <input type="number" name="zip" placeholder="83263"
                         required></label>
             </fieldset>
-
-
             <fieldset>
                 <legend>Storm Information</legend>
-
                 <label class="top">Storm Date<input type="date" name="stormDate"></label>
 
 
@@ -95,9 +87,7 @@
                 </label>
 
                 <label class="top">Additional Information</label>
-                <textarea name="addinfo" rows="4" cols="40" form="stormform">
-                    </textarea>
-
+                <textarea name="addinfo" rows="4" cols="50" form="stormform"></textarea>
             </fieldset>
 
 
@@ -106,7 +96,6 @@
             </fieldset>
         </form>
     </main>
-
     <footer>
         <div class='contact'>
             <div class="info">
@@ -114,28 +103,26 @@
                     123 Main St.<br>
                     Weather, Id 89111<br>
                     <a href="mailto:Adventure@outdoorweather.watch" target="_top">Adventure@outdoorweather.watch</a><br>
-                    <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a><br>
-                    <a href="https://kmortenson.github.io/kmortenson.github.io/">Assignment Portal</a>
                 </p>
-                <a href="https://www.facebook.com"><img class="social" src="images/facebook.png"
-                        alt="Facebook Icon"></a>
-                <a href="https://www.google.com"><img class="social" src="images/google.png" alt="Google Icon"></a>
-                <a href="https://www.twitter.com"><img class="social" src="images/twitter.png" alt="Twitter Icon"></a>
-                <a href="https://www.pinterest.com"><img class="social" src="images/pinterest.png"
-                        alt="Pinterest Icon"></a><br>
+                <img class="social" src="images/facebook.png" alt="Facebook Icon">
+                <img class="social" src="images/google.png" alt="Google Icon">
+                <img class="social" src="images/twitter.png" alt="Twitter Icon">
+                <img class="social" src="images/pinterest.png" alt="Pinterest Icon">
 
             </div>
             <div id="googlemap"></div>
         </div>
     </footer>
-    <p class='copyr'>&copy;2019 All Rights Reserved - Outdoor Weather - <span id="dt"></span><br></p>
-    <script src="scripts/slider.js"></script>
+    <div>
+        <p class='copyr'>&copy;2019 All Rights Reserved - Outdoor Weather - <span id="dt"></span><br></p>
+    </div>
+
     <script src="scripts/navmenu.js"></script>
     <script src="scripts/currentdate.js"></script>
-    <script src="scripts/idahomap.js"></script>
+    <script src="scripts/map.js"></script>
+    <script src="scripts/slider.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6Ztx0goERX869VlKM0sJA_HRX-3LuRL4&callback=myMap">
     </script>
 </body>
-
 
 </html>

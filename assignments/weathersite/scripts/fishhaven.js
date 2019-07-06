@@ -1,4 +1,4 @@
-//Fish Haven 5585010 (Could not find in Jason file did find Bear Lake county used one provided by course)
+//Fish Haven 5585010 
 
 //weather summery
 var weatherObject = new XMLHttpRequest
@@ -13,6 +13,7 @@ weatherObject.onload = function () {
     document.getElementById('cTemp').innerHTML = weatherInfo.main.temp;
     document.getElementById('humidity').innerHTML = weatherInfo.main.humidity;
     document.getElementById('wSpeed').innerHTML = weatherInfo.wind.speed;
+    document.getElementById('wDir').innerHTML = Math.round(weatherInfo.wind.deg);
 
 
     var wChill = 35.74 + 0.6215 * weatherInfo.main.temp - 35.75 * Math.pow(weatherInfo.wind.speed, 0.16) + 0.4275 * weatherInfo.main.temp * Math.pow(weatherInfo.wind.speed, 0.16);
@@ -99,8 +100,8 @@ function showData(jsonObj) {
         var mylist = document.createElement('ul');
         var myPhoto = document.createElement('img');
 
-        myH2.textContent = "Upomming events in Fish Haven:";
-       
+        myH2.textContent = "Upcoming events in Fish Haven:";
+
 
         var allevents = data[i].events;
         for (var j = 0; j < allevents.length; j++) {
@@ -108,7 +109,7 @@ function showData(jsonObj) {
             listItem.textContent = allevents[j];
             mylist.appendChild(listItem);
         }
-        
+
         myAside.appendChild(myH2);
         myAside.appendChild(mylist);
         myAside.appendChild(myPhoto);
@@ -121,9 +122,9 @@ function showData(jsonObj) {
 }
 // Map for Fish Haven
 function myMap() {
-    var mapProp= {
-      center:new google.maps.LatLng(42.0372,-111.3960),
-      zoom:10,
+    var mapProp = {
+        center: new google.maps.LatLng(42.0372, -111.3960),
+        zoom: 10,
     };
-    var map = new google.maps.Map(document.getElementById("googlemap"),mapProp);
+    var map = new google.maps.Map(document.getElementById("googlemap"), mapProp);
 }

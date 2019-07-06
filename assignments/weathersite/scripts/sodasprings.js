@@ -13,6 +13,7 @@ weatherObject.onload = function () {
     document.getElementById('cTemp').innerHTML = weatherInfo.main.temp;
     document.getElementById('humidity').innerHTML = weatherInfo.main.humidity;
     document.getElementById('wSpeed').innerHTML = weatherInfo.wind.speed;
+    document.getElementById('wDir').innerHTML = Math.round(weatherInfo.wind.deg);
 
 
     var wChill = 35.74 + 0.6215 * weatherInfo.main.temp - 35.75 * Math.pow(weatherInfo.wind.speed, 0.16) + 0.4275 * weatherInfo.main.temp * Math.pow(weatherInfo.wind.speed, 0.16);
@@ -94,20 +95,24 @@ function showData(jsonObj) {
         if ((data[i].name == "Soda Springs") == false) {
             continue;
         }
-        var myAside = document.createElement('div');
+        var myAside = document.createElement('aside');
         var myH2 = document.createElement('h2');
-        var myPara1 = document.createElement('p');
+        var mylist = document.createElement('ul');
         var myPhoto = document.createElement('img');
 
-        myH2.textContent = "Upomming events in Soda Springs:";
-        myPara1.textContent = data[i].events;
-       
+        myH2.textContent = "Upcoming events in Soda Springs:";
+        var allevents = data[i].events;
+        for (var j = 0; j < allevents.length; j++) {
+            var listItem = document.createElement('li');
+            listItem.textContent = allevents[j];
+            mylist.appendChild(listItem);
+        }
 
         myAside.appendChild(myH2);
-        myAside.appendChild(myPara1);
+        myAside.appendChild(mylist);
         myAside.appendChild(myPhoto);
 
-        myPhoto.src = "images/oktoberFestSodaSprings.jpg"
+        myPhoto.src = "images/oktoberfest.jpg"
         myPhoto.setAttribute('class', 'eventPhoto');
         myPhoto.setAttribute('alt', 'Oktober Fest Logo');
         aside.appendChild(myAside);
@@ -115,9 +120,9 @@ function showData(jsonObj) {
 }
 // Map for Spda Springs
 function myMap() {
-    var mapProp= {
-      center:new google.maps.LatLng(42.6544,-111.6047),
-      zoom:12,
+    var mapProp = {
+        center: new google.maps.LatLng(42.6544, -111.6047),
+        zoom: 12,
     };
-    var map = new google.maps.Map(document.getElementById("googlemap"),mapProp);
+    var map = new google.maps.Map(document.getElementById("googlemap"), mapProp);
 }

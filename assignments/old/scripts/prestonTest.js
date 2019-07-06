@@ -1,8 +1,8 @@
-//Fish Haven 5585010 
+//Preston 5604473
 
 //weather summery
 var weatherObject = new XMLHttpRequest
-weatherObject.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/weather?id=5585010&appid=9a639e9b88f8f96c233986dc5ceb5877&units=imperial', true);
+weatherObject.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/weather?id=5604473&appid=9a639e9b88f8f96c233986dc5ceb5877&units=imperial', true);
 weatherObject.send();
 weatherObject.onload = function () {
 
@@ -13,7 +13,6 @@ weatherObject.onload = function () {
     document.getElementById('cTemp').innerHTML = weatherInfo.main.temp;
     document.getElementById('humidity').innerHTML = weatherInfo.main.humidity;
     document.getElementById('wSpeed').innerHTML = weatherInfo.wind.speed;
-    document.getElementById('wDir').innerHTML = Math.round(weatherInfo.wind.deg);
 
 
     var wChill = 35.74 + 0.6215 * weatherInfo.main.temp - 35.75 * Math.pow(weatherInfo.wind.speed, 0.16) + 0.4275 * weatherInfo.main.temp * Math.pow(weatherInfo.wind.speed, 0.16);
@@ -23,7 +22,7 @@ weatherObject.onload = function () {
 
 //forcast
 var weatherForecast = new XMLHttpRequest
-weatherForecast.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/forecast?id=5585010&appid=9a639e9b88f8f96c233986dc5ceb5877&units=imperial', true);
+weatherForecast.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=9a639e9b88f8f96c233986dc5ceb5877&units=imperial', true);
 weatherForecast.send();
 weatherForecast.onload = function () {
 
@@ -92,38 +91,43 @@ function showData(jsonObj) {
 
 
     for (var i = 0; i < data.length; i++) {
-        if ((data[i].name == "Fish Haven") == false) {
+        if ((data[i].name == "Preston") == false) {
             continue;
-        }
-        var myAside = document.createElement('aside');
+                   }
+        
+
+        var myAside = document.createElement('div');
         var myH2 = document.createElement('h2');
-        var mylist = document.createElement('ul');
+        /*var myPara1 = document.createElement('p');*/
         var myPhoto = document.createElement('img');
+        var listItem = document.createElement('li');
 
-        myH2.textContent = "Upcoming events in Fish Haven:";
+        myH2.textContent = "Upomming events in Preston:";
 
-
-        var allevents = data[i].events;
-        for (var j = 0; j < allevents.length; j++) {
-            var listItem = document.createElement('li');
-            listItem.textContent = allevents[j];
-            mylist.appendChild(listItem);
+        var townEvents = data[i].events;
+        for (var j = 0; j < townEvents.length; j++) {
+            listItem.textContent = townEvents[j];
         }
 
+        /*
+        myPara1.textContent = data[i].events;
+        myAside.appendChild(myPara1);
+*/
         myAside.appendChild(myH2);
-        myAside.appendChild(mylist);
+        myAside.appendChild(listItem);
+
         myAside.appendChild(myPhoto);
 
-        myPhoto.src = "images/howbigfishhaven.jpg"
+        myPhoto.src = "images/nDinoFest.jpg"
         myPhoto.setAttribute('class', 'eventPhoto');
-        myPhoto.setAttribute('alt', 'Big Fish');
+        myPhoto.setAttribute('alt', 'Napoleon Dynamite Festival');
         aside.appendChild(myAside);
     }
 }
-// Map for Fish Haven
+// Map for preston
 function myMap() {
     var mapProp = {
-        center: new google.maps.LatLng(42.0372, -111.3960),
+        center: new google.maps.LatLng(42.0963, -111.8766),
         zoom: 10,
     };
     var map = new google.maps.Map(document.getElementById("googlemap"), mapProp);
