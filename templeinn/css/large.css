@@ -6,13 +6,6 @@
         padding: .5rem;
         max-width: 1000px;
     }
-
-    header img {
-        width: 150px;
-        height: auto;
-    }
-
-
     nav {
         font-size: .8em;
         text-align: center;
@@ -27,7 +20,12 @@
     nav ul.hide {
         display: block;
     }
-
+    nav li img {
+        float: left;
+        display: block;
+        text-align: left;
+        text-decoration: none;
+    }
     Nav ul li {
         display: inline-block;
         border: 1px;

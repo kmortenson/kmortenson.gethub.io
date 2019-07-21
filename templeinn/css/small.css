@@ -50,10 +50,7 @@ nav ul {
     margin: 0
 }
 nav li img {
-    float: left;
-    display: block;
-    text-align: left;
-    text-decoration: none;
+    display: none;
 
 
 
