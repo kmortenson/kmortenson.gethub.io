@@ -26,18 +26,18 @@ weatherObject.onload = function () {
 
 //Event
 var aside = document.querySelector('aside');
-var requestURL = "json/temple.json";
+var requestURL = "https://github.com/kmortenson/kmortenson.github.io/blob/master/templeinn/json/temple.json";
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 request.onload = function () {
-    var townData = request.response;
+    var templeData = request.response;
     showData(templedata);
 }
 
 function showData(jsonObj) {
-    var data = jsonObj['towns'];
+    var data = jsonObj['temple'];
 
 
     for (var i = 0; i < data.length; i++) {
