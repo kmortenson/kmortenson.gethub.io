@@ -49,7 +49,7 @@ function showData(jsonObj) {
         var mylist = document.createElement('ul');
        
 
-        myH2.textContent = "Temple Closure Scheduale:";
+        myH3.textContent = "Temple Closure Scheduale:";
 
 
         var allevents = data[i].events;
