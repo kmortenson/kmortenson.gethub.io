@@ -20,12 +20,7 @@
     nav ul.hide {
         display: block;
     }
-    nav li img {
-        float: left;
-        display: block;
-        text-align: left;
-        text-decoration: none;
-    }
+   
     Nav ul li {
         display: inline-block;
         border: 1px;
