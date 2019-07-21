@@ -24,9 +24,10 @@ header {
     flex-direction: column;
     justify-content: center;
 }
+
 nav {
     overflow: hidden;
-    Border:5px solid Black ;
+    Border: 5px solid Black;
     background-color: rgb(54, 2, 2);
     list-style-type: none;
     Padding: 0;
@@ -51,12 +52,14 @@ nav ul {
     float: none;
     margin: 0
 }
+
 nav li img {
     display: none;
 
 
 
 }
+
 nav ul li a {
     float: none;
     display: block;
@@ -87,4 +90,59 @@ nav a.active {
 
 nav ul.hide {
     display: none;
+}
+
+
+/* -----------------footer-------------------*/
+footer {
+    max-width: 450px;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    font-size: 1em;
+    color: whitesmoke;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.info {
+    padding: 5px;
+    text-align: left;
+    line-height: 20px;
+    font-size: .7em;
+}
+
+a:link {
+    color: whitesmoke;
+}
+
+a:visited {
+    color: rgb(102, 162, 182);
+}
+
+a:hover {
+    color: green
+}
+
+.social {
+    max-width: 50px;
+}
+
+div#googlemap {
+    margin: 20px;
+    max-width: 100%;
+    height: 200px;
+    border: 1px solid Black;
+}
+
+p.copyr {
+    Border: 2px solid black;
+    padding: 5px;
+    color: whitesmoke;
+    font-size: .8rem;
+    text-align: center;
 }

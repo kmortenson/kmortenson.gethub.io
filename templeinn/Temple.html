@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="The Temple Inn & Suites">
+    <meta name="author" content="Kirk Mortenson">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>The Temple Inn & Suites : Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <button onclick="togglemenu()">Menu &#9776;</button>
+                <ul id="primaryNav" class="hide">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="temple.html" class="active">Temple information</a></li>
+                    <li><a href="seservations.html">Make a Reservation</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <div><img src="images/tiaslogo.png" alt="Temple Inn Logo"></div>
+    </header>
+
+    <main>
+
+        <div class="articleimg"><img src="images/moroni.jpg" alt="Moroni"></div>
+        <div class="articlewrd">
+            <h2>Temple Information</h2>
+            <h3> For information choose one of our locations.</h3>
+
+        </div>
+
+        <div class="container">
+            <nav>
+                <button onclick="togglemenu()">Menu &#9776;</button>
+                <ul id="primaryNav" class="hide">
+                    <li><a href="index.html">D.C. Temple</a></li>
+                    <li><a href="temple.html">Salt Lake Temple</a></li>
+                    <li><a href="seservations.html">Rexburg Temple</a></li>
+                    <li><a href="services.html">St.George Temple</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <footer>
+            <div class="contact">
+                <div class="info">
+                    <p><b>Temple Inn & Suites</b><br>
+                        4800 Montgomery ln #300.<br>
+                        Bethesda, MD 20814<br>
+                        <a href="mailto:Templeinnsuites.com" target="_top">customerrelations@Templeinnsuites.com</a><br>
+                    </p>
+                    <a href="https://www.facebook.com"><img class="social" src="images/facebook.png"
+                            alt="Facebook Icon"></a>
+                    <a href="https://www.google.com"><img class="social" src="images/google.png" alt="Google Icon"></a>
+                    <a href="https://www.twitter.com"><img class="social" src="images/twitter.png"
+                            alt="Twitter Icon"></a>
+                    <a href="https://www.pinterest.com"><img class="social" src="images/pinterest.png"
+                            alt="Pinterest Icon"></a><br>
+                </div>
+
+                <div id="googlemap"></div>
+
+            </div>
+        </footer>
+        <div>
+            <p class='copyr'>&copy;2019 All Rights Reserved - The Temple Inn & Suites - <span id="dt"></span><br>
+            </p>
+        </div>
+        <script src="scripts/navmenu.js"></script>
+        <script src="scripts/currentdate.js"></script>
+
+        </script>
+</body>
+
+</Html>
