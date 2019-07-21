@@ -33,7 +33,7 @@ request.responseType = 'json';
 request.send();
 request.onload = function () {
     var templeData = request.response;
-    showData(templedata);
+    showData(templeData);
 }
 
 function showData(jsonObj) {
@@ -45,7 +45,7 @@ function showData(jsonObj) {
             continue;
         }
         var myAside = document.createElement('aside');
-        var myH2 = document.createElement('h2');
+        var myH3 = document.createElement('h3');
         var mylist = document.createElement('ul');
        
 
@@ -59,9 +59,8 @@ function showData(jsonObj) {
             mylist.appendChild(listItem);
         }
 
-        myAside.appendChild(myH2);
+        myAside.appendChild(myH3);
         myAside.appendChild(mylist);
-             
         aside.appendChild(myAside);
     }
 }
