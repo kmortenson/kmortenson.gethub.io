@@ -1,0 +1,38 @@
+/* Temple Inn and Suites CSS Large */
+@media (min-width:900px) {
+
+    header {
+        margin: 1.25rem auto;
+        padding: .5rem;
+        max-width: 1000px;
+    }
+
+    header img {
+        width: 150px;
+        height: auto;
+    }
+
+
+    nav {
+        font-size: .8em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+
+    Nav ul li {
+        display: inline-block;
+        border: 1px;
+        float: none;
+    }
+
+    Nav ul li a {
+        padding: 8px;
