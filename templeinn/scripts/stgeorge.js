@@ -1,8 +1,8 @@
-//washington DC 4140963
+//St George 5546220
 
 //weather summery
 var weatherObject = new XMLHttpRequest
-weatherObject.open('GET', 'https://api.openweathermap.org/data/2.5/weather?id=4140963&appid=9a639e9b88f8f96c233986dc5ceb5877&units=imperial', true);
+weatherObject.open('GET', 'https://api.openweathermap.org/data/2.5/weather?id=5546220&appid=9a639e9b88f8f96c233986dc5ceb5877&units=imperial', true);
 weatherObject.send();
 weatherObject.onload = function () {
 
@@ -41,7 +41,7 @@ function showData(jsonObj) {
 
 
     for (var i = 0; i < data.length; i++) {
-        if ((data[i].name == "Washington D.C.") == false) {
+        if ((data[i].name == "St George") == false) {
             continue;
         }
         var myAside = document.createElement('aside');
@@ -64,10 +64,10 @@ function showData(jsonObj) {
         aside.appendChild(myAside);
     }
 }
-// Map for DC
+// Map for St George
 function myMap() {
     var mapProp = {
-        center: new google.maps.LatLng(39.0140934,-77.0677707),
+        center: new google.maps.LatLng(37.104149,-113.584122),
         zoom: 12,
     };
     var map = new google.maps.Map(document.getElementById("googlemap"), mapProp);

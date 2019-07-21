@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
-    <title>The Temple Inn & Suites : Washington D.C.</title>
+    <title>The Temple Inn & Suites : Salt Lake</title>
 </head>
 
 <body>
@@ -38,8 +38,8 @@
             <nav>
                 <button onclick="toggletemplemenu()">Temple Menu &#9776;</button>
                 <ul id="templeNav" class="hide">
-                    <li><a href="dc.html" class="active">D.C. Temple</a></li>
-                    <li><a href="saltlake.html">Salt Lake Temple</a></li>
+                    <li><a href="dc.html">D.C. Temple</a></li>
+                    <li><a href="saltlake.html" class="active">Salt Lake Temple</a></li>
                     <li><a href="rexburg.html">Rexburg Temple</a></li>
                     <li><a href="stgeorge.html">St.George Temple</a></li>
                 </ul>
@@ -47,7 +47,7 @@
 
         </div>
         <div class="herodiv">
-            <img src="images/washington_dc_mormon_temple.jpeg" alt="Moroni"></div>
+            <img src="images/saltlaketemple.jpg" alt="Moroni"></div>
         <section class="cweather">
             <h4>Current Weather</h4>
             <p>Currently: <span id='weatherDesc'></span></P>
@@ -60,17 +60,25 @@
 
         </div>
 
-        <h1>Washington D.C. Temple</h1>
+        <h1>Salt Lake Temple</h1>
 
 
 
         <h3>Address</h3>
-        <p>9900 Stoneybrook Dr<br>
-            Kensington MD 20895-3199<br>
+        <p>50 W North Temple St<br>
+            Salt Lake City UT 84150-9709<br>
             United States<br>
+            1 (801)240-2640<br>
         </p>
 
+
         <h3>Services</h3>
+        <ul>
+            <li>Clothing rental available</li>
+            <li>Cafeteria available</li>
+            <li>No Patron housing available</li>
+            <li>Distribution center nearby</li>
+        </ul>
 
         <!--JSON Data-->
         <aside Class="asidejson" id="events">
@@ -78,12 +86,17 @@
         <!--JSON Data-->
 
         <h3>Milestones</h3>
+        <ul>
+            <li>28 July 1847 Announced</li>
+            <li>14 February 1853 Groundbreaking</li>
+            <li>6 April 1893 Dedicated</li>
+        </ul>
 
         </div>
 
+
+        <div id="googlemap"></div>
         <footer>
-            
-       
             <div class="contact">
                 <div class="info">
                     <p><b>Temple Inn & Suites</b><br>
@@ -99,7 +112,7 @@
                     <a href="https://www.pinterest.com"><img class="social" src="images/pinterest.png"
                             alt="Pinterest Icon"></a><br>
                 </div>
-                <div id="googlemap"></div>
+
             </div>
         </footer>
         <div>
@@ -109,7 +122,7 @@
         <script src="scripts/navmenu.js"></script>
         <script src="scripts/templenavmenu.js"></script>
         <script src="scripts/currentdate.js"></script>
-        <script src="scripts/dctemple.js"></script>
+        <script src="scripts/saltlake.js"></script>
         <script
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6Ztx0goERX869VlKM0sJA_HRX-3LuRL4&callback=myMap">
         </script>
