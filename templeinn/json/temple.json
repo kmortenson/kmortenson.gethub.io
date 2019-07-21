@@ -1,0 +1,29 @@
+{
+"Temple": [
+{
+"name": "Washington D.C.",
+"events": [
+"Temple closed during renovation",
+]
+},
+{
+"name": "Salt Lake",
+"events": [
+ "Temple closed today and tomorrow",
+"The temple will be closed for renovation starting Sunday, 29 December 2019"
+]
+},
+{
+"name": "Rexburg",
+"events": [
+"Temple closed today and tomorrow",
+]
+},
+{
+"name": "St George",
+"events": [
+"The temple will be closed for renovation starting Monday, 4 November 2019.",
+]
+}
+]
+}
