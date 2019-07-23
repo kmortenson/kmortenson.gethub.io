@@ -26,7 +26,7 @@ weatherObject.onload = function () {
 
 //Event
 var aside = document.querySelector('aside');
-var requestURL = "https://github.com/kmortenson/kmortenson.github.io/blob/master/templeinn/json/temple.json";
+var requestURL = "temple.json";
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
