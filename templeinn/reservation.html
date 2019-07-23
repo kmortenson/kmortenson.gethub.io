@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="The Temple Inn & Suites">
+    <meta name="author" content="Kirk Mortenson">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>The Temple Inn & Suites : Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <button onclick="togglemenu()">Menu &#9776;</button>
+                <ul id="primaryNav" class="hide">
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="temple.html">Temple information</a></li>
+                    <li><a href="reservation.html" class="active">Make a Reservation</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div><img src="images/tiaslogo.png" alt="Temple Inn Logo"></div>
+    </header>
+
+    <main>
+
+        <h1>Reservations</h1>
+        <h2>Please fillout all required informations</h2>
+        <form method="get" action="thanks.html" id="stormform">
+            <fieldset>
+                <label class="top">Select Hotel
+                    <input list=hotel Name="hotel" placeholder="Rexburg">
+                    <datalist id="hotel">
+                        <option value="Washington D.C">
+                        <option value="Salt Lake City">
+                        <option value="Rexburg">
+                        <option value="St George">
+                    </datalist>
+                </label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Guest Information</legend>
+                <label class="top">Full Name(required)* <input type="text" name="name" pattern="{a-zA-Z -._] {5,99}"
+                        required></label>
+                <label class="top">Address 1 (required)* <input type="text" name="address1"
+                        placeholder="123 Anywhere Ave" required></label>
+                <label class="top">Address 2 <input type="text" name="address2"
+                        placeholder="Additional address information"></label>
+                <label class="top">City (required)* <input type="text" name="city" placeholder="City" required></label>
+                <label class="top">State (required)* <input type="text" name="state" placeholder="State" required></label>
+                <label class="top">Zip Code <input type="text" name="zip" placeholder="83263" required></label>
+                <label class="top">Country <input type="text" name="country" placeholder="United States"></label>
+                <label class="top">Phone(required)* <input type="tel" name="phone" value="" pattern="[0-9]{10,20}"
+                        placeholder="123-555-1234" required></label>
+
+            </fieldset>
+            <fieldset>
+                <legend>Room Information</legend>
+                <label class="top">Select date of stay <br><input type="date" name="staydate"> to <input type="date" name="staydate"></label>
+   
+                <label class="top">Number of rooms <input type="number" name="roomqty" placeholder="1" min="1"
+                        max="10"></label>
+
+                <label class="top">Select type of room <input list=roomtype Name="roomtype">
+                    <datalist id="roomtype">
+                        <option value="One king size bed">
+                        <option value="Two queen size beds">
+                    </datalist>
+                </label>
+
+                    <label class="top">Additional Information or requirements<br>
+                    <textarea  name="addinfo" rows="4" cols="50" form="addinfo"></textarea>
+                </label>
+            </fieldset>
+
+
+            <fieldset>
+                <input type="submit" value="Submit Reservation" class="submitBtn">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <div class="contact">
+            <div class="info">
+                <p><b>Temple Inn & Suites</b><br>
+                    4800 Montgomery ln #300.<br>
+                    Bethesda, MD 20814<br>
+                    <a href="mailto:Templeinnsuites.com" target="_top">customerrelations@Templeinnsuites.com</a><br>
+                </p>
+                <a href="https://www.facebook.com"><img class="social" src="images/facebook.png"
+                        alt="Facebook Icon"></a>
+                <a href="https://www.google.com"><img class="social" src="images/google.png" alt="Google Icon"></a>
+                <a href="https://www.twitter.com"><img class="social" src="images/twitter.png" alt="Twitter Icon"></a>
+                <a href="https://www.pinterest.com"><img class="social" src="images/pinterest.png"
+                        alt="Pinterest Icon"></a><br>
+            </div>
+
+        </div>
+    </footer>
+    <div>
+        <p class='copyr'>&copy;2019 All Rights Reserved - The Temple Inn & Suites - <span id="dt"></span><br>
+        </p>
+    </div>
+    <script src="scripts/navmenu.js"></script>
+    <script src="scripts/currentdate.js"></script>
+
+    </script>
+</body>
+
+</Html>
