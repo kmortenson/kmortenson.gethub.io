@@ -32,8 +32,8 @@ request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 request.onload = function () {
-    var templeData = request.response;
-    showData(templeData);
+    var temple = request.response;
+    showData(temple);
 }
 
 function showData(jsonObj) {
