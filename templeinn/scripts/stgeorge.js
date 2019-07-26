@@ -26,7 +26,7 @@ weatherObject.onload = function () {
 
 //Event
 var aside = document.querySelector('aside');
-var requestURL = "temple.json";
+var requestURL = "/temple.json";
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -37,7 +37,7 @@ request.onload = function () {
 }
 
 function showData(jsonObj) {
-    var data = jsonObj["temple"];
+    var data = jsonObj["/temple"];
 
 
     for (var i = 0; i < data.length; i++) {
