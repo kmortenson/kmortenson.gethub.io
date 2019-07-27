@@ -267,41 +267,53 @@ article {
     border: 2px solid black;
     border-radius: 10px;
     max-width: 350px;
-    */
 }
+    */
+
 
 /*-----------Services----------*/
 
 .serv-container {
     display: grid;
-    grid-template-columns: auto auto ;
+    grid-template-columns: auto;
     grid-template-rows: auto;
     grid-gap: 10px;
 
 }
 
-.serviceintro { 
+.serviceintro {
     margin: 10px 5px;
-    border: 2px solid Black;
+    border: 5px solid Black;
     Padding: 5px;
-
+    background-color: #4a5405;
+    border-radius: 10px;
 }
 
 .amenities {
     margin: 10px 5px;
-    border: 2px solid Black;
+    border: 5px solid Black;
     Padding: 5px;
+    border-radius: 10px;
+    background-color: #015b70;
+}
+
+.amenitiesimg img {
+    margin: 10px 5px;
+    border: 5px solid black;
+    border-radius: 10px;
+
 }
 
 .service {
     margin: 10px 5px;
-    border: 2px solid Black;
+    border: 5px solid Black;
     Padding: 5px;
+    border-radius: 10px;
 }
 
-.serviceimg {
+.serviceimg img {
     margin: 10px 5px;
-    
+    border: 5px solid black;
     border-radius: 10px;
 }
 
@@ -331,5 +343,4 @@ div#googlemap {
     height: 200px;
     border: 1px solid Black;
     border-radius: 10px;
-}
 }
