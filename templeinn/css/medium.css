@@ -8,7 +8,7 @@
 
     .hotelcont {
         Display: grid;
-        grid-template-rows: 350px / auto;
+        grid-template-rows: auto;
         grid-template-columns: auto auto;
         }
 
