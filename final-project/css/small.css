@@ -278,6 +278,7 @@ article {
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-gap: 10px;
+    font-size: 0.9 rem;
 
 }
 
