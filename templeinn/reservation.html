@@ -6,6 +6,7 @@
     <meta name="description" content="The Temple Inn & Suites">
     <meta name="author" content="Kirk Mortenson">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tinos&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -35,6 +36,7 @@
 
         <h1>Reservations</h1>
         <h2>Please fillout all required informations</h2>
+
         <form method="get" action="thanks.html" id="stormform">
             <fieldset>
                 <label class="top">Select Hotel
@@ -58,7 +60,8 @@
                 <label class="top">Address 2 <input type="text" name="address2"
                         placeholder="Additional address information"></label>
                 <label class="top">City (required)* <input type="text" name="city" placeholder="City" required></label>
-                <label class="top">State (required)* <input type="text" name="state" placeholder="State" required></label>
+                <label class="top">State (required)* <input type="text" name="state" placeholder="State"
+                        required></label>
                 <label class="top">Zip Code <input type="text" name="zip" placeholder="83263" required></label>
                 <label class="top">Country <input type="text" name="country" placeholder="United States"></label>
                 <label class="top">Phone(required)* <input type="tel" name="phone" value="" pattern="[0-9]{10,20}"
@@ -67,8 +70,9 @@
             </fieldset>
             <fieldset>
                 <legend>Room Information</legend>
-                <label class="top">Select date of stay <br><input type="date" name="staydate"> to <input type="date" name="staydate"></label>
-   
+                <label class="top">Select date of stay <br><input type="date" name="staydate"> to <input type="date"
+                        name="staydate"></label>
+
                 <label class="top">Number of rooms <input type="number" name="roomqty" placeholder="1" min="1"
                         max="10"></label>
 
@@ -79,33 +83,27 @@
                     </datalist>
                 </label>
 
-                    <label class="top">Additional Information or requirements<br>
-                    <textarea  name="addinfo" rows="4" cols="50" form="addinfo"></textarea>
-                </label>
+                <label class="top">Additional information or requirements.<br>
+                    <textarea name="addinfo" rows="4" cols="50" form="addinfo"></textarea></label>
+
             </fieldset>
 
+            <input type="submit" value="Submit Reservation" class="submitBtn">
 
-            <fieldset>
-                <input type="submit" value="Submit Reservation" class="submitBtn">
-            </fieldset>
         </form>
     </main>
     <footer>
-        <div class="contact">
-            <div class="info">
-                <p><b>Temple Inn & Suites</b><br>
-                    4800 Montgomery ln #300.<br>
-                    Bethesda, MD 20814<br>
-                    <a href="mailto:Templeinnsuites.com" target="_top">customerrelations@Templeinnsuites.com</a><br>
-                </p>
-                <a href="https://www.facebook.com"><img class="social" src="images/facebook.png"
-                        alt="Facebook Icon"></a>
-                <a href="https://www.google.com"><img class="social" src="images/google.png" alt="Google Icon"></a>
-                <a href="https://www.twitter.com"><img class="social" src="images/twitter.png" alt="Twitter Icon"></a>
-                <a href="https://www.pinterest.com"><img class="social" src="images/pinterest.png"
-                        alt="Pinterest Icon"></a><br>
-            </div>
-
+        <div class="info">
+            <p><b>Temple Inn & Suites</b><br>
+                4800 Montgomery ln #300.<br>
+                Bethesda, MD 20814<br>
+                <a href="mailto:Templeinnsuites.com" target="_top">customerrelations@Templeinnsuites.com</a><br>
+            </p>
+            <a href="https://www.facebook.com"><img class="social" src="images/facebook.png" alt="Facebook Icon"></a>
+            <a href="https://www.google.com"><img class="social" src="images/google.png" alt="Google Icon"></a>
+            <a href="https://www.twitter.com"><img class="social" src="images/twitter.png" alt="Twitter Icon"></a>
+            <a href="https://www.pinterest.com"><img class="social" src="images/pinterest.png"
+                    alt="Pinterest Icon"></a><br>
         </div>
     </footer>
     <div>
@@ -115,7 +113,6 @@
     <script src="scripts/navmenu.js"></script>
     <script src="scripts/currentdate.js"></script>
 
-    </script>
 </body>
 
 </Html>
