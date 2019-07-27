@@ -26,14 +26,14 @@ weatherObject.onload = function () {
 
 //Event
 var aside = document.querySelector('aside');
-var requestURL = "https://github.com/kmortenson/kmortenson.github.io/blob/master/templeinn/json/temple.json";
+var requestURL = "temple.json";
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 request.onload = function () {
-    var templeData = request.response;
-    showData(templeData);
+    var temple = request.response;
+    showData(temple);
 }
 
 function showData(jsonObj) {
@@ -61,6 +61,7 @@ function showData(jsonObj) {
 
         myAside.appendChild(myH3);
         myAside.appendChild(mylist);
+
         aside.appendChild(myAside);
     }
 }
