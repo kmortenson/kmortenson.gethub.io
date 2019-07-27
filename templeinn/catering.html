@@ -30,59 +30,58 @@
         </div>
         <div><img src="images/tiaslogo.png" alt="Temple Inn Logo"></div>
 
-       
+
         <h3> For Long term stay and Event/Catering Information</h3>
         <div class="container">
             <nav>
                 <button onclick="toggleservicemenu()">Services Menu &#9776;</button>
                 <ul id="serviceNav" class="hide">
                     <li><a href="longterm.html">Long term stay</a></li>
-                    <li><a href="catering.html">Event and Catering</a></li>
+                    <li><a href="catering.html" class="active">Event and Catering</a></li>
+                    <li><a href="services.html">Services</a></li>
                 </ul>
             </nav>
     </header>
 
     <main>
         <div class="serviceintro">
-            <p>At Temple Inn and suties we offer free amenities and services to make the guests stay more
-                comfortable.<br>
-                We cater to temple workers, patrons, and their families by providing specialized
-                services<br> and accommodations that meet the needs of those patrons. </p>
+            <p>At Temple Inn and Suites we offer wedding reception / event areas with full catering. <br>
+                If it is the perfect wedding reception, reunion or party our staff is ready to make it memorable.<br>
+                We have multiple event venues and full catering wot standard or custom menus.</p>
         </div>
         <div class="serv-container">
-
-
-            <div class="amenities">
-                <h3>Free Amenities</h3>
-                <ul>
-                    <li> Breakfast </li>
-                    <li> Exercise/workout room</li>
-                    <li> Indoor pool</li>
-                    <li> WiFi high-speed internet access and smart TVs</li>
-                    <li> Parking</li>
-                    <li> Temple shuttle</li>
-                    <li> Family history consultation and family ordinance card service</li>
-                </ul>
-            </div>
-            <div class="amenitiesimg"><img src="images/pool400.jpg" alt="indoor pool"></div>
-
             <div class="service">
-                <h3>Services</h3>
+                <h3>For more information on events,<br> leave us your contact information</h3>
+                <h3>or E-mail us at:</h3>
+           
 
-                <div>
-                    <ul>
-                        <li> Free access to changing rooms and bathroom facilities for temple patrons who have traveled
-                            far and need to change to and from church clothes</li>
-                        <li> A playroom and low-cost, short-term babysitting services for the children of patrons</li>
-                        <li>Long-term stay accommodations for full-time temple Missionaries.</li>
-                        <li></li>
-                        <li> Temple history themed reception and sitting area</li>
-                    </ul>
-                </div>
-            </div>
+            <a href="mailto:Templeinnsuites.com" target="_top">longTerm@Templeinnsuites.com</a><br>
+            <form method="get" action="sthanks.html" id="reservation">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label class="top">Select Hotel
+                        <input list=hotel Name="hotel" placeholder="Rexburg">
+                        <datalist id="hotel">
+                            <option value="Washington D.C">
+                            <option value="Salt Lake City">
+                            <option value="Rexburg">
+                            <option value="St George">
+                        </datalist>
+                    </label>
+                    <label class="top">Full Name(required)* <input type="text" name="name" pattern="{a-zA-Z -._] {5,99}"
+                            required></label>
+                    <label class="top">Email <input type="email" name="email" placeholder="guest@mail.com"></label>
+                    <label class="top">Phone(required)* <input type="tel" name="phone" value="" pattern="[0-9]{10,20}"
+                            placeholder="123-555-1234" required></label>
 
-            <div class="serviceimg"><img src="images/Reception400.jpg" alt="reception and sitting area"></div>
+                </fieldset>
+                <input type="submit" value="Submit Information Request" class="submitBtn">
+            </form>
+        </div>
 
+        <div class="serviceimg"><img src="images/weddingreception.jpg" alt="Event/ Reception area"><br>
+            <img src="images/catering.jpg" alt="food service"></div>
+        </div>
 
     </main>
 
