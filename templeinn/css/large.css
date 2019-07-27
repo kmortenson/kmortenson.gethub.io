@@ -1,5 +1,6 @@
 /* Temple Inn and Suites CSS Large */
 @media (min-width:900px) {
+
   body {
     max-width: 1000px;
     margin: Auto;
@@ -41,55 +42,14 @@
     padding: 8px;
   }
 
-/*-----------------services --------------*/
+  /*-----------------services --------------*/
 
-.serv-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
-  grid-gap: 10px;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*-----------------Footer --------------*/
-  footer {
-    max-width: 1000px;
-  }
-
-  .contact {
+  .serv-container {
     display: grid;
-    grid: 220px / 220px 400px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
     grid-gap: 10px;
-    padding: 10px;
-  }
 
-
-  .info {
-    margin: 1.25rem auto;
-    padding: .5rem;
-    max-width: 800px;
-  }
-
-  .social {
-    max-width: 35px;
-  }
-
-  .container {
-    margin-left: auto;
   }
 
 
@@ -99,4 +59,39 @@
 
 
 
-}
+
+
+
+
+
+
+
+    /*-----------------Footer --------------*/
+    footer {
+      max-width: 1000px;
+    }
+
+    .contact {
+      display: grid;
+      grid: 220px / 220px 400px;
+      grid-gap: 10px;
+      padding: 10px;
+    }
+
+
+    .info {
+      margin: 1.25rem auto;
+      padding: .5rem;
+      max-width: 800px;
+    }
+
+    .social {
+      max-width: 35px;
+    }
+
+    .container {
+      margin-left: auto;
+    }
+
+
+  }
