@@ -6,6 +6,7 @@
     <meta name="description" content="The Temple Inn & Suites">
     <meta name="author" content="Kirk Mortenson">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tinos&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -25,10 +26,13 @@
                     <li><a href="services.html">Services</a></li>
                     <li><a href="contact.html">Contact us</a></li>
                 </ul>
+
             </nav>
 
         </div>
-        <div><img src="images/tiaslogo.png" alt="Temple Inn Logo"></div>
+
+        <div><img src="images/tiascolor.png" alt="Temple Inn Logo"></div>
+
     </header>
 
     <main>
@@ -47,8 +51,10 @@
 
         </div>
         <div class="herodiv">
-            <img src="images/rexburg_idaho_temple.jpg" alt="Moroni"></div>
-        <section class="cweather">
+                <img src="images/test400.jpg" alt="Rexburg Temple" sizes="100vw"
+                srcset="images/test400.jpg 400w, images/test600.jpg 600w, images/test800.jpg 800w">
+                   
+            <section class="cweather">
             <h4>Current Weather</h4>
             <p>Currently: <span id='weatherDesc'></span></P>
             <P>Temp:<span id='cTemp'></span>&deg; F</P>
@@ -58,57 +64,59 @@
             <p>Windchill: <span id='wChill'></span>&deg;F</P>
         </section>
 
+        <body>
+            <div class="templeadd">
+                <h1>Rexburg Temple</h1>
 
-        <h1>Rexburg Temple</h1>
+                <h3>Address</h3>
+                <p>750 S 2nd E<br>
+                    Rexburg ID 83440-5404<br>
+                    United States<br>
+                    1 (208)656-0880<br>
+                </p>
+            </div>
+            <div>
+                <h3>Services</h3>
+                <ul>
+                    <li>Clothing rental available</li>
+                    <li>No Cafeteria available</li>
+                    <li>No Patron housing available</li>
+                    <li>Distribution center nearby</li>
+                </ul>
+                <a href="https://www.churchofjesuschrist.org/temples/details/rexburg-idaho-temple?lang=eng">
+                    Click this link to view the ordnance schedule on the church website. </a><br>
+            </div>
+            <!--JSON Data-->
+            <aside Class="asidejson" id="events">
+            </aside>
+            <!--JSON Data-->
 
-        <h3>Address</h3>
-        <p>750 S 2nd E<br>
-            Rexburg ID 83440-5404<br>
-            United States<br>
-            1 (208)656-0880<br>
-        </p>
-
-
-        <h3>Services</h3>
-        <ul>
-            <li>Clothing rental available</li>
-            <li>No Cafeteria available</li>
-            <li>No Patron housing available</li>
-            <li>Distribution center nearby</li>
-        </ul>
-        <a href="https://www.churchofjesuschrist.org/temples/details/rexburg-idaho-temple?lang=eng">Click this link to
-            view the ordnance schedule on the church website. </a><br>
-        <!--JSON Data-->
-        <aside Class="asidejson" id="events">
-        </aside>
-        <!--JSON Data-->
-
-        <h3>Milestones</h3>
-        <ul>
-            <li>12 December 2003 Announced</li>
-            <li>30 July 2005 Groundbreaking</li>
-            <li>10 February 2008 Dedicated</li>
-        </ul>
-        </div>
-        <div id="googlemap"></div>
-        </div>
+            <h3>Milestones</h3>
+            <ul>
+                <li>12 December 2003 Announced</li>
+                <li>30 July 2005 Groundbreaking</li>
+                <li>10 February 2008 Dedicated</li>
+            </ul>
+            </div>
+            <div id="googlemap"></div>
+            </div>
+        </body>
     </main>
 
     <footer>
-      
-            <div class="info">
-                <p><b>Temple Inn & Suites</b><br>
-                    4800 Montgomery ln #300.<br>
-                    Bethesda, MD 20814<br>
-                    <a href="mailto:Templeinnsuites.com" target="_top">customerrelations@Templeinnsuites.com</a><br>
-                    <a href="/templeinn/useofmaterialreport .pdf">Recource Refrence Page</a><br>
-                </p>
-                <a href="https://www.facebook.com"><img class="social" src="images/facebook.png"
-                        alt="Facebook Icon"></a>
-                <a href="https://www.google.com"><img class="social" src="images/google.png" alt="Google Icon"></a>
-                <a href="https://www.twitter.com"><img class="social" src="images/twitter.png" alt="Twitter Icon"></a>
-                <a href="https://www.pinterest.com"><img class="social" src="images/pinterest.png"
-                        alt="Pinterest Icon"></a><br>
+
+        <div class="info">
+            <p><b>Temple Inn & Suites</b><br>
+                4800 Montgomery ln #300.<br>
+                Bethesda, MD 20814<br>
+                <a href="mailto:Templeinnsuites.com" target="_top">customerrelations@Templeinnsuites.com</a><br>
+                <a href="/templeinn/useofmaterialreport .pdf">Recource Refrence Page</a><br>
+            </p>
+            <a href="https://www.facebook.com"><img class="social" src="images/facebook.png" alt="Facebook Icon"></a>
+            <a href="https://www.google.com"><img class="social" src="images/google.png" alt="Google Icon"></a>
+            <a href="https://www.twitter.com"><img class="social" src="images/twitter.png" alt="Twitter Icon"></a>
+            <a href="https://www.pinterest.com"><img class="social" src="images/pinterest.png"
+                    alt="Pinterest Icon"></a><br>
 
 
     </footer>
