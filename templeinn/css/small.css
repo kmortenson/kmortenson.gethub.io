@@ -243,7 +243,7 @@ form textarea.top {
     text-align: left;
 }
 
-/*----------article----------*/
+/*----------article----------
 article {
     display: grid;
     grid-template-rows: auto;
@@ -271,6 +271,32 @@ article {
     border: 2px solid black;
     border-radius: 10px;
     max-width: 350px;
+    */
+}
+/*-----------Services----------*/
+
+.serv-container {
+display: grid;
+grid-template-rows: auto auto;
+grid-template-columns: auto auto;
+}
+.serviceintro {
+border: 2px solid Black;
+
+}
+
+.amenities {
+    border: 2px solid Black;
+
+}
+
+.service {
+    border: 2px solid Black;
+
+}
+.serviceimg {
+    border: 2px solid Black;
+
 }
 
 /*-----------contact----------*/
