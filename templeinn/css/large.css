@@ -5,12 +5,16 @@
     margin: Auto;
   }
 
+
+  /*-----------------Header --------------*/
   header {
     margin: 1.25rem auto;
     padding: .5rem;
     max-width: 1000px;
   }
 
+
+  /*-----------------Nav --------------*/
   nav {
     Border: 5px solid Black;
     font-size: .8em;
@@ -36,6 +40,25 @@
   Nav ul li a {
     padding: 8px;
   }
+
+/*-----------------services --------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   /*-----------------Footer --------------*/
