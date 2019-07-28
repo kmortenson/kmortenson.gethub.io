@@ -187,7 +187,7 @@ nav ul.hide {
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-gap: 10px;
-    font-size: 0.9 rem;
+    font-size: .9 rem;
 
 }
 
@@ -343,7 +343,7 @@ form textarea.top {
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-gap: 10px;
-    font-size: 0.9 rem;
+    font-size: .9 rem;
 
 }
 
