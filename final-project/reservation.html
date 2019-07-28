@@ -71,8 +71,8 @@
             </fieldset>
             <fieldset>
                 <legend>Room Information</legend>
-                <label class="top">Select date of stay <br><input type="date" name="staydate"> to <input type="date"
-                        name="staydate"></label>
+                <label class="top">Select date of stay <br><input type="date" name="staydate"></label>
+                <label class="top"> to <input type="date" name="staydate"></label>
 
                 <label class="top">Number of rooms <input type="number" name="roomqty" placeholder="1" min="1"
                         max="10"></label>
@@ -84,11 +84,12 @@
                     </datalist>
                 </label>
 
-                <label class="top">Additional information or requirements.<br>
-                    <textarea name="addinfo" rows="4" cols="50" form="addinfo"></textarea></label>
+                <label class="top">Additional information or requirements.</label>
+                <textarea name="addinfo" rows="4" cols="50" form="addinfo">
+                    </textarea>
 
             </fieldset>
-
+         
             <input type="submit" value="Submit Reservation" class="submitBtn">
 
         </form>
