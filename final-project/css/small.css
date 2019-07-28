@@ -182,11 +182,7 @@ nav ul.hide {
     width: 80%;
 }
 
-
-
-
-
-.serv-container {
+.home-container {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -194,7 +190,12 @@ nav ul.hide {
     font-size: 0.9 rem;
 
 }
+.home img {
+    margin: 10px 5px;
+    border: 5px solid black;
+    border-radius: 10px;
 
+}
 .serviceintro {
     margin: 10px 5px;
     border: 5px solid Black;
@@ -211,12 +212,7 @@ nav ul.hide {
     background-color: #015b70;
 }
 
-.amenitiesimg img {
-    margin: 10px 5px;
-    border: 5px solid black;
-    border-radius: 10px;
 
-}
 
 .service {
     margin: 10px 5px;
