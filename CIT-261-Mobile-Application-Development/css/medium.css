@@ -1,0 +1,11 @@
+/* Kirk Mortenson CIT 261 CSS medium */
+@media (min-width:600px) {
+
+    body {
+        max-width: 600px;
+        margin: Auto;
+    }
+
+   
+
+}
