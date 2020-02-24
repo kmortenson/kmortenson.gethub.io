@@ -24,62 +24,76 @@
                     <li><a href="javaScript.html" class="active">JavaScript</a></li>
                     <li><a href="json.html">JSON</a></li>
                     <li><a href="html.html">HTML</a></li>
-                    <li><a href="journal">Journal</a></li>
+                    <li><a href="pdf/CIT 261 Mobil Application Development Journal.pdf">Journal</a></li>
                 </ul>
             </nav>
         </div>
         <div class="articlewrd">
-            <h2>This is my javaScript page where I will have various program showing my abiblity to utiliseJavascript </h2>
+            <h2>This is my javaScript page where I will have various program showing my abiblity to utiliseJavascript
+            </h2>
             <P> Here you can find topics and examples of lessons learned in my mobil application devlopment class.<br>
 
     </header>
 
     <main>
+        <div>
+            <h1>Lesson 1 JavaScript</h1>
+            <h2>Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays</h2>
+        </div>
+
         <div class="scriptCode">
             <script>
                 function calc() {
-                
+
                     /*Defining Table
-                    * Input: 		None.
-                    * Processing: 	Determine all values between 2^0 to 2^31.
-                    * Output: 		Display result of calculation.
-                    */     
+                     * Input: 		None.
+                     * Processing: 	Determine all values between 2^0 to 2^31.
+                     * Output: 		Display result of calculation.
+                     */
                     var cal = 0;
                     var i = 0;
                     var output = "";
                     var t1 = document.getElementById('txt1').value;
                     t1 = parseFloat(t1);
-                    
+
                     //Only run when t1 > 0
-                    if (t1 > 0){
-                        while(i <= t1){
+                    if (t1 > 0) {
+                        while (i <= t1) {
                             cal = Math.pow(2, i);
                             output += "2^" + i + " = " + cal + "<br> ";
                             i += 1;
                         }
-                     } else if (t1 < 0) {
-                            output = "you cannot enter a negitive number";
-                        }
-                        else{
+                    } else if (t1 < 0) {
+                        output = "you cannot enter a negitive number";
+                    } else {
                         output = "Enter a value greater than 0";
-                        }
-                
+                    }
+
                     document.getElementById('outputDiv').innerHTML = output;
                 }
-    
-                
-                </script>
-                <h1>Powers Of Two</h1>
-                <p>
-                What is 2^<input type="text" id="txt1" size="3">? <button type="button" onclick="calc()">GO</button>
-                </p>
-                <div id="outputDiv"></div>
+            </script>
 
-            </div>
-        
-       
+            <h1>Powers Of Two</h1>
+            <p>
+                What is 2^<input type="text" id="txt1" size="3">? <button type="button" onclick="calc()">GO</button>
+            </p>
+            <div id="outputDiv"></div>
+
+        </div>
+        <div>
+            <h1>Lesson 2 JavaScript Objects</h1>
+            <h2>Object Creation Functions, Inheritance, Properties, Methods, Instantiation</h2>
+        </div>
+
+
+        <div>
+            <h1>Lesson 9 JavaScript Events</h1>
+            <h2>Mobile Devices ( Ex. onTouchBegin, onLoad, etc.) and Animation and Transition Events</h2>
+        </div>
+
+
     </main>
-    
+
 
     <footer>
         <div class="info">
@@ -90,12 +104,12 @@
         </div>
     </footer>
     <div>
-        <p class='copyr'>&copy;2020  - Kirk Mortenson - <span id="dt"></span><br>
+        <p class='copyr'>&copy;2020 - Kirk Mortenson - <span id="dt"></span><br>
         </p>
     </div>
     <script src="scripts/navmenu.js"></script>
     <script src="scripts/currentdate.js"></script>
 
-    </body>
+</body>
 
 </Html>
