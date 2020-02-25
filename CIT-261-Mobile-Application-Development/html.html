@@ -21,7 +21,7 @@
                 <ul id="primaryNav" class="hide">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="javaScript.html">JavaScript</a></li>
-                    <li><a href="json.html" >JSON</a></li>
+                    <li><a href="json.html">JSON</a></li>
                     <li><a href="html.html" class="active">HTML</a></li>
                     <li><a href="pdf/CIT261Journal.pdf">Journal</a></li>
                 </ul>
@@ -33,29 +33,45 @@
 
     </header>
     <br>
-    <p class="codepen" data-height="700" data-theme-id="default" data-default-tab="html,result" data-user="kmortenson" data-slug-hash="yLNgERM" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="HTML5 Tags">
-        <span>See the Pen <a href="https://codepen.io/kmortenson/pen/yLNgERM">
-        HTML5 Tags</a> by Kirk Mortenson (<a href="https://codepen.io/kmortenson">@kmortenson</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
-      </p>
-      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-</body>
+    <!DOCTYPE html>
+    <html>
 
-<footer>
-    <div class="info">
-        <p><b>Kirk Mortenson CIT 230 Information page</b><br>
-            <br>
-            Any questions please contact me at:
-            <a href="mailto:Kirk.Mortenson@gmail.com" target="_top">Kirk.Mortenson@gmail.com</a><br>
-    </div>
-</footer>
-<div>
-    <p class='copyr'>&copy;2020 - Kirk Mortenson - <span id="dt"></span><br>
-    </p>
-</div>
-<script src="scripts/navmenu.js"></script>
-<script src="scripts/currentdate.js"></script>
-<script src="scripts/json.js"></script>
-</body>
+    <body>
+        <div class="scriptCode">
+            <h1>The video element</h1>
 
-</Html>
+            <video width="500" height="280" controls>
+                <source src="video/movie.mp4" type="video/mp4">
+                <source src="video/movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="scriptCode">
+            <audio controls>
+                <source src="audio/music.ogg.ogg" type="audio/ogg">
+                <source src="audio/music.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+
+        <footer>
+            <div class="info">
+                <p><b>Kirk Mortenson CIT 230 Information page</b><br>
+                    <br>
+                    Any questions please contact me at:
+                    <a href="mailto:Kirk.Mortenson@gmail.com" target="_top">Kirk.Mortenson@gmail.com</a><br>
+            </div>
+
+        </footer>
+        <div>
+            <p class='copyr'>&copy;2020 - Kirk Mortenson - <span id="dt"></span><br>
+            </p>
+        </div>
+        <script src="scripts/navmenu.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/json.js"></script>
+    </body>
+
+    </Html>
