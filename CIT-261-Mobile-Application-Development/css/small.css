@@ -11,12 +11,13 @@ body {
     justify-content: center;
 }
 
-/*main ul {
-    text-align: left;
-    max-width: 350px;
-    Margin: auto;
+.scriptCode {
+    margin: 10px 5px;
+    border: 5px solid Black;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #96afb6;
 }
-*/
 header {
     text-align: center;
     max-width: 450px;
