@@ -1,0 +1,87 @@
+@keyframes header {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
+
+header h1 {
+    padding: 8px;
+    width: 250px;
+    height: 50px;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    margin-left: -125px;
+    top: 5px;
+    background-color: green;
+    animation-name: header;
+    animation-duration: 8s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+
+
+td {
+    border: 3px solid black;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font: 100px;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    position: absolute;
+    left: 50%;
+    margin-left: -155px;
+    top: 100px;
+}
+
+
+.endgame {
+    display: none;
+    width: 200px;
+    top: 220px;
+    background-color: rgba(205, 133, 63, 0.8);
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 2em;
+}
+.button{
+    padding: 8px;
+    width: 250px;
+    height: 50px;
+    border-radius: 20px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    left: 50%;
+    margin-left: -120px;
+    top: 450px;
+}
+button:hover{ background: gray; }
+
+#quote {
+    padding: 8px;
+    width: 400px;
+    height: 50px;
+    border-radius: 20px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    left: 50%;
+    margin-left: -120px;
+    top: 550px;
+
+}
