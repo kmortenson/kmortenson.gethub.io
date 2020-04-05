@@ -16,6 +16,7 @@ const cells = document.querySelectorAll('.cell');
 startGame();
 
 function startGame() {
+	Quote()
 	document.querySelector(".endgame").style.display = "none";
 	origBoard = Array.from(Array(9).keys());
 	for (var i = 0; i < cells.length; i++) {
@@ -40,12 +41,15 @@ function turn(squareId, player) {
 }
 
 function checkWin(board, player) {
-	let plays = board.reduce((a, e, i) => 
+	let plays = board.reduce((a, e, i) =>
 		(e === player) ? a.concat(i) : a, []);
 	let gameWon = null;
 	for (let [index, win] of winCombos.entries()) {
 		if (win.every(elem => plays.indexOf(elem) > -1)) {
-			gameWon = {index: index, player: player};
+			gameWon = {
+				index: index,
+				player: player
+			};
 			break;
 		}
 	}
@@ -88,25 +92,25 @@ function checkTie() {
 	return false;
 }
 
-// quote generator
+// quote generator 
 function Quote() {
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://type.fit/api/quotes", true);
-    xhr.send();
-  
-    xhr.addEventListener("readystatechange", processRequest, false);
-  
-    function processRequest() {
-      if (xhr.readyState == 4 && xhr.status == 200) {
-        var notify = JSON.parse(xhr.responseText);
-        var max = notify.length;
-        var i = randomQuote(max);
-        document.getElementById("quote").innerHTML = notify[i].text + "<br/>Author: " + notify[i].author;
-       
-      }
-    }
-  }
-  
-  function randomQuote(max){
-    return Math.floor(Math.random() * (max - 0) ) + 0;
-  }
+	var xhr = new XMLHttpRequest();
+	xhr.open("GET", "https://type.fit/api/quotes", true);
+	xhr.send();
+
+	xhr.addEventListener("readystatechange", processRequest, false);
+
+	function processRequest() {
+		if (xhr.readyState == 4 && xhr.status == 200) {
+			var notify = JSON.parse(xhr.responseText);
+			var max = notify.length;
+			var i = randomQuote(max);
+			document.getElementById("quote").innerHTML = notify[i].text + "<br/>Author: " + notify[i].author;
+
+		}
+	}
+}
+//random quote generator
+function randomQuote(max) {
+	return Math.floor(Math.random() * (max - 0)) + 0;
+}
