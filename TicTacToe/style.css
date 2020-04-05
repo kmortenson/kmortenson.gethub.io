@@ -1,22 +1,23 @@
 @keyframes header {
     0% {
         background-color: red;
-        color: green
+        color: blue
     }
 
     25% {
         background-color: yellow;
-        color: blue
+        color:  green
     }
 
     50% {
-        background-color: blue;
-        color: red
+        background-color: green;
+        color: yellow
+       
     }
 
     100% {
-        background-color: green;
-        color: yellow
+        background-color: blue;
+        color: red
     }
 }
 
@@ -37,6 +38,10 @@ header h1 {
     animation-direction: alternate;
 }
 
+body {
+background-color: lightgray;
+
+}
 
 td {
     border: 3px solid black;
@@ -47,7 +52,7 @@ td {
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 75px;
     cursor: pointer;
-}
+   }
 
 table {
     border-collapse: collapse;
@@ -55,12 +60,13 @@ table {
     left: 50%;
     margin-left: -155px;
     top: 100px;
+ 
 }
 
 
 .endgame {
     display: none;
-    width: 200px;
+    width: 250px;
     top: 220px;
     background-color: rgba(205, 133, 63, 0.8);
     position: absolute;
@@ -72,6 +78,7 @@ table {
     border-radius: 5px;
     color: white;
     font-size: 2em;
+    transition: width 3s, height 3s,
 }
 
 .button {

@@ -14,7 +14,7 @@ const winCombos = [
 
 const cells = document.querySelectorAll('.cell');
 startGame();
-
+// initate game and clear board
 function startGame() {
 	Quote()
 	document.querySelector(".endgame").style.display = "none";
@@ -32,7 +32,7 @@ function turnClick(square) {
 		if (!checkTie()) turn(bestSpot(), aiPlayer);
 	}
 }
-
+//take turn and verify if won
 function turn(squareId, player) {
 	origBoard[squareId] = player;
 	document.getElementById(squareId).innerText = player;
@@ -69,6 +69,7 @@ function gameOver(gameWon) {
 
 function declareWinner(who) {
 	document.querySelector(".endgame").style.display = "block";
+   
 	document.querySelector(".endgame .text").innerText = who;
 }
 
