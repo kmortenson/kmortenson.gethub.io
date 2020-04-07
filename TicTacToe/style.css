@@ -21,6 +21,8 @@
     }
 }
 
+
+
 header h1 {
     padding: 8px;
     width: 250px;
@@ -60,25 +62,31 @@ table {
     left: 50%;
     margin-left: -155px;
     top: 100px;
- 
+ }
+
+@keyframes endgame {
+from {}
+to {transform: rotate(360deg) scale(2);}
+
 }
-
-
 .endgame {
     display: none;
-    width: 250px;
-    top: 220px;
-    background-color: rgba(205, 133, 63, 0.8);
+    width: 100px;
+    top: 240px;
+    background-color: green;
+    opacity: .8;
     position: absolute;
     left: 50%;
-    margin-left: -100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    margin-left: -46px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
     border-radius: 5px;
     color: white;
-    font-size: 2em;
-    transition: width 3s, height 3s,
+    font-size: 1em;
+    transition: 1s;
+    animation: endgame 1s;
+    animation-fill-mode: forwards;
 }
 
 .button {
