@@ -65,11 +65,10 @@ table {
  }
 
 @keyframes endgame {
-from {}
+from {transform: rotate(0deg) scale(2); }
 to {transform: rotate(360deg) scale(2);}
-
 }
-.endgame {
+.endgame, .endgame-animate {
     display: none;
     width: 100px;
     top: 240px;
@@ -84,6 +83,11 @@ to {transform: rotate(360deg) scale(2);}
     border-radius: 5px;
     color: white;
     font-size: 1em;
+    
+}
+
+.endgame-animate{
+    display: block;
     transition: 1s;
     animation: endgame 1s;
     animation-fill-mode: forwards;

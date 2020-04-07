@@ -16,7 +16,7 @@ const cells = document.querySelectorAll('.cell');
 startGame();
 // initate game and clear board
 function startGame() {
-	Quote()
+	Quote();
 	document.querySelector(".endgame").style.display = "none";
 	origBoard = Array.from(Array(9).keys());
 	for (var i = 0; i < cells.length; i++) {
@@ -68,10 +68,10 @@ function gameOver(gameWon) {
 }
 
 function declareWinner(who) {
-	
-	document.querySelector(".endgame").style.display = "block";
-	document.querySelector(".endgame .text").innerText = who;
-	
+
+	document.querySelector(".text").innerText = who;
+	document.querySelector(".endgame").classList.add = "endgame-animate";
+	document.querySelector(".endgame").classList.remove = "endgame";
 	
 }
 
