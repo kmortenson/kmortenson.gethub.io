@@ -3,54 +3,69 @@
 /* CSS Animation for Header Rubric */
 @keyframes header {
     0% {
-      background-color: red;
-      color: green;
+        background-color: red;
+        color: green;
     }
-  
+
     25% {
-      background-color: yellow;
-      color: blue;
+        background-color: yellow;
+        color: blue;
     }
-  
+
     50% {
-      background-color: blue;
-      color: red;
+        background-color: blue;
+        color: red;
     }
-  
+
     100% {
-      background-color: green;
-      color: yellow;
+        background-color: green;
+        color: yellow;
     }
-  }
-  /* CSS Animation and Transform for Winning announcement Rubric */
-  @keyframes win {
+}
+
+/* CSS Animation and Transform for Winning announcement Rubric */
+@keyframes win {
     0% {
-      transform: rotate(0deg) scale(1);
+        transform: rotate(0deg) scale(1);
     }
+
     100% {
-      transform: rotate(360deg) scale(2);
+        transform: rotate(360deg) scale(2);
     }
-  }
-  
-  header h1 {
+}
+
+header h1 {
     padding: 8px;
     width: 250px;
     height: 50px;
+    border: 2px solid black;
     border-radius: 20px;
     text-align: center;
     position: absolute;
     left: 50%;
     margin-left: -125px;
-    top: 5px;
+    top: 8px;
     background-color: green;
     animation-name: header;
     animation-duration: 8s;
     animation-iteration-count: 3;
     animation-direction: alternate;
-  }
-  body {background-color: lightgray;}
-  
-  td {
+}
+
+body {
+    background-color: lightgray;
+}
+
+.back {
+    height: 670px;
+    border-radius: 20px;
+    background-image: url(https://cdn.pixabay.com/photo/2017/12/28/18/13/body-of-water-3045871_960_720.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+
+td {
     border: 3px solid black;
     height: 100px;
     width: 100px;
@@ -59,25 +74,26 @@
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 75px;
     cursor: pointer;
-  }
-  
-  table {
+}
+
+table {
+    background-image: url(https://images.pexels.com/photos/129733/pexels-photo-129733.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     border-collapse: collapse;
     position: absolute;
     left: 50%;
     margin-left: -155px;
     top: 100px;
-  }
-  
-  .endgame {
+}
+
+.endgame {
     display: none;
-  }
-  
-  .end-animate {
+}
+
+.end-animate {
     width: 100px;
     top: 220px;
-    background-color: green;
-    opacity: 0.8;
+    background-image: url(https://images.pexels.com/photos/172298/pexels-photo-172298.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    border: 2px solid black;
     position: absolute;
     left: 50%;
     margin-left: -46px;
@@ -85,16 +101,21 @@
     padding-bottom: 20px;
     text-align: center;
     border-radius: 5px;
-    color: white;
-    font-size: 1em;
+    color: black;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 1.25em;
     animation: 2s win;
     animation-fill-mode: forwards;
-  }
-   /* CSS Transform for button Rubric */
-  .button {
+}
+
+/* CSS Transform for button Rubric */
+.button {
+    background: rgb(165, 136, 112);
     padding: 8px;
     width: 250px;
     height: 50px;
+    border: 2px solid Black;
+    border-radius: 8px;
     text-align: center;
     vertical-align: middle;
     position: absolute;
@@ -102,20 +123,22 @@
     margin-left: -120px;
     top: 450px;
     transition: border-radius 0.5s;
-  
-  }
-  
-  button:hover {
+
+}
+
+button:hover {
     background: gray;
     color: whitesmoke;
+    font-size: 1.5em;
     border-radius: 30px;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background: gray;
-  }
-  
-  #quoteDisplay {
+}
+
+#quoteDisplay {
+    background: rgb(165, 136, 112);
     padding: 8px;
     border: 4px solid black;
     width: 350px;
@@ -125,6 +148,5 @@
     position: absolute;
     left: 50%;
     margin-left: -175px;
-    top: 550px;
-  }
-  
+    top: 525px;
+}
