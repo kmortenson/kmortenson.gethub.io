@@ -18,6 +18,7 @@ startGame();
 // Game start and reset
 function startGame() {
 	clearWin();
+//See quote.js for quote generator the utilizes json, Local memory, and API request (Rubric).
 	quote();
 	document.querySelector(".endgame").style.display = "none";
 	origBoard = Array.from(Array(9).keys());
@@ -79,8 +80,21 @@ function declareWinner(who) {
 	document.body.appendChild(win);
 	document.querySelector(".endgame").style.display = "block";
 	document.querySelector(".text").innerText = who;
-
 }
+
+// Clear Winner
+function clearWin() {
+	var text = document.getElementsByClassName("text");
+	while (text[0]) {
+		text[0].parentNode.removeChild(text[0]);
+	}
+
+	var win = document.getElementsByClassName("end-animate");
+	while (win[0]) {
+		win[0].parentNode.removeChild(win[0]);
+	}
+}
+
 
 function emptySquares() {
 	return origBoard.filter((s) => typeof s == "number");
@@ -107,17 +121,4 @@ function checkTie() {
 		}
 	}
 	return false;
-}
-
-// Clear Winner
-function clearWin() {
-	var text = document.getElementsByClassName("text");
-	while (text[0]) {
-		text[0].parentNode.removeChild(text[0]);
-	}
-
-	var win = document.getElementsByClassName("end-animate");
-	while (win[0]) {
-		win[0].parentNode.removeChild(win[0]);
-	}
 }
