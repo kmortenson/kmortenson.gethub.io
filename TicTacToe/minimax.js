@@ -1,3 +1,7 @@
+// I Was thinking of using the minimax Algorithm but it was out of the scope of the program and would have made it to hard to test the functions.
+// This is also not my code.
+// This is what attracted me to the concept of a TicTacToe game because I wanted to better understand the basic code of this Algorithm.
+
 function minimax(newBoard, player) {
 	var availSpots = emptySquares();
 

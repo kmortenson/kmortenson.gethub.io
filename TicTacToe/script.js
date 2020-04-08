@@ -14,7 +14,8 @@ const winCombos = [
 
 const cells = document.querySelectorAll(".cell");
 startGame();
-//start game and reset the game
+
+// Game start and reset
 function startGame() {
 	clearWin();
 	quote();
@@ -33,7 +34,6 @@ function turnClick(square) {
 		if (!checkWin(origBoard, huPlayer) && !checkTie()) turn(bestSpot(), aiPlayer);
 	}
 }
-
 
 function turn(squareId, player) {
 	origBoard[squareId] = player;
@@ -68,6 +68,7 @@ function gameOver(gameWon) {
 	declareWinner(gameWon.player == huPlayer ? "You win!" : "You lose.");
 }
 
+//create element for win loose or tie animation
 function declareWinner(who) {
 	var win = document.createElement("DIV");
 	var text = document.createElement("DIV");
@@ -84,7 +85,7 @@ function declareWinner(who) {
 function emptySquares() {
 	return origBoard.filter((s) => typeof s == "number");
 }
-
+// very bad IA for Tic Tac Toe but I wanted it to be easy to see the functions
 function bestSpot() {
 	return emptySquares()[0];
 }
@@ -108,7 +109,7 @@ function checkTie() {
 	return false;
 }
 
-
+// Clear Winner
 function clearWin() {
 	var text = document.getElementsByClassName("text");
 	while (text[0]) {
