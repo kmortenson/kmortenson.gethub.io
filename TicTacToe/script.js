@@ -14,7 +14,7 @@ const winCombos = [
 
 const cells = document.querySelectorAll(".cell");
 startGame();
-
+//start game and reset the game
 function startGame() {
 	clearWin();
 	quote();
@@ -30,9 +30,10 @@ function startGame() {
 function turnClick(square) {
 	if (typeof origBoard[square.target.id] == "number") {
 		turn(square.target.id, huPlayer);
-		if (!checkTie()) turn(bestSpot(), aiPlayer);
+		if (!checkWin(origBoard, huPlayer) && !checkTie()) turn(bestSpot(), aiPlayer);
 	}
 }
+
 
 function turn(squareId, player) {
 	origBoard[squareId] = player;
@@ -77,7 +78,7 @@ function declareWinner(who) {
 	document.body.appendChild(win);
 	document.querySelector(".endgame").style.display = "block";
 	document.querySelector(".text").innerText = who;
-	// document.getElementById("end").style.transform = "rotate(300deg) scale(2)";
+
 }
 
 function emptySquares() {
@@ -89,16 +90,24 @@ function bestSpot() {
 }
 
 function checkTie() {
+	let gameWon = null;
 	if (emptySquares().length == 0) {
-		for (var i = 0; i < cells.length; i++) {
-			cells[i].style.backgroundColor = "Lightgray";
-			cells[i].removeEventListener("click", turnClick, false);
+		gameWon = checkWin(origBoard, huPlayer);
+		if (gameWon) {
+			gameOver(gameWon);
+			return true;
+		} else {
+			for (var i = 0; i < cells.length; i++) {
+				cells[i].style.backgroundColor = "green";
+				cells[i].removeEventListener('click', turnClick, false);
+			}
+			declareWinner("Tie Game!");
+			return true;
 		}
-		declareWinner("Tie Game!");
-		return true;
 	}
 	return false;
 }
+
 
 function clearWin() {
 	var text = document.getElementsByClassName("text");
@@ -111,31 +120,3 @@ function clearWin() {
 		win[0].parentNode.removeChild(win[0]);
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

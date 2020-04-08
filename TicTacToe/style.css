@@ -1,3 +1,6 @@
+/* CSS commnets will note rubric requirements */
+
+/* CSS Animation for Header Rubric */
 @keyframes header {
     0% {
       background-color: red;
@@ -19,7 +22,7 @@
       color: yellow;
     }
   }
-  
+  /* CSS Animation and Transform for Winning announcement Rubric */
   @keyframes win {
     0% {
       transform: rotate(0deg) scale(1);
@@ -45,6 +48,7 @@
     animation-iteration-count: 3;
     animation-direction: alternate;
   }
+  body {background-color: lightgray;}
   
   td {
     border: 3px solid black;
@@ -86,7 +90,7 @@
     animation: 2s win;
     animation-fill-mode: forwards;
   }
-  
+   /* CSS Transform for button Rubric */
   .button {
     padding: 8px;
     width: 250px;
@@ -97,10 +101,14 @@
     left: 50%;
     margin-left: -120px;
     top: 450px;
+    transition: border-radius 0.5s;
+  
   }
   
   button:hover {
     background: gray;
+    color: whitesmoke;
+    border-radius: 30px;
   }
   
   button:hover {
@@ -111,7 +119,6 @@
     padding: 8px;
     border: 4px solid black;
     width: 350px;
-    
     border-radius: 20px;
     text-align: center;
     vertical-align: middle;
